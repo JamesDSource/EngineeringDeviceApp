@@ -16,14 +16,14 @@ def nav_bar_hide():
     navigation_frame.place_forget()
 
 def nav_bar_show():
-    navigation_frame.place(relx=0.9, relwidth=0.1, relheight=1)
+    navigation_frame.place(relx=0.8, relwidth=0.2, relheight=1)
     navigation_open_button.place_forget()
 
 navigation_open_button = Button(main_frame, text="Open nav", command=nav_bar_show)
-navigation_frame = Frame(main_frame)
+navigation_frame = Frame(main_frame, bg="#000000")
 
-navigation_close_button = Button(navigation_frame, text="Close")
-navigation_close_button.place()
+navigation_close_button = Button(navigation_frame, text="Close", command=nav_bar_hide)
+navigation_close_button.pack()
 nav_bar_hide()
 
 main_frame.place(relwidth=1, relheight=1)
