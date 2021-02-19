@@ -4,7 +4,7 @@ class Project {
 	public function new() {}
 
 	public function init() {
-
+		
 	}
 	
 	public function update() {
