@@ -1,6 +1,8 @@
 -cp c:\Users\james\Desktop\KodeStudio\resources\app\kodeExtensions\kha\Kha\Sources
 -cp c:\Users\james\Desktop\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\HTML5
 -cp c:\Users\james\Desktop\School\PLTW Engineering\EngineeringApp\Sources
+-cp C:\HaxeToolkit\domkit\git
+-D domkit
 -D sys_g1
 -D sys_g2
 -D sys_g3
