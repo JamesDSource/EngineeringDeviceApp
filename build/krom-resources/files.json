@@ -1,6 +1,13 @@
 {
 	"files": [
 		{
+			"name": "RobotoMono",
+			"files": [
+				"RobotoMono.ttf"
+			],
+			"type": "font"
+		},
+		{
 			"name": "painter_colored_frag",
 			"files": [
 				"painter-colored.frag.d3d11"
@@ -180,36 +187,6 @@
 			]
 		},
 		{
-			"name": "painter_text_frag",
-			"files": [
-				"painter-text.frag.d3d11"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "fragmentColor",
-					"type": "vec4"
-				},
-				{
-					"name": "texCoord",
-					"type": "vec2"
-				}
-			],
-			"outputs": [
-				{
-					"name": "FragColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [
-				{
-					"name": "tex",
-					"type": "sampler2D"
-				}
-			],
-			"types": []
-		},
-		{
 			"name": "painter_text_vert",
 			"files": [
 				"painter-text.vert.d3d11"
@@ -291,6 +268,36 @@
 				{
 					"name": "color",
 					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			],
+			"types": []
+		},
+		{
+			"name": "painter_text_frag",
+			"files": [
+				"painter-text.frag.d3d11"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
 				}
 			],
 			"outputs": [
