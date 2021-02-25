@@ -94,7 +94,7 @@ Project.prototype = {
 var Main = $hxClasses["Main"] = function() { };
 Main.__name__ = true;
 Main.main = function() {
-	kha_System.start(new kha_SystemOptions("Meditation App",1024,768,null,null),function(_) {
+	kha_System.start(new kha_SystemOptions("Meditation App",800,480,null,null),function(_) {
 		kha_Assets.loadEverything(function() {
 			Main.proj.init();
 			kha_Scheduler.addTimeTask(function() {

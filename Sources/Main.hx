@@ -9,7 +9,7 @@ class Main {
 	static var proj: Project = new Project();
 
 	public static function main() {
-		System.start({title: "Meditation App", width: 1024, height: 768}, function (_) {
+		System.start({title: "Meditation App", width: 800, height: 480}, function (_) {
 			// Just loading everything is ok for small projects
 			Assets.loadEverything(function () {
 				// Avoid passing update/render directly,

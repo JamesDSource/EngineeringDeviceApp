@@ -12,6 +12,6 @@ class Project {
 	}
 
 	public function render(frames: Array<Framebuffer>) {
-
+		
 	}
 }
