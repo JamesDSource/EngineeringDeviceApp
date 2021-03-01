@@ -6,10 +6,10 @@ import kha.Scheduler;
 import kha.System;
 
 class Main {
-	static var proj: Project = new Project();
+	static var proj: Project = new Project(800, 480);
 
 	public static function main() {
-		System.start({title: "Meditation App", width: 800, height: 480}, function (_) {
+		System.start({title: "Meditation App", width: cast proj.windowWidth, height: cast proj.windowHeight}, function (_) {
 			// Just loading everything is ok for small projects
 			Assets.loadEverything(function () {
 				// Avoid passing update/render directly,

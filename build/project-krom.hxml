@@ -1,8 +1,6 @@
 -cp c:\Users\james\Desktop\KodeStudio\resources\app\kodeExtensions\kha\Kha\Sources
 -cp c:\Users\james\Desktop\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Krom
 -cp c:\Users\james\Desktop\School\PLTW Engineering\EngineeringApp\Sources
--cp C:\HaxeToolkit\domkit\git
--D domkit
 -D js-classic
 -D sys_krom
 -D sys_g1

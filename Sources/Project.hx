@@ -1,15 +1,23 @@
-import kha.Assets;
-import kha.Font;
+import kha.math.Vector2;
 import kha.Framebuffer;
+import components.*;
 
 class Project {
 
-	private var font: Font;
+	public var windowWidth: Float;
+	public var windowHeight: Float;
 
- 	public function new() {}
+	private var masterDivision: DivisionRect;
+
+ 	public function new(windowWidth: Float, windowHeight: Float) {
+		 this.windowWidth = windowWidth;
+		 this.windowHeight = windowHeight;
+	 }
 
 	public function init() {
-		font = Assets.fonts.get("RobotoMono");
+		masterDivision = new DivisionRect(new Vector2(0, 0), windowWidth, windowHeight);
+		masterDivision.origin = new Vector2();
+		masterDivision.addChild(new DivisionRect(new Vector2(100, 100), 100, 200));
 	}
 	
 	public function update() {
@@ -20,9 +28,7 @@ class Project {
 		if(frames.length > 0) {
 			var graphics = frames[0].g2;
 			graphics.begin();
-			graphics.font = font;
-			graphics.fontSize = 24;
-			graphics.drawString("Hello World", 60, 60);
+			masterDivision.draw(graphics);
 			graphics.end();
 		}
 	}
