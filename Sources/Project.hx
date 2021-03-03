@@ -1,3 +1,4 @@
+import Origin.OriginPoint;
 import kha.math.Vector2;
 import kha.Framebuffer;
 import components.*;
@@ -9,6 +10,8 @@ class Project {
 
 	private var masterDivision: DivisionRect;
 
+	private var font: kha.Font;
+
  	public function new(windowWidth: Float, windowHeight: Float) {
 		 this.windowWidth = windowWidth;
 		 this.windowHeight = windowHeight;
@@ -17,7 +20,8 @@ class Project {
 	public function init() {
 		masterDivision = new DivisionRect(new Vector2(0, 0), windowWidth, windowHeight);
 		masterDivision.origin = new Vector2();
-		masterDivision.addChild(new DivisionRect(new Vector2(100, 100), 100, 200));
+
+		font = kha.Assets.fonts.get("RobotoMono");
 	}
 	
 	public function update() {
@@ -28,6 +32,9 @@ class Project {
 		if(frames.length > 0) {
 			var graphics = frames[0].g2;
 			graphics.begin();
+			graphics.font = font;
+			graphics.fontSize = 22;
+			Text.drawText(graphics, "This is<nl>cool text<nl>I love it", new kha.math.Vector2(windowWidth, windowHeight), 12, 22, OriginPoint.bottomRight);
 			masterDivision.draw(graphics);
 			graphics.end();
 		}
