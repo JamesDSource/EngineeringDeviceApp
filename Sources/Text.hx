@@ -56,7 +56,6 @@ class Text {
 
 	public static function getTokens(text: String) {
 		var tokens: Array<Token> = [];
-		
 		var textReturn = "";
 		var i: Int = -1; 
 		while(i + 1 < text.length) {

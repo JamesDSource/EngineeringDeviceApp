@@ -21,6 +21,9 @@ class Project {
 		masterDivision = new DivisionRect(new Vector2(0, 0), windowWidth, windowHeight);
 		masterDivision.origin = new Vector2();
 
+		var tb = new Textbox(new Vector2(0, 0), "This is a text string<nl>with a new line");
+		masterDivision.addChild(tb);
+
 		font = kha.Assets.fonts.get("RobotoMono");
 	}
 	
@@ -33,8 +36,6 @@ class Project {
 			var graphics = frames[0].g2;
 			graphics.begin();
 			graphics.font = font;
-			graphics.fontSize = 22;
-			Text.drawText(graphics, "This is<nl>cool text<nl>I love it", new kha.math.Vector2(windowWidth, windowHeight), 12, 22, OriginPoint.bottomRight);
 			masterDivision.draw(graphics);
 			graphics.end();
 		}

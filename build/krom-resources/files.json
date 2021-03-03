@@ -29,66 +29,6 @@
 			"types": []
 		},
 		{
-			"name": "painter_colored_vert",
-			"files": [
-				"painter-colored.vert.d3d11"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "vertexPosition",
-					"type": "vec3"
-				},
-				{
-					"name": "vertexColor",
-					"type": "vec4"
-				},
-				{
-					"name": "gl_VertexID",
-					"type": "int"
-				},
-				{
-					"name": "gl_InstanceID",
-					"type": "int"
-				}
-			],
-			"outputs": [
-				{
-					"name": "fragmentColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [
-				{
-					"name": "projectionMatrix",
-					"type": "mat4"
-				}
-			],
-			"types": [
-				{
-					"name": "gl_PerVertex",
-					"members": [
-						{
-							"type": "vec4",
-							"name": "gl_Position"
-						},
-						{
-							"type": "float",
-							"name": "gl_PointSize"
-						},
-						{
-							"type": "float[]",
-							"name": "gl_ClipDistance"
-						},
-						{
-							"type": "float[]",
-							"name": "gl_CullDistance"
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "painter_image_frag",
 			"files": [
 				"painter-image.frag.d3d11"
@@ -119,49 +59,15 @@
 			"types": []
 		},
 		{
-			"name": "painter_text_frag",
+			"name": "painter_colored_vert",
 			"files": [
-				"painter-text.frag.d3d11"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "fragmentColor",
-					"type": "vec4"
-				},
-				{
-					"name": "texCoord",
-					"type": "vec2"
-				}
-			],
-			"outputs": [
-				{
-					"name": "FragColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [
-				{
-					"name": "tex",
-					"type": "sampler2D"
-				}
-			],
-			"types": []
-		},
-		{
-			"name": "painter_image_vert",
-			"files": [
-				"painter-image.vert.d3d11"
+				"painter-colored.vert.d3d11"
 			],
 			"type": "shader",
 			"inputs": [
 				{
 					"name": "vertexPosition",
 					"type": "vec3"
-				},
-				{
-					"name": "texPosition",
-					"type": "vec2"
 				},
 				{
 					"name": "vertexColor",
@@ -178,11 +84,7 @@
 			],
 			"outputs": [
 				{
-					"name": "texCoord",
-					"type": "vec2"
-				},
-				{
-					"name": "color",
+					"name": "fragmentColor",
 					"type": "vec4"
 				}
 			],
@@ -315,6 +217,74 @@
 			"types": []
 		},
 		{
+			"name": "painter_image_vert",
+			"files": [
+				"painter-image.vert.d3d11"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "vertexPosition",
+					"type": "vec3"
+				},
+				{
+					"name": "texPosition",
+					"type": "vec2"
+				},
+				{
+					"name": "vertexColor",
+					"type": "vec4"
+				},
+				{
+					"name": "gl_VertexID",
+					"type": "int"
+				},
+				{
+					"name": "gl_InstanceID",
+					"type": "int"
+				}
+			],
+			"outputs": [
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "color",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "projectionMatrix",
+					"type": "mat4"
+				}
+			],
+			"types": [
+				{
+					"name": "gl_PerVertex",
+					"members": [
+						{
+							"type": "vec4",
+							"name": "gl_Position"
+						},
+						{
+							"type": "float",
+							"name": "gl_PointSize"
+						},
+						{
+							"type": "float[]",
+							"name": "gl_ClipDistance"
+						},
+						{
+							"type": "float[]",
+							"name": "gl_CullDistance"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "painter_video_vert",
 			"files": [
 				"painter-video.vert.d3d11"
@@ -381,6 +351,36 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "painter_text_frag",
+			"files": [
+				"painter-text.frag.d3d11"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				}
+			],
+			"outputs": [
+				{
+					"name": "FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			],
+			"types": []
 		}
 	]
 }
