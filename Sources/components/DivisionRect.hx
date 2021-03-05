@@ -25,8 +25,8 @@ class DivisionRect implements Component {
 		}
 	}
 
-	public function getSize(): kha.math.Vector2 {
-		return new kha.math.Vector2(width, height);
+	public function getBoundingBox(): Component.BoundingBox {
+		return {topLeft: null, bottomRight: null};
 	}
 
 	public function isOver(x: Float, y: Float): Component {

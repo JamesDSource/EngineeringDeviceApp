@@ -43,8 +43,8 @@ class Textbox implements Component {
 		Text.drawText(graphics, text, position.add(origin), hSeperation, vSeperation, originPoint);
 	}
 	
-	public function getSize(): kha.math.Vector2 {
-		return textSize;
+	public function getBoundingBox(): Component.BoundingBox {
+		return {topLeft: null, bottomRight: null};
 	}
 	
 	public function isOver(x: Float, y: Float): Component {
