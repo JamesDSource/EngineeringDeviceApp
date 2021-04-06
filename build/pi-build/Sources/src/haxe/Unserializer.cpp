@@ -45,21 +45,21 @@
 #include <hxinc/haxe/io/Bytes.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_42722ce5378309e2_104_new,"haxe.Unserializer","new",0xa8f5e205,"haxe.Unserializer.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",104,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_149_readDigits,"haxe.Unserializer","readDigits",0x75598b17,"haxe.Unserializer.readDigits","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",149,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_174_readFloat,"haxe.Unserializer","readFloat",0x5bd86dcb,"haxe.Unserializer.readFloat","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",174,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_188_unserializeObject,"haxe.Unserializer","unserializeObject",0x1b3e66eb,"haxe.Unserializer.unserializeObject","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",188,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_203_unserializeEnum,"haxe.Unserializer","unserializeEnum",0x5018b02d,"haxe.Unserializer.unserializeEnum","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",203,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_235_unserialize,"haxe.Unserializer","unserialize",0x92cca30c,"haxe.Unserializer.unserialize","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",235,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_72_initCodes,"haxe.Unserializer","initCodes",0xee42ccdb,"haxe.Unserializer.initCodes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",72,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_468_run,"haxe.Unserializer","run",0xa8f8f8f0,"haxe.Unserializer.run","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",468,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_65_boot,"haxe.Unserializer","boot",0x2648e2ed,"haxe.Unserializer.boot","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",65,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_67_boot,"haxe.Unserializer","boot",0x2648e2ed,"haxe.Unserializer.boot","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",67,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_42722ce5378309e2_70_boot,"haxe.Unserializer","boot",0x2648e2ed,"haxe.Unserializer.boot","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",70,0x6913b83a)
+HX_DEFINE_STACK_FRAME(_hx_pos_e4213c05660581ca_104_new,"haxe.Unserializer","new",0xa8f5e205,"haxe.Unserializer.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",104,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_149_readDigits,"haxe.Unserializer","readDigits",0x75598b17,"haxe.Unserializer.readDigits","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",149,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_174_readFloat,"haxe.Unserializer","readFloat",0x5bd86dcb,"haxe.Unserializer.readFloat","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",174,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_188_unserializeObject,"haxe.Unserializer","unserializeObject",0x1b3e66eb,"haxe.Unserializer.unserializeObject","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",188,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_203_unserializeEnum,"haxe.Unserializer","unserializeEnum",0x5018b02d,"haxe.Unserializer.unserializeEnum","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",203,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_235_unserialize,"haxe.Unserializer","unserialize",0x92cca30c,"haxe.Unserializer.unserialize","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",235,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_72_initCodes,"haxe.Unserializer","initCodes",0xee42ccdb,"haxe.Unserializer.initCodes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",72,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_468_run,"haxe.Unserializer","run",0xa8f8f8f0,"haxe.Unserializer.run","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",468,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_65_boot,"haxe.Unserializer","boot",0x2648e2ed,"haxe.Unserializer.boot","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",65,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_67_boot,"haxe.Unserializer","boot",0x2648e2ed,"haxe.Unserializer.boot","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",67,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_e4213c05660581ca_70_boot,"haxe.Unserializer","boot",0x2648e2ed,"haxe.Unserializer.boot","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",70,0xe82ab002)
 namespace haxe{
 
 void Unserializer_obj::__construct(::String buf){
-            	HX_GC_STACKFRAME(&_hx_pos_42722ce5378309e2_104_new)
+            	HX_GC_STACKFRAME(&_hx_pos_e4213c05660581ca_104_new)
 HXLINE( 105)		this->buf = buf;
 HXLINE( 106)		this->length = buf.length;
 HXLINE( 107)		this->pos = 0;
@@ -89,7 +89,7 @@ bool Unserializer_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 int Unserializer_obj::readDigits(){
-            	HX_STACKFRAME(&_hx_pos_42722ce5378309e2_149_readDigits)
+            	HX_STACKFRAME(&_hx_pos_e4213c05660581ca_149_readDigits)
 HXLINE( 150)		int k = 0;
 HXLINE( 151)		bool s = false;
 HXLINE( 152)		int fpos = this->pos;
@@ -130,7 +130,7 @@ HXLINE( 171)		return k;
 HX_DEFINE_DYNAMIC_FUNC0(Unserializer_obj,readDigits,return )
 
 Float Unserializer_obj::readFloat(){
-            	HX_STACKFRAME(&_hx_pos_42722ce5378309e2_174_readFloat)
+            	HX_STACKFRAME(&_hx_pos_e4213c05660581ca_174_readFloat)
 HXLINE( 175)		int p1 = this->pos;
 HXLINE( 176)		while(true){
 HXLINE( 177)			int c = this->buf.cca(this->pos);
@@ -173,7 +173,7 @@ HXLINE( 185)		return ::Std_obj::parseFloat(this->buf.substr(p1,(this->pos - p1))
 HX_DEFINE_DYNAMIC_FUNC0(Unserializer_obj,readFloat,return )
 
 void Unserializer_obj::unserializeObject( ::Dynamic o){
-            	HX_STACKFRAME(&_hx_pos_42722ce5378309e2_188_unserializeObject)
+            	HX_STACKFRAME(&_hx_pos_e4213c05660581ca_188_unserializeObject)
 HXLINE( 189)		while(true){
 HXLINE( 190)			if ((this->pos >= this->length)) {
 HXLINE( 191)				HX_STACK_DO_THROW(HX_("Invalid object",e8,6c,b7,e2));
@@ -196,7 +196,7 @@ HXLINE( 200)		this->pos++;
 HX_DEFINE_DYNAMIC_FUNC1(Unserializer_obj,unserializeObject,(void))
 
  ::Dynamic Unserializer_obj::unserializeEnum(hx::Class edecl,::String tag){
-            	HX_STACKFRAME(&_hx_pos_42722ce5378309e2_203_unserializeEnum)
+            	HX_STACKFRAME(&_hx_pos_e4213c05660581ca_203_unserializeEnum)
 HXLINE( 204)		if ((this->buf.cca(this->pos++) != 58)) {
 HXLINE( 205)			HX_STACK_DO_THROW(HX_("Invalid enum format",ad,eb,77,c2));
             		}
@@ -220,7 +220,7 @@ HXLINE( 212)		return ::Type_obj::createEnum(edecl,tag,args);
 HX_DEFINE_DYNAMIC_FUNC2(Unserializer_obj,unserializeEnum,return )
 
  ::Dynamic Unserializer_obj::unserialize(){
-            	HX_GC_STACKFRAME(&_hx_pos_42722ce5378309e2_235_unserialize)
+            	HX_GC_STACKFRAME(&_hx_pos_e4213c05660581ca_235_unserialize)
 HXLINE( 236)		switch((int)(this->buf.cca(this->pos++))){
             			case (int)65: {
 HXLINE( 443)				::String name = ( (::String)(this->unserialize()) );
@@ -633,7 +633,7 @@ HX_DEFINE_DYNAMIC_FUNC0(Unserializer_obj,unserialize,return )
 ::Array< int > Unserializer_obj::CODES;
 
 ::Array< int > Unserializer_obj::initCodes(){
-            	HX_STACKFRAME(&_hx_pos_42722ce5378309e2_72_initCodes)
+            	HX_STACKFRAME(&_hx_pos_e4213c05660581ca_72_initCodes)
 HXLINE(  73)		::Array< int > codes = ::Array_obj< int >::__new();
 HXLINE(  79)		{
 HXLINE(  79)			int _g = 0;
@@ -651,7 +651,7 @@ HXLINE(  81)		return codes;
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(Unserializer_obj,initCodes,return )
 
  ::Dynamic Unserializer_obj::run(::String v){
-            	HX_GC_STACKFRAME(&_hx_pos_42722ce5378309e2_468_run)
+            	HX_GC_STACKFRAME(&_hx_pos_e4213c05660581ca_468_run)
 HXDLIN( 468)		return  ::haxe::Unserializer_obj::__alloc( HX_CTX ,v)->unserialize();
             	}
 
@@ -888,15 +888,15 @@ void Unserializer_obj::__register()
 void Unserializer_obj::__boot()
 {
 {
-            	HX_GC_STACKFRAME(&_hx_pos_42722ce5378309e2_65_boot)
+            	HX_GC_STACKFRAME(&_hx_pos_e4213c05660581ca_65_boot)
 HXDLIN(  65)		DEFAULT_RESOLVER =  ::haxe::_Unserializer::DefaultResolver_obj::__alloc( HX_CTX );
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_42722ce5378309e2_67_boot)
+            	HX_STACKFRAME(&_hx_pos_e4213c05660581ca_67_boot)
 HXDLIN(  67)		BASE64 = HX_("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:",d4,3b,03,7f);
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_42722ce5378309e2_70_boot)
+            	HX_STACKFRAME(&_hx_pos_e4213c05660581ca_70_boot)
 HXDLIN(  70)		CODES = null();
             	}
 }

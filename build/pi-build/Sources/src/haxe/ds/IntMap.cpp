@@ -8,16 +8,16 @@
 #include <hxinc/haxe/ds/IntMap.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_1a18f9b4ad2dd57c_58_new,"haxe.ds.IntMap","new",0x7222c4b6,"haxe.ds.IntMap.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",58,0x50694f2b)
-HX_LOCAL_STACK_FRAME(_hx_pos_1a18f9b4ad2dd57c_61_set,"haxe.ds.IntMap","set",0x72268ff8,"haxe.ds.IntMap.set","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",61,0x50694f2b)
-HX_LOCAL_STACK_FRAME(_hx_pos_1a18f9b4ad2dd57c_65_get,"haxe.ds.IntMap","get",0x721d74ec,"haxe.ds.IntMap.get","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",65,0x50694f2b)
-HX_LOCAL_STACK_FRAME(_hx_pos_1a18f9b4ad2dd57c_69_exists,"haxe.ds.IntMap","exists",0x63ba0346,"haxe.ds.IntMap.exists","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",69,0x50694f2b)
-HX_LOCAL_STACK_FRAME(_hx_pos_1a18f9b4ad2dd57c_81_iterator,"haxe.ds.IntMap","iterator",0x4dc7ddd8,"haxe.ds.IntMap.iterator","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",81,0x50694f2b)
+HX_DEFINE_STACK_FRAME(_hx_pos_8085dc345aa40d55_58_new,"haxe.ds.IntMap","new",0x7222c4b6,"haxe.ds.IntMap.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",58,0xf6584cf3)
+HX_LOCAL_STACK_FRAME(_hx_pos_8085dc345aa40d55_61_set,"haxe.ds.IntMap","set",0x72268ff8,"haxe.ds.IntMap.set","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",61,0xf6584cf3)
+HX_LOCAL_STACK_FRAME(_hx_pos_8085dc345aa40d55_65_get,"haxe.ds.IntMap","get",0x721d74ec,"haxe.ds.IntMap.get","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",65,0xf6584cf3)
+HX_LOCAL_STACK_FRAME(_hx_pos_8085dc345aa40d55_69_exists,"haxe.ds.IntMap","exists",0x63ba0346,"haxe.ds.IntMap.exists","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",69,0xf6584cf3)
+HX_LOCAL_STACK_FRAME(_hx_pos_8085dc345aa40d55_81_iterator,"haxe.ds.IntMap","iterator",0x4dc7ddd8,"haxe.ds.IntMap.iterator","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/IntMap.hx",81,0xf6584cf3)
 namespace haxe{
 namespace ds{
 
 void IntMap_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_1a18f9b4ad2dd57c_58_new)
+            	HX_STACKFRAME(&_hx_pos_8085dc345aa40d55_58_new)
             	}
 
 Dynamic IntMap_obj::__CreateEmpty() { return new IntMap_obj; }
@@ -50,7 +50,7 @@ void *IntMap_obj::_hx_getInterface(int inHash) {
 }
 
 void IntMap_obj::set(int key, ::Dynamic value){
-            	HX_STACKFRAME(&_hx_pos_1a18f9b4ad2dd57c_61_set)
+            	HX_STACKFRAME(&_hx_pos_8085dc345aa40d55_61_set)
 HXDLIN(  61)		 ::__int_hash_set(HX_MAP_THIS,key,value);
             	}
 
@@ -58,7 +58,7 @@ HXDLIN(  61)		 ::__int_hash_set(HX_MAP_THIS,key,value);
 HX_DEFINE_DYNAMIC_FUNC2(IntMap_obj,set,(void))
 
  ::Dynamic IntMap_obj::get(int key){
-            	HX_STACKFRAME(&_hx_pos_1a18f9b4ad2dd57c_65_get)
+            	HX_STACKFRAME(&_hx_pos_8085dc345aa40d55_65_get)
 HXDLIN(  65)		return  ::__int_hash_get(this->h,key);
             	}
 
@@ -66,7 +66,7 @@ HXDLIN(  65)		return  ::__int_hash_get(this->h,key);
 HX_DEFINE_DYNAMIC_FUNC1(IntMap_obj,get,return )
 
 bool IntMap_obj::exists(int key){
-            	HX_STACKFRAME(&_hx_pos_1a18f9b4ad2dd57c_69_exists)
+            	HX_STACKFRAME(&_hx_pos_8085dc345aa40d55_69_exists)
 HXDLIN(  69)		return  ::__int_hash_exists(this->h,key);
             	}
 
@@ -74,7 +74,7 @@ HXDLIN(  69)		return  ::__int_hash_exists(this->h,key);
 HX_DEFINE_DYNAMIC_FUNC1(IntMap_obj,exists,return )
 
  ::Dynamic IntMap_obj::iterator(){
-            	HX_STACKFRAME(&_hx_pos_1a18f9b4ad2dd57c_81_iterator)
+            	HX_STACKFRAME(&_hx_pos_8085dc345aa40d55_81_iterator)
 HXLINE(  82)		::cpp::VirtualArray a =  ::__int_hash_values(this->h);
 HXLINE(  83)		return a->iterator();
             	}

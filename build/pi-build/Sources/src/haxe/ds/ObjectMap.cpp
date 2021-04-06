@@ -8,13 +8,13 @@
 #include <hxinc/haxe/ds/ObjectMap.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_052c9b68113c8907_57_new,"haxe.ds.ObjectMap","new",0x27af5498,"haxe.ds.ObjectMap.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/ObjectMap.hx",57,0xa01d5ec7)
-HX_LOCAL_STACK_FRAME(_hx_pos_052c9b68113c8907_60_set,"haxe.ds.ObjectMap","set",0x27b31fda,"haxe.ds.ObjectMap.set","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/ObjectMap.hx",60,0xa01d5ec7)
+HX_DEFINE_STACK_FRAME(_hx_pos_7acbe4e3f3f7189d_57_new,"haxe.ds.ObjectMap","new",0x27af5498,"haxe.ds.ObjectMap.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/ObjectMap.hx",57,0xa21d2dff)
+HX_LOCAL_STACK_FRAME(_hx_pos_7acbe4e3f3f7189d_60_set,"haxe.ds.ObjectMap","set",0x27b31fda,"haxe.ds.ObjectMap.set","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/ObjectMap.hx",60,0xa21d2dff)
 namespace haxe{
 namespace ds{
 
 void ObjectMap_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_052c9b68113c8907_57_new)
+            	HX_STACKFRAME(&_hx_pos_7acbe4e3f3f7189d_57_new)
             	}
 
 Dynamic ObjectMap_obj::__CreateEmpty() { return new ObjectMap_obj; }
@@ -47,7 +47,7 @@ void *ObjectMap_obj::_hx_getInterface(int inHash) {
 }
 
 void ObjectMap_obj::set( ::Dynamic key, ::Dynamic value){
-            	HX_STACKFRAME(&_hx_pos_052c9b68113c8907_60_set)
+            	HX_STACKFRAME(&_hx_pos_7acbe4e3f3f7189d_60_set)
 HXDLIN(  60)		 ::__object_hash_set(HX_MAP_THIS,key,value);
             	}
 

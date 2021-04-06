@@ -10,6 +10,8 @@ class Project {
 
 	private var masterDivision: DivisionRect;
 
+	private var toDoList: DivisionRect;
+
 	private var font: kha.Font;
 
  	public function new(windowWidth: Float, windowHeight: Float) {

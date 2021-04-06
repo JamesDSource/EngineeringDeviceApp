@@ -8,27 +8,6 @@
 			"type": "font"
 		},
 		{
-			"name": "painter_colored_frag",
-			"files": [
-				"painter-colored.frag.essl"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "fragmentColor",
-					"type": "vec4"
-				}
-			],
-			"outputs": [
-				{
-					"name": "FragColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [],
-			"types": []
-		},
-		{
 			"name": "painter_colored_vert",
 			"files": [
 				"painter-colored.vert.essl"
@@ -89,18 +68,14 @@
 			]
 		},
 		{
-			"name": "painter_image_frag",
+			"name": "painter_colored_frag",
 			"files": [
-				"painter-image.frag.essl"
+				"painter-colored.frag.essl"
 			],
 			"type": "shader",
 			"inputs": [
 				{
-					"name": "texCoord",
-					"type": "vec2"
-				},
-				{
-					"name": "color",
+					"name": "fragmentColor",
 					"type": "vec4"
 				}
 			],
@@ -110,12 +85,7 @@
 					"type": "vec4"
 				}
 			],
-			"uniforms": [
-				{
-					"name": "tex",
-					"type": "sampler2D"
-				}
-			],
+			"uniforms": [],
 			"types": []
 		},
 		{
@@ -187,36 +157,6 @@
 			]
 		},
 		{
-			"name": "painter_text_frag",
-			"files": [
-				"painter-text.frag.essl"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "fragmentColor",
-					"type": "vec4"
-				},
-				{
-					"name": "texCoord",
-					"type": "vec2"
-				}
-			],
-			"outputs": [
-				{
-					"name": "FragColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [
-				{
-					"name": "tex",
-					"type": "sampler2D"
-				}
-			],
-			"types": []
-		},
-		{
 			"name": "painter_text_vert",
 			"files": [
 				"painter-text.vert.essl"
@@ -283,6 +223,66 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "painter_image_frag",
+			"files": [
+				"painter-image.frag.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "color",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			],
+			"types": []
+		},
+		{
+			"name": "painter_text_frag",
+			"files": [
+				"painter-text.frag.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				}
+			],
+			"outputs": [
+				{
+					"name": "FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			],
+			"types": []
 		},
 		{
 			"name": "painter_video_frag",

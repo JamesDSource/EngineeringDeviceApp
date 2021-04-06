@@ -8,14 +8,14 @@
 #include <hxinc/haxe/_Unserializer/DefaultResolver.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_2f28d97681451112_478_new,"haxe._Unserializer.DefaultResolver","new",0xe2809ead,"haxe._Unserializer.DefaultResolver.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",478,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_2f28d97681451112_479_resolveClass,"haxe._Unserializer.DefaultResolver","resolveClass",0xbc0d3dbf,"haxe._Unserializer.DefaultResolver.resolveClass","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",479,0x6913b83a)
-HX_LOCAL_STACK_FRAME(_hx_pos_2f28d97681451112_480_resolveEnum,"haxe._Unserializer.DefaultResolver","resolveEnum",0x8198f35a,"haxe._Unserializer.DefaultResolver.resolveEnum","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",480,0x6913b83a)
+HX_DEFINE_STACK_FRAME(_hx_pos_4f875ecd701253ba_478_new,"haxe._Unserializer.DefaultResolver","new",0xe2809ead,"haxe._Unserializer.DefaultResolver.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",478,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_4f875ecd701253ba_479_resolveClass,"haxe._Unserializer.DefaultResolver","resolveClass",0xbc0d3dbf,"haxe._Unserializer.DefaultResolver.resolveClass","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",479,0xe82ab002)
+HX_LOCAL_STACK_FRAME(_hx_pos_4f875ecd701253ba_480_resolveEnum,"haxe._Unserializer.DefaultResolver","resolveEnum",0x8198f35a,"haxe._Unserializer.DefaultResolver.resolveEnum","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/Unserializer.hx",480,0xe82ab002)
 namespace haxe{
 namespace _Unserializer{
 
 void DefaultResolver_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_2f28d97681451112_478_new)
+            	HX_STACKFRAME(&_hx_pos_4f875ecd701253ba_478_new)
             	}
 
 Dynamic DefaultResolver_obj::__CreateEmpty() { return new DefaultResolver_obj; }
@@ -34,7 +34,7 @@ bool DefaultResolver_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 hx::Class DefaultResolver_obj::resolveClass(::String name){
-            	HX_STACKFRAME(&_hx_pos_2f28d97681451112_479_resolveClass)
+            	HX_STACKFRAME(&_hx_pos_4f875ecd701253ba_479_resolveClass)
 HXDLIN( 479)		return ::Type_obj::resolveClass(name);
             	}
 
@@ -42,7 +42,7 @@ HXDLIN( 479)		return ::Type_obj::resolveClass(name);
 HX_DEFINE_DYNAMIC_FUNC1(DefaultResolver_obj,resolveClass,return )
 
 hx::Class DefaultResolver_obj::resolveEnum(::String name){
-            	HX_STACKFRAME(&_hx_pos_2f28d97681451112_480_resolveEnum)
+            	HX_STACKFRAME(&_hx_pos_4f875ecd701253ba_480_resolveEnum)
 HXDLIN( 480)		return ::Type_obj::resolveEnum(name);
             	}
 

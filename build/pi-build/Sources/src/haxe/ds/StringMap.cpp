@@ -8,15 +8,15 @@
 #include <hxinc/haxe/ds/StringMap.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_ec45751f1816f6ad_57_new,"haxe.ds.StringMap","new",0x0f13f0c6,"haxe.ds.StringMap.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/StringMap.hx",57,0x5d6be259)
-HX_LOCAL_STACK_FRAME(_hx_pos_ec45751f1816f6ad_60_set,"haxe.ds.StringMap","set",0x0f17bc08,"haxe.ds.StringMap.set","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/StringMap.hx",60,0x5d6be259)
-HX_LOCAL_STACK_FRAME(_hx_pos_ec45751f1816f6ad_64_get,"haxe.ds.StringMap","get",0x0f0ea0fc,"haxe.ds.StringMap.get","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/StringMap.hx",64,0x5d6be259)
-HX_LOCAL_STACK_FRAME(_hx_pos_ec45751f1816f6ad_68_exists,"haxe.ds.StringMap","exists",0xd35fc136,"haxe.ds.StringMap.exists","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/StringMap.hx",68,0x5d6be259)
+HX_DEFINE_STACK_FRAME(_hx_pos_c95b651e725feab8_57_new,"haxe.ds.StringMap","new",0x0f13f0c6,"haxe.ds.StringMap.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/StringMap.hx",57,0x5f6bb191)
+HX_LOCAL_STACK_FRAME(_hx_pos_c95b651e725feab8_60_set,"haxe.ds.StringMap","set",0x0f17bc08,"haxe.ds.StringMap.set","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/StringMap.hx",60,0x5f6bb191)
+HX_LOCAL_STACK_FRAME(_hx_pos_c95b651e725feab8_64_get,"haxe.ds.StringMap","get",0x0f0ea0fc,"haxe.ds.StringMap.get","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/StringMap.hx",64,0x5f6bb191)
+HX_LOCAL_STACK_FRAME(_hx_pos_c95b651e725feab8_68_exists,"haxe.ds.StringMap","exists",0xd35fc136,"haxe.ds.StringMap.exists","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/ds/StringMap.hx",68,0x5f6bb191)
 namespace haxe{
 namespace ds{
 
 void StringMap_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_ec45751f1816f6ad_57_new)
+            	HX_STACKFRAME(&_hx_pos_c95b651e725feab8_57_new)
             	}
 
 Dynamic StringMap_obj::__CreateEmpty() { return new StringMap_obj; }
@@ -49,7 +49,7 @@ void *StringMap_obj::_hx_getInterface(int inHash) {
 }
 
 void StringMap_obj::set(::String key, ::Dynamic value){
-            	HX_STACKFRAME(&_hx_pos_ec45751f1816f6ad_60_set)
+            	HX_STACKFRAME(&_hx_pos_c95b651e725feab8_60_set)
 HXDLIN(  60)		 ::__string_hash_set(HX_MAP_THIS,key,value);
             	}
 
@@ -57,7 +57,7 @@ HXDLIN(  60)		 ::__string_hash_set(HX_MAP_THIS,key,value);
 HX_DEFINE_DYNAMIC_FUNC2(StringMap_obj,set,(void))
 
  ::Dynamic StringMap_obj::get(::String key){
-            	HX_STACKFRAME(&_hx_pos_ec45751f1816f6ad_64_get)
+            	HX_STACKFRAME(&_hx_pos_c95b651e725feab8_64_get)
 HXDLIN(  64)		return  ::__string_hash_get(this->h,key);
             	}
 
@@ -65,7 +65,7 @@ HXDLIN(  64)		return  ::__string_hash_get(this->h,key);
 HX_DEFINE_DYNAMIC_FUNC1(StringMap_obj,get,return )
 
 bool StringMap_obj::exists(::String key){
-            	HX_STACKFRAME(&_hx_pos_ec45751f1816f6ad_68_exists)
+            	HX_STACKFRAME(&_hx_pos_c95b651e725feab8_68_exists)
 HXDLIN(  68)		return  ::__string_hash_exists(this->h,key);
             	}
 

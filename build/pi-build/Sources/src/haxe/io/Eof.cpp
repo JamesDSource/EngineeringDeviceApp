@@ -5,13 +5,13 @@
 #include <hxinc/haxe/io/Eof.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_3e0c581dad57a0fc_28_new,"haxe.io.Eof","new",0x2166e64e,"haxe.io.Eof.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Eof.hx",28,0xaa8d6992)
-HX_LOCAL_STACK_FRAME(_hx_pos_3e0c581dad57a0fc_33_toString,"haxe.io.Eof","toString",0xf9ff7bfe,"haxe.io.Eof.toString","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Eof.hx",33,0xaa8d6992)
+HX_DEFINE_STACK_FRAME(_hx_pos_dc5703f4c35dde0b_28_new,"haxe.io.Eof","new",0x2166e64e,"haxe.io.Eof.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Eof.hx",28,0x7c34db5a)
+HX_LOCAL_STACK_FRAME(_hx_pos_dc5703f4c35dde0b_33_toString,"haxe.io.Eof","toString",0xf9ff7bfe,"haxe.io.Eof.toString","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Eof.hx",33,0x7c34db5a)
 namespace haxe{
 namespace io{
 
 void Eof_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_3e0c581dad57a0fc_28_new)
+            	HX_STACKFRAME(&_hx_pos_dc5703f4c35dde0b_28_new)
             	}
 
 Dynamic Eof_obj::__CreateEmpty() { return new Eof_obj; }
@@ -30,7 +30,7 @@ bool Eof_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 ::String Eof_obj::toString(){
-            	HX_STACKFRAME(&_hx_pos_3e0c581dad57a0fc_33_toString)
+            	HX_STACKFRAME(&_hx_pos_dc5703f4c35dde0b_33_toString)
 HXDLIN(  33)		return HX_("Eof",9c,bc,34,00);
             	}
 

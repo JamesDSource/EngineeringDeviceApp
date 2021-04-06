@@ -17,12 +17,12 @@
 #include <hxinc/haxe/io/Input.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_fb3b68351f98c45a_51_readByte,"haxe.io.Input","readByte",0x4de8a3c2,"haxe.io.Input.readByte","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",51,0x1bd85304)
-HX_LOCAL_STACK_FRAME(_hx_pos_fb3b68351f98c45a_64_readBytes,"haxe.io.Input","readBytes",0xdda6a671,"haxe.io.Input.readBytes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",64,0x1bd85304)
-HX_LOCAL_STACK_FRAME(_hx_pos_fb3b68351f98c45a_135_readFullBytes,"haxe.io.Input","readFullBytes",0x3db9a162,"haxe.io.Input.readFullBytes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",135,0x1bd85304)
-HX_LOCAL_STACK_FRAME(_hx_pos_fb3b68351f98c45a_147_read,"haxe.io.Input","read",0x27b9839a,"haxe.io.Input.read","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",147,0x1bd85304)
-HX_LOCAL_STACK_FRAME(_hx_pos_fb3b68351f98c45a_281_readInt32,"haxe.io.Input","readInt32",0xde2f3154,"haxe.io.Input.readInt32","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",281,0x1bd85304)
-HX_LOCAL_STACK_FRAME(_hx_pos_fb3b68351f98c45a_303_readString,"haxe.io.Input","readString",0xfdebd00b,"haxe.io.Input.readString","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",303,0x1bd85304)
+HX_LOCAL_STACK_FRAME(_hx_pos_0fe28b7afb2e6880_51_readByte,"haxe.io.Input","readByte",0x4de8a3c2,"haxe.io.Input.readByte","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",51,0x3b95c6cc)
+HX_LOCAL_STACK_FRAME(_hx_pos_0fe28b7afb2e6880_64_readBytes,"haxe.io.Input","readBytes",0xdda6a671,"haxe.io.Input.readBytes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",64,0x3b95c6cc)
+HX_LOCAL_STACK_FRAME(_hx_pos_0fe28b7afb2e6880_135_readFullBytes,"haxe.io.Input","readFullBytes",0x3db9a162,"haxe.io.Input.readFullBytes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",135,0x3b95c6cc)
+HX_LOCAL_STACK_FRAME(_hx_pos_0fe28b7afb2e6880_147_read,"haxe.io.Input","read",0x27b9839a,"haxe.io.Input.read","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",147,0x3b95c6cc)
+HX_LOCAL_STACK_FRAME(_hx_pos_0fe28b7afb2e6880_281_readInt32,"haxe.io.Input","readInt32",0xde2f3154,"haxe.io.Input.readInt32","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",281,0x3b95c6cc)
+HX_LOCAL_STACK_FRAME(_hx_pos_0fe28b7afb2e6880_303_readString,"haxe.io.Input","readString",0xfdebd00b,"haxe.io.Input.readString","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Input.hx",303,0x3b95c6cc)
 namespace haxe{
 namespace io{
 
@@ -44,7 +44,7 @@ bool Input_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 int Input_obj::readByte(){
-            	HX_STACKFRAME(&_hx_pos_fb3b68351f98c45a_51_readByte)
+            	HX_STACKFRAME(&_hx_pos_0fe28b7afb2e6880_51_readByte)
 HXDLIN(  51)		HX_STACK_DO_THROW(HX_("Not implemented",15,1e,32,34));
 HXDLIN(  51)		return 0;
             	}
@@ -53,7 +53,7 @@ HXDLIN(  51)		return 0;
 HX_DEFINE_DYNAMIC_FUNC0(Input_obj,readByte,return )
 
 int Input_obj::readBytes( ::haxe::io::Bytes s,int pos,int len){
-            	HX_STACKFRAME(&_hx_pos_fb3b68351f98c45a_64_readBytes)
+            	HX_STACKFRAME(&_hx_pos_0fe28b7afb2e6880_64_readBytes)
 HXLINE(  65)		int k = len;
 HXLINE(  66)		::Array< unsigned char > b = s->b;
 HXLINE(  67)		bool _hx_tmp;
@@ -97,7 +97,7 @@ HXLINE(  84)		return (len - k);
 HX_DEFINE_DYNAMIC_FUNC3(Input_obj,readBytes,return )
 
 void Input_obj::readFullBytes( ::haxe::io::Bytes s,int pos,int len){
-            	HX_STACKFRAME(&_hx_pos_fb3b68351f98c45a_135_readFullBytes)
+            	HX_STACKFRAME(&_hx_pos_0fe28b7afb2e6880_135_readFullBytes)
 HXDLIN( 135)		while((len > 0)){
 HXLINE( 136)			int k = this->readBytes(s,pos,len);
 HXLINE( 137)			if ((k == 0)) {
@@ -112,7 +112,7 @@ HXLINE( 140)			len = (len - k);
 HX_DEFINE_DYNAMIC_FUNC3(Input_obj,readFullBytes,(void))
 
  ::haxe::io::Bytes Input_obj::read(int nbytes){
-            	HX_STACKFRAME(&_hx_pos_fb3b68351f98c45a_147_read)
+            	HX_STACKFRAME(&_hx_pos_0fe28b7afb2e6880_147_read)
 HXLINE( 148)		 ::haxe::io::Bytes s = ::haxe::io::Bytes_obj::alloc(nbytes);
 HXLINE( 149)		int p = 0;
 HXLINE( 150)		while((nbytes > 0)){
@@ -130,7 +130,7 @@ HXLINE( 156)		return s;
 HX_DEFINE_DYNAMIC_FUNC1(Input_obj,read,return )
 
 int Input_obj::readInt32(){
-            	HX_STACKFRAME(&_hx_pos_fb3b68351f98c45a_281_readInt32)
+            	HX_STACKFRAME(&_hx_pos_0fe28b7afb2e6880_281_readInt32)
 HXLINE( 282)		int ch1 = this->readByte();
 HXLINE( 283)		int ch2 = this->readByte();
 HXLINE( 284)		int ch3 = this->readByte();
@@ -148,7 +148,7 @@ HXDLIN( 296)		return 0;
 HX_DEFINE_DYNAMIC_FUNC0(Input_obj,readInt32,return )
 
 ::String Input_obj::readString(int len, ::haxe::io::Encoding encoding){
-            	HX_STACKFRAME(&_hx_pos_fb3b68351f98c45a_303_readString)
+            	HX_STACKFRAME(&_hx_pos_0fe28b7afb2e6880_303_readString)
 HXLINE( 304)		 ::haxe::io::Bytes b = ::haxe::io::Bytes_obj::alloc(len);
 HXLINE( 305)		this->readFullBytes(b,0,len);
 HXLINE( 309)		return b->getString(0,len,encoding);

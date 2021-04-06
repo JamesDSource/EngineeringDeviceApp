@@ -8,7 +8,7 @@
 #include <hxinc/haxe/Log.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_451783dfcfc8734c_30___default_trace,"haxe.Log","__default_trace",0xe2f5e5d5,"haxe.Log.__default_trace","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/Log.hx",30,0x2eff2a74)
+HX_LOCAL_STACK_FRAME(_hx_pos_8f2bd21c5a5ac1ce_30___default_trace,"haxe.Log","__default_trace",0xe2f5e5d5,"haxe.Log.__default_trace","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/haxe/Log.hx",30,0xae16223c)
 namespace haxe{
 
 void Log_obj::__construct() { }
@@ -30,7 +30,7 @@ bool Log_obj::_hx_isInstanceOf(int inClassId) {
 
 HX_BEGIN_DEFAULT_FUNC(__default_trace,Log_obj)
 void _hx_run( ::Dynamic v, ::Dynamic infos){
-            	HX_STACKFRAME(&_hx_pos_451783dfcfc8734c_30___default_trace)
+            	HX_STACKFRAME(&_hx_pos_8f2bd21c5a5ac1ce_30___default_trace)
 HXDLIN(  30)		bool _hx_tmp;
 HXDLIN(  30)		if (hx::IsNotNull( infos )) {
 HXDLIN(  30)			_hx_tmp = hx::IsNotNull( infos->__Field(HX_("customParams",d7,51,18,ed),hx::paccDynamic) );

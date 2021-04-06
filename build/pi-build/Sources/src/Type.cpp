@@ -5,12 +5,12 @@
 #include <hxinc/Type.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_17ead5b8158085d5_67_resolveClass,"Type","resolveClass",0x23b06bc0,"Type.resolveClass","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",67,0x96a21f35)
-HX_LOCAL_STACK_FRAME(_hx_pos_17ead5b8158085d5_74_resolveEnum,"Type","resolveEnum",0x26394079,"Type.resolveEnum","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",74,0x96a21f35)
-HX_LOCAL_STACK_FRAME(_hx_pos_17ead5b8158085d5_88_createEmptyInstance,"Type","createEmptyInstance",0xcb752312,"Type.createEmptyInstance","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",88,0x96a21f35)
-HX_LOCAL_STACK_FRAME(_hx_pos_17ead5b8158085d5_92_createEnum,"Type","createEnum",0xd8d56d31,"Type.createEnum","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",92,0x96a21f35)
-HX_LOCAL_STACK_FRAME(_hx_pos_17ead5b8158085d5_102_getInstanceFields,"Type","getInstanceFields",0xe970f890,"Type.getInstanceFields","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",102,0x96a21f35)
-HX_LOCAL_STACK_FRAME(_hx_pos_17ead5b8158085d5_110_getEnumConstructs,"Type","getEnumConstructs",0x7f46cf7f,"Type.getEnumConstructs","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",110,0x96a21f35)
+HX_LOCAL_STACK_FRAME(_hx_pos_c9dadb863c7a0338_67_resolveClass,"Type","resolveClass",0x23b06bc0,"Type.resolveClass","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",67,0xb65f92fd)
+HX_LOCAL_STACK_FRAME(_hx_pos_c9dadb863c7a0338_74_resolveEnum,"Type","resolveEnum",0x26394079,"Type.resolveEnum","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",74,0xb65f92fd)
+HX_LOCAL_STACK_FRAME(_hx_pos_c9dadb863c7a0338_88_createEmptyInstance,"Type","createEmptyInstance",0xcb752312,"Type.createEmptyInstance","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",88,0xb65f92fd)
+HX_LOCAL_STACK_FRAME(_hx_pos_c9dadb863c7a0338_92_createEnum,"Type","createEnum",0xd8d56d31,"Type.createEnum","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",92,0xb65f92fd)
+HX_LOCAL_STACK_FRAME(_hx_pos_c9dadb863c7a0338_102_getInstanceFields,"Type","getInstanceFields",0xe970f890,"Type.getInstanceFields","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",102,0xb65f92fd)
+HX_LOCAL_STACK_FRAME(_hx_pos_c9dadb863c7a0338_110_getEnumConstructs,"Type","getEnumConstructs",0x7f46cf7f,"Type.getEnumConstructs","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Type.hx",110,0xb65f92fd)
 
 void Type_obj::__construct() { }
 
@@ -30,7 +30,7 @@ bool Type_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 hx::Class Type_obj::resolveClass(::String name){
-            	HX_STACKFRAME(&_hx_pos_17ead5b8158085d5_67_resolveClass)
+            	HX_STACKFRAME(&_hx_pos_c9dadb863c7a0338_67_resolveClass)
 HXLINE(  68)		hx::Class result =  ::hx::Class_obj::Resolve(name);
 HXLINE(  69)		bool _hx_tmp;
 HXDLIN(  69)		if (hx::IsNotNull( result )) {
@@ -49,7 +49,7 @@ HXLINE(  71)		return result;
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Type_obj,resolveClass,return )
 
 hx::Class Type_obj::resolveEnum(::String name){
-            	HX_STACKFRAME(&_hx_pos_17ead5b8158085d5_74_resolveEnum)
+            	HX_STACKFRAME(&_hx_pos_c9dadb863c7a0338_74_resolveEnum)
 HXLINE(  75)		hx::Class result =  ::hx::Class_obj::Resolve(name);
 HXLINE(  76)		bool _hx_tmp;
 HXDLIN(  76)		if (hx::IsNotNull( result )) {
@@ -68,7 +68,7 @@ HXLINE(  78)		return result;
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Type_obj,resolveEnum,return )
 
  ::Dynamic Type_obj::createEmptyInstance(hx::Class cl){
-            	HX_STACKFRAME(&_hx_pos_17ead5b8158085d5_88_createEmptyInstance)
+            	HX_STACKFRAME(&_hx_pos_c9dadb863c7a0338_88_createEmptyInstance)
 HXDLIN(  88)		return cl->ConstructEmpty();
             	}
 
@@ -76,7 +76,7 @@ HXDLIN(  88)		return cl->ConstructEmpty();
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Type_obj,createEmptyInstance,return )
 
  ::Dynamic Type_obj::createEnum(hx::Class e,::String constr,::cpp::VirtualArray params){
-            	HX_STACKFRAME(&_hx_pos_17ead5b8158085d5_92_createEnum)
+            	HX_STACKFRAME(&_hx_pos_c9dadb863c7a0338_92_createEnum)
 HXDLIN(  92)		return e->ConstructEnum(constr,params);
             	}
 
@@ -84,7 +84,7 @@ HXDLIN(  92)		return e->ConstructEnum(constr,params);
 STATIC_HX_DEFINE_DYNAMIC_FUNC3(Type_obj,createEnum,return )
 
 ::Array< ::String > Type_obj::getInstanceFields(hx::Class c){
-            	HX_STACKFRAME(&_hx_pos_17ead5b8158085d5_102_getInstanceFields)
+            	HX_STACKFRAME(&_hx_pos_c9dadb863c7a0338_102_getInstanceFields)
 HXDLIN( 102)		return ( (::Array< ::String >)(c->GetInstanceFields()) );
             	}
 
@@ -92,7 +92,7 @@ HXDLIN( 102)		return ( (::Array< ::String >)(c->GetInstanceFields()) );
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Type_obj,getInstanceFields,return )
 
 ::Array< ::String > Type_obj::getEnumConstructs(hx::Class e){
-            	HX_STACKFRAME(&_hx_pos_17ead5b8158085d5_110_getEnumConstructs)
+            	HX_STACKFRAME(&_hx_pos_c9dadb863c7a0338_110_getEnumConstructs)
 HXDLIN( 110)		return ( (::Array< ::String >)(e->GetClassFields()) );
             	}
 

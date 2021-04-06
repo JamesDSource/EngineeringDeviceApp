@@ -11,7 +11,7 @@
 #include <hxinc/sys/FileSystem.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_3c6f9779556878b3_38_stat,"sys.FileSystem","stat",0xa630df16,"sys.FileSystem.stat","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/FileSystem.hx",38,0xa7238b82)
+HX_LOCAL_STACK_FRAME(_hx_pos_3cc846291ba990a0_38_stat,"sys.FileSystem","stat",0xa630df16,"sys.FileSystem.stat","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/FileSystem.hx",38,0x4d12894a)
 namespace sys{
 
 void FileSystem_obj::__construct() { }
@@ -32,7 +32,7 @@ bool FileSystem_obj::_hx_isInstanceOf(int inClassId) {
 }
 
  ::Dynamic FileSystem_obj::stat(::String path){
-            	HX_STACKFRAME(&_hx_pos_3c6f9779556878b3_38_stat)
+            	HX_STACKFRAME(&_hx_pos_3cc846291ba990a0_38_stat)
 HXLINE(  39)		::String s;
 HXDLIN(  39)		bool s1;
 HXDLIN(  39)		if (hx::IsEq( path.charCodeAt(1),58 )) {

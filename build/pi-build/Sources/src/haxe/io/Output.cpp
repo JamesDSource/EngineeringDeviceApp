@@ -14,11 +14,11 @@
 #include <hxinc/haxe/io/Output.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_b5ddd981bfacb274_47_writeByte,"haxe.io.Output","writeByte",0xb4fe513a,"haxe.io.Output.writeByte","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",47,0x2b86664d)
-HX_LOCAL_STACK_FRAME(_hx_pos_b5ddd981bfacb274_57_writeBytes,"haxe.io.Output","writeBytes",0xa988c1f9,"haxe.io.Output.writeBytes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",57,0x2b86664d)
-HX_LOCAL_STACK_FRAME(_hx_pos_b5ddd981bfacb274_106_write,"haxe.io.Output","write",0x6f1d1512,"haxe.io.Output.write","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",106,0x2b86664d)
-HX_LOCAL_STACK_FRAME(_hx_pos_b5ddd981bfacb274_136_writeFloat,"haxe.io.Output","writeFloat",0xee877f2a,"haxe.io.Output.writeFloat","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",136,0x2b86664d)
-HX_LOCAL_STACK_FRAME(_hx_pos_b5ddd981bfacb274_224_writeInt32,"haxe.io.Output","writeInt32",0xaa114cdc,"haxe.io.Output.writeInt32","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",224,0x2b86664d)
+HX_LOCAL_STACK_FRAME(_hx_pos_e20f4b9259e0833b_47_writeByte,"haxe.io.Output","writeByte",0xb4fe513a,"haxe.io.Output.writeByte","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",47,0xd18e4185)
+HX_LOCAL_STACK_FRAME(_hx_pos_e20f4b9259e0833b_57_writeBytes,"haxe.io.Output","writeBytes",0xa988c1f9,"haxe.io.Output.writeBytes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",57,0xd18e4185)
+HX_LOCAL_STACK_FRAME(_hx_pos_e20f4b9259e0833b_106_write,"haxe.io.Output","write",0x6f1d1512,"haxe.io.Output.write","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",106,0xd18e4185)
+HX_LOCAL_STACK_FRAME(_hx_pos_e20f4b9259e0833b_136_writeFloat,"haxe.io.Output","writeFloat",0xee877f2a,"haxe.io.Output.writeFloat","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",136,0xd18e4185)
+HX_LOCAL_STACK_FRAME(_hx_pos_e20f4b9259e0833b_224_writeInt32,"haxe.io.Output","writeInt32",0xaa114cdc,"haxe.io.Output.writeInt32","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Output.hx",224,0xd18e4185)
 namespace haxe{
 namespace io{
 
@@ -40,7 +40,7 @@ bool Output_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void Output_obj::writeByte(int c){
-            	HX_STACKFRAME(&_hx_pos_b5ddd981bfacb274_47_writeByte)
+            	HX_STACKFRAME(&_hx_pos_e20f4b9259e0833b_47_writeByte)
 HXDLIN(  47)		HX_STACK_DO_THROW(HX_("Not implemented",15,1e,32,34));
             	}
 
@@ -48,7 +48,7 @@ HXDLIN(  47)		HX_STACK_DO_THROW(HX_("Not implemented",15,1e,32,34));
 HX_DEFINE_DYNAMIC_FUNC1(Output_obj,writeByte,(void))
 
 int Output_obj::writeBytes( ::haxe::io::Bytes s,int pos,int len){
-            	HX_STACKFRAME(&_hx_pos_b5ddd981bfacb274_57_writeBytes)
+            	HX_STACKFRAME(&_hx_pos_e20f4b9259e0833b_57_writeBytes)
 HXLINE(  59)		bool _hx_tmp;
 HXDLIN(  59)		bool _hx_tmp1;
 HXDLIN(  59)		if ((pos >= 0)) {
@@ -80,7 +80,7 @@ HXLINE(  79)		return len;
 HX_DEFINE_DYNAMIC_FUNC3(Output_obj,writeBytes,return )
 
 void Output_obj::write( ::haxe::io::Bytes s){
-            	HX_STACKFRAME(&_hx_pos_b5ddd981bfacb274_106_write)
+            	HX_STACKFRAME(&_hx_pos_e20f4b9259e0833b_106_write)
 HXLINE( 107)		int l = s->length;
 HXLINE( 108)		int p = 0;
 HXLINE( 109)		while((l > 0)){
@@ -97,7 +97,7 @@ HXLINE( 113)			l = (l - k);
 HX_DEFINE_DYNAMIC_FUNC1(Output_obj,write,(void))
 
 void Output_obj::writeFloat(Float x){
-            	HX_STACKFRAME(&_hx_pos_b5ddd981bfacb274_136_writeFloat)
+            	HX_STACKFRAME(&_hx_pos_e20f4b9259e0833b_136_writeFloat)
 HXDLIN( 136)		this->writeInt32(::haxe::io::FPHelper_obj::floatToI32(x));
             	}
 
@@ -105,7 +105,7 @@ HXDLIN( 136)		this->writeInt32(::haxe::io::FPHelper_obj::floatToI32(x));
 HX_DEFINE_DYNAMIC_FUNC1(Output_obj,writeFloat,(void))
 
 void Output_obj::writeInt32(int x){
-            	HX_STACKFRAME(&_hx_pos_b5ddd981bfacb274_224_writeInt32)
+            	HX_STACKFRAME(&_hx_pos_e20f4b9259e0833b_224_writeInt32)
 HXDLIN( 224)		if (this->bigEndian) {
 HXLINE( 225)			this->writeByte(hx::UShr(x,24));
 HXLINE( 226)			this->writeByte(((x >> 16) & 255));

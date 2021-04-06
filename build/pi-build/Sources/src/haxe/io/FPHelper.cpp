@@ -5,7 +5,7 @@
 #include <hxinc/haxe/io/FPHelper.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_ba37f0da87b9390b_186_floatToI32,"haxe.io.FPHelper","floatToI32",0xff5a7c67,"haxe.io.FPHelper.floatToI32","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/FPHelper.hx",186,0x7f27e776)
+HX_LOCAL_STACK_FRAME(_hx_pos_ac1335c40283d73e_186_floatToI32,"haxe.io.FPHelper","floatToI32",0xff5a7c67,"haxe.io.FPHelper.floatToI32","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/FPHelper.hx",186,0x9b4700ae)
 namespace haxe{
 namespace io{
 
@@ -27,7 +27,7 @@ bool FPHelper_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 int FPHelper_obj::floatToI32(Float f){
-            	HX_STACKFRAME(&_hx_pos_ba37f0da87b9390b_186_floatToI32)
+            	HX_STACKFRAME(&_hx_pos_ac1335c40283d73e_186_floatToI32)
 HXDLIN( 186)		return  ::__hxcpp_reinterpret_float32_as_le_int32(f);
             	}
 

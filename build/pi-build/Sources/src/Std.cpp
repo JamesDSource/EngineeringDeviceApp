@@ -5,13 +5,13 @@
 #include <hxinc/Std.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_9133598b18fb2d6e_26_is,"Std","is",0x3c56d6f5,"Std.is","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",26,0x15186c2a)
-HX_LOCAL_STACK_FRAME(_hx_pos_9133598b18fb2d6e_30_instance,"Std","instance",0x1431f4e0,"Std.instance","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",30,0x15186c2a)
-HX_LOCAL_STACK_FRAME(_hx_pos_9133598b18fb2d6e_34_string,"Std","string",0xcf48855c,"Std.string","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",34,0x15186c2a)
-HX_LOCAL_STACK_FRAME(_hx_pos_9133598b18fb2d6e_38_int,"Std","int",0x8fa53b84,"Std.int","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",38,0x15186c2a)
-HX_LOCAL_STACK_FRAME(_hx_pos_9133598b18fb2d6e_42_parseInt,"Std","parseInt",0x90c2ebc7,"Std.parseInt","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",42,0x15186c2a)
-HX_LOCAL_STACK_FRAME(_hx_pos_9133598b18fb2d6e_46_parseFloat,"Std","parseFloat",0xbca10a74,"Std.parseFloat","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",46,0x15186c2a)
-HX_LOCAL_STACK_FRAME(_hx_pos_9133598b18fb2d6e_49_random,"Std","random",0x75a77e8e,"Std.random","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",49,0x15186c2a)
+HX_LOCAL_STACK_FRAME(_hx_pos_5daface4d1b5942c_26_is,"Std","is",0x3c56d6f5,"Std.is","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",26,0xb5f48962)
+HX_LOCAL_STACK_FRAME(_hx_pos_5daface4d1b5942c_30_instance,"Std","instance",0x1431f4e0,"Std.instance","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",30,0xb5f48962)
+HX_LOCAL_STACK_FRAME(_hx_pos_5daface4d1b5942c_34_string,"Std","string",0xcf48855c,"Std.string","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",34,0xb5f48962)
+HX_LOCAL_STACK_FRAME(_hx_pos_5daface4d1b5942c_38_int,"Std","int",0x8fa53b84,"Std.int","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",38,0xb5f48962)
+HX_LOCAL_STACK_FRAME(_hx_pos_5daface4d1b5942c_42_parseInt,"Std","parseInt",0x90c2ebc7,"Std.parseInt","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",42,0xb5f48962)
+HX_LOCAL_STACK_FRAME(_hx_pos_5daface4d1b5942c_46_parseFloat,"Std","parseFloat",0xbca10a74,"Std.parseFloat","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",46,0xb5f48962)
+HX_LOCAL_STACK_FRAME(_hx_pos_5daface4d1b5942c_49_random,"Std","random",0x75a77e8e,"Std.random","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Std.hx",49,0xb5f48962)
 
 void Std_obj::__construct() { }
 
@@ -31,7 +31,7 @@ bool Std_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 bool Std_obj::is( ::Dynamic v, ::Dynamic t){
-            	HX_STACKFRAME(&_hx_pos_9133598b18fb2d6e_26_is)
+            	HX_STACKFRAME(&_hx_pos_5daface4d1b5942c_26_is)
 HXDLIN(  26)		return  ::__instanceof(v,t);
             	}
 
@@ -39,7 +39,7 @@ HXDLIN(  26)		return  ::__instanceof(v,t);
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Std_obj,is,return )
 
  ::Dynamic Std_obj::instance( ::Dynamic value,hx::Class c){
-            	HX_STACKFRAME(&_hx_pos_9133598b18fb2d6e_30_instance)
+            	HX_STACKFRAME(&_hx_pos_5daface4d1b5942c_30_instance)
 HXDLIN(  30)		if (::Std_obj::is(value,c)) {
 HXDLIN(  30)			return value;
             		}
@@ -53,7 +53,7 @@ HXDLIN(  30)		return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Std_obj,instance,return )
 
 ::String Std_obj::string( ::Dynamic s){
-            	HX_STACKFRAME(&_hx_pos_9133598b18fb2d6e_34_string)
+            	HX_STACKFRAME(&_hx_pos_5daface4d1b5942c_34_string)
 HXDLIN(  34)		if (hx::IsNull( s )) {
 HXDLIN(  34)			return HX_("null",87,9e,0e,49);
             		}
@@ -67,7 +67,7 @@ HXDLIN(  34)		return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Std_obj,string,return )
 
 int Std_obj::_hx_int(Float x){
-            	HX_STACKFRAME(&_hx_pos_9133598b18fb2d6e_38_int)
+            	HX_STACKFRAME(&_hx_pos_5daface4d1b5942c_38_int)
 HXDLIN(  38)		return  ::__int__(x);
             	}
 
@@ -75,7 +75,7 @@ HXDLIN(  38)		return  ::__int__(x);
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Std_obj,_hx_int,return )
 
  ::Dynamic Std_obj::parseInt(::String x){
-            	HX_STACKFRAME(&_hx_pos_9133598b18fb2d6e_42_parseInt)
+            	HX_STACKFRAME(&_hx_pos_5daface4d1b5942c_42_parseInt)
 HXDLIN(  42)		return  ::__hxcpp_parse_int(x);
             	}
 
@@ -83,7 +83,7 @@ HXDLIN(  42)		return  ::__hxcpp_parse_int(x);
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Std_obj,parseInt,return )
 
 Float Std_obj::parseFloat(::String x){
-            	HX_STACKFRAME(&_hx_pos_9133598b18fb2d6e_46_parseFloat)
+            	HX_STACKFRAME(&_hx_pos_5daface4d1b5942c_46_parseFloat)
 HXDLIN(  46)		return  ::__hxcpp_parse_float(x);
             	}
 
@@ -91,7 +91,7 @@ HXDLIN(  46)		return  ::__hxcpp_parse_float(x);
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Std_obj,parseFloat,return )
 
 int Std_obj::random(int x){
-            	HX_STACKFRAME(&_hx_pos_9133598b18fb2d6e_49_random)
+            	HX_STACKFRAME(&_hx_pos_5daface4d1b5942c_49_random)
 HXLINE(  50)		if ((x <= 0)) {
 HXLINE(  50)			return 0;
             		}

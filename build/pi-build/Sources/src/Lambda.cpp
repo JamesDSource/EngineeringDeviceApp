@@ -5,7 +5,7 @@
 #include <hxinc/Lambda.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_79e733646b159a21_47_array,"Lambda","array",0x9c8b0512,"Lambda.array","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/Lambda.hx",47,0xa54e69e7)
+HX_LOCAL_STACK_FRAME(_hx_pos_9569e03ca4b82ab8_47_array,"Lambda","array",0x9c8b0512,"Lambda.array","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/Lambda.hx",47,0x316c4d1f)
 
 void Lambda_obj::__construct() { }
 
@@ -25,7 +25,7 @@ bool Lambda_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 ::cpp::VirtualArray Lambda_obj::array( ::Dynamic it){
-            	HX_STACKFRAME(&_hx_pos_79e733646b159a21_47_array)
+            	HX_STACKFRAME(&_hx_pos_9569e03ca4b82ab8_47_array)
 HXLINE(  48)		::cpp::VirtualArray a = ::cpp::VirtualArray_obj::__new();
 HXLINE(  49)		{
 HXLINE(  49)			 ::Dynamic i = it->__Field(HX_("iterator",ee,49,9a,93),hx::paccDynamic)();

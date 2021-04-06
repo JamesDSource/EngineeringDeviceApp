@@ -6,7 +6,7 @@
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_STACK_FRAME(_hx_pos_62ecc24d2b168028_31_new)
+HX_DECLARE_STACK_FRAME(_hx_pos_2aaf797e731718e6_31_new)
 HX_DECLARE_CLASS2(cpp,vm,Thread)
 
 namespace cpp{
@@ -39,7 +39,7 @@ class HXCPP_CLASS_ATTRIBUTES Thread_obj : public hx::Object
 			Thread_obj *__this = (Thread_obj*)(hx::Ctx::alloc(_hx_ctx, sizeof(Thread_obj), true, "cpp.vm.Thread"));
 			*(void **)__this = Thread_obj::_hx_vtable;
 {
-            	HX_STACKFRAME(&_hx_pos_62ecc24d2b168028_31_new)
+            	HX_STACKFRAME(&_hx_pos_2aaf797e731718e6_31_new)
 HXDLIN(  31)		( ( ::cpp::vm::Thread)(__this) )->handle = h;
             	}
 		

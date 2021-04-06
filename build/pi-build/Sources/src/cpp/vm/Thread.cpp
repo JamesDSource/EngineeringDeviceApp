@@ -5,17 +5,17 @@
 #include <hxinc/cpp/vm/Thread.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_62ecc24d2b168028_31_new,"cpp.vm.Thread","new",0x66262c28,"cpp.vm.Thread.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",31,0x6f65c7b8)
-HX_LOCAL_STACK_FRAME(_hx_pos_62ecc24d2b168028_38_sendMessage,"cpp.vm.Thread","sendMessage",0x48dced27,"cpp.vm.Thread.sendMessage","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",38,0x6f65c7b8)
-HX_LOCAL_STACK_FRAME(_hx_pos_62ecc24d2b168028_66___compare,"cpp.vm.Thread","__compare",0x3204cb4d,"cpp.vm.Thread.__compare","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",66,0x6f65c7b8)
-HX_LOCAL_STACK_FRAME(_hx_pos_62ecc24d2b168028_46_current,"cpp.vm.Thread","current",0x21a37c01,"cpp.vm.Thread.current","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",46,0x6f65c7b8)
-HX_LOCAL_STACK_FRAME(_hx_pos_62ecc24d2b168028_53_create,"cpp.vm.Thread","create",0xb01a9834,"cpp.vm.Thread.create","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",53,0x6f65c7b8)
-HX_LOCAL_STACK_FRAME(_hx_pos_62ecc24d2b168028_62_readMessage,"cpp.vm.Thread","readMessage",0x11bc2cd9,"cpp.vm.Thread.readMessage","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",62,0x6f65c7b8)
+HX_DEFINE_STACK_FRAME(_hx_pos_2aaf797e731718e6_31_new,"cpp.vm.Thread","new",0x66262c28,"cpp.vm.Thread.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",31,0x8f233b80)
+HX_LOCAL_STACK_FRAME(_hx_pos_2aaf797e731718e6_38_sendMessage,"cpp.vm.Thread","sendMessage",0x48dced27,"cpp.vm.Thread.sendMessage","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",38,0x8f233b80)
+HX_LOCAL_STACK_FRAME(_hx_pos_2aaf797e731718e6_66___compare,"cpp.vm.Thread","__compare",0x3204cb4d,"cpp.vm.Thread.__compare","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",66,0x8f233b80)
+HX_LOCAL_STACK_FRAME(_hx_pos_2aaf797e731718e6_46_current,"cpp.vm.Thread","current",0x21a37c01,"cpp.vm.Thread.current","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",46,0x8f233b80)
+HX_LOCAL_STACK_FRAME(_hx_pos_2aaf797e731718e6_53_create,"cpp.vm.Thread","create",0xb01a9834,"cpp.vm.Thread.create","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",53,0x8f233b80)
+HX_LOCAL_STACK_FRAME(_hx_pos_2aaf797e731718e6_62_readMessage,"cpp.vm.Thread","readMessage",0x11bc2cd9,"cpp.vm.Thread.readMessage","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Thread.hx",62,0x8f233b80)
 namespace cpp{
 namespace vm{
 
 void Thread_obj::__construct( ::Dynamic h){
-            	HX_STACKFRAME(&_hx_pos_62ecc24d2b168028_31_new)
+            	HX_STACKFRAME(&_hx_pos_2aaf797e731718e6_31_new)
 HXDLIN(  31)		this->handle = h;
             	}
 
@@ -35,7 +35,7 @@ bool Thread_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void Thread_obj::sendMessage( ::Dynamic msg){
-            	HX_STACKFRAME(&_hx_pos_62ecc24d2b168028_38_sendMessage)
+            	HX_STACKFRAME(&_hx_pos_2aaf797e731718e6_38_sendMessage)
 HXDLIN(  38)		 ::__hxcpp_thread_send(this->handle,msg);
             	}
 
@@ -43,7 +43,7 @@ HXDLIN(  38)		 ::__hxcpp_thread_send(this->handle,msg);
 HX_DEFINE_DYNAMIC_FUNC1(Thread_obj,sendMessage,(void))
 
 int Thread_obj::__compare( ::Dynamic t){
-            	HX_STACKFRAME(&_hx_pos_62ecc24d2b168028_66___compare)
+            	HX_STACKFRAME(&_hx_pos_2aaf797e731718e6_66___compare)
 HXDLIN(  66)		if (hx::IsEq( this->handle,t->__Field(HX_("handle",a8,83,fd,b7),hx::paccDynamic) )) {
 HXDLIN(  66)			return 0;
             		}
@@ -57,7 +57,7 @@ HXDLIN(  66)		return 0;
 HX_DEFINE_DYNAMIC_FUNC1(Thread_obj,__compare,return )
 
  ::cpp::vm::Thread Thread_obj::current(){
-            	HX_GC_STACKFRAME(&_hx_pos_62ecc24d2b168028_46_current)
+            	HX_GC_STACKFRAME(&_hx_pos_2aaf797e731718e6_46_current)
 HXDLIN(  46)		return  ::cpp::vm::Thread_obj::__alloc( HX_CTX , ::__hxcpp_thread_current());
             	}
 
@@ -65,7 +65,7 @@ HXDLIN(  46)		return  ::cpp::vm::Thread_obj::__alloc( HX_CTX , ::__hxcpp_thread_
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(Thread_obj,current,return )
 
  ::cpp::vm::Thread Thread_obj::create( ::Dynamic callb){
-            	HX_GC_STACKFRAME(&_hx_pos_62ecc24d2b168028_53_create)
+            	HX_GC_STACKFRAME(&_hx_pos_2aaf797e731718e6_53_create)
 HXDLIN(  53)		return  ::cpp::vm::Thread_obj::__alloc( HX_CTX , ::__hxcpp_thread_create(callb));
             	}
 
@@ -73,7 +73,7 @@ HXDLIN(  53)		return  ::cpp::vm::Thread_obj::__alloc( HX_CTX , ::__hxcpp_thread_
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Thread_obj,create,return )
 
  ::Dynamic Thread_obj::readMessage(bool block){
-            	HX_STACKFRAME(&_hx_pos_62ecc24d2b168028_62_readMessage)
+            	HX_STACKFRAME(&_hx_pos_2aaf797e731718e6_62_readMessage)
 HXDLIN(  62)		return  ::__hxcpp_thread_read_message(block);
             	}
 

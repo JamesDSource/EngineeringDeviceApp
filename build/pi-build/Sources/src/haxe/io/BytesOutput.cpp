@@ -17,15 +17,15 @@
 #include <hxinc/haxe/io/Output.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_4346bb6277daf395_40_new,"haxe.io.BytesOutput","new",0x130b775e,"haxe.io.BytesOutput.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesOutput.hx",40,0x7405da82)
-HX_LOCAL_STACK_FRAME(_hx_pos_4346bb6277daf395_55_writeByte,"haxe.io.BytesOutput","writeByte",0xed1b0d05,"haxe.io.BytesOutput.writeByte","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesOutput.hx",55,0x7405da82)
-HX_LOCAL_STACK_FRAME(_hx_pos_4346bb6277daf395_59_writeBytes,"haxe.io.BytesOutput","writeBytes",0x8a9057ce,"haxe.io.BytesOutput.writeBytes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesOutput.hx",59,0x7405da82)
-HX_LOCAL_STACK_FRAME(_hx_pos_4346bb6277daf395_140_getBytes,"haxe.io.BytesOutput","getBytes",0x9fe35837,"haxe.io.BytesOutput.getBytes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesOutput.hx",140,0x7405da82)
+HX_DEFINE_STACK_FRAME(_hx_pos_19b6a6649c169dd2_40_new,"haxe.io.BytesOutput","new",0x130b775e,"haxe.io.BytesOutput.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesOutput.hx",40,0x20a0544a)
+HX_LOCAL_STACK_FRAME(_hx_pos_19b6a6649c169dd2_55_writeByte,"haxe.io.BytesOutput","writeByte",0xed1b0d05,"haxe.io.BytesOutput.writeByte","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesOutput.hx",55,0x20a0544a)
+HX_LOCAL_STACK_FRAME(_hx_pos_19b6a6649c169dd2_59_writeBytes,"haxe.io.BytesOutput","writeBytes",0x8a9057ce,"haxe.io.BytesOutput.writeBytes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesOutput.hx",59,0x20a0544a)
+HX_LOCAL_STACK_FRAME(_hx_pos_19b6a6649c169dd2_140_getBytes,"haxe.io.BytesOutput","getBytes",0x9fe35837,"haxe.io.BytesOutput.getBytes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesOutput.hx",140,0x20a0544a)
 namespace haxe{
 namespace io{
 
 void BytesOutput_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_4346bb6277daf395_40_new)
+            	HX_GC_STACKFRAME(&_hx_pos_19b6a6649c169dd2_40_new)
 HXDLIN(  40)		this->b =  ::haxe::io::BytesBuffer_obj::__alloc( HX_CTX );
             	}
 
@@ -49,13 +49,13 @@ bool BytesOutput_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void BytesOutput_obj::writeByte(int c){
-            	HX_STACKFRAME(&_hx_pos_4346bb6277daf395_55_writeByte)
+            	HX_STACKFRAME(&_hx_pos_19b6a6649c169dd2_55_writeByte)
 HXDLIN(  55)		this->b->b->push(c);
             	}
 
 
 int BytesOutput_obj::writeBytes( ::haxe::io::Bytes buf,int pos,int len){
-            	HX_STACKFRAME(&_hx_pos_4346bb6277daf395_59_writeBytes)
+            	HX_STACKFRAME(&_hx_pos_19b6a6649c169dd2_59_writeBytes)
 HXLINE(  64)		{
 HXLINE(  64)			 ::haxe::io::BytesBuffer _this = this->b;
 HXDLIN(  64)			bool _hx_tmp;
@@ -92,7 +92,7 @@ HXLINE(  66)		return len;
 
 
  ::haxe::io::Bytes BytesOutput_obj::getBytes(){
-            	HX_STACKFRAME(&_hx_pos_4346bb6277daf395_140_getBytes)
+            	HX_STACKFRAME(&_hx_pos_19b6a6649c169dd2_140_getBytes)
 HXDLIN( 140)		return this->b->getBytes();
             	}
 

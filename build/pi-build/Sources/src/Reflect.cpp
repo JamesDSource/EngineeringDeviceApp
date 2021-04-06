@@ -5,10 +5,10 @@
 #include <hxinc/Reflect.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_303bc8d5db64860a_30_hasField,"Reflect","hasField",0xef8c2571,"Reflect.hasField","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Reflect.hx",30,0x610e9050)
-HX_LOCAL_STACK_FRAME(_hx_pos_303bc8d5db64860a_34_field,"Reflect","field",0x54b04da9,"Reflect.field","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Reflect.hx",34,0x610e9050)
-HX_LOCAL_STACK_FRAME(_hx_pos_303bc8d5db64860a_38_setField,"Reflect","setField",0x71684429,"Reflect.setField","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Reflect.hx",38,0x610e9050)
-HX_LOCAL_STACK_FRAME(_hx_pos_303bc8d5db64860a_51_callMethod,"Reflect","callMethod",0xb49e52d0,"Reflect.callMethod","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Reflect.hx",51,0x610e9050)
+HX_LOCAL_STACK_FRAME(_hx_pos_7f6386c53932414e_30_hasField,"Reflect","hasField",0xef8c2571,"Reflect.hasField","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Reflect.hx",30,0x7d2da988)
+HX_LOCAL_STACK_FRAME(_hx_pos_7f6386c53932414e_34_field,"Reflect","field",0x54b04da9,"Reflect.field","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Reflect.hx",34,0x7d2da988)
+HX_LOCAL_STACK_FRAME(_hx_pos_7f6386c53932414e_38_setField,"Reflect","setField",0x71684429,"Reflect.setField","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Reflect.hx",38,0x7d2da988)
+HX_LOCAL_STACK_FRAME(_hx_pos_7f6386c53932414e_51_callMethod,"Reflect","callMethod",0xb49e52d0,"Reflect.callMethod","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Reflect.hx",51,0x7d2da988)
 
 void Reflect_obj::__construct() { }
 
@@ -28,7 +28,7 @@ bool Reflect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 bool Reflect_obj::hasField( ::Dynamic o,::String field){
-            	HX_STACKFRAME(&_hx_pos_303bc8d5db64860a_30_hasField)
+            	HX_STACKFRAME(&_hx_pos_7f6386c53932414e_30_hasField)
 HXDLIN(  30)		return (hx::IsNotNull( o ) && ( (bool)(o->__HasField(field)) ));
             	}
 
@@ -36,7 +36,7 @@ HXDLIN(  30)		return (hx::IsNotNull( o ) && ( (bool)(o->__HasField(field)) ));
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Reflect_obj,hasField,return )
 
  ::Dynamic Reflect_obj::field( ::Dynamic o,::String field){
-            	HX_STACKFRAME(&_hx_pos_303bc8d5db64860a_34_field)
+            	HX_STACKFRAME(&_hx_pos_7f6386c53932414e_34_field)
 HXDLIN(  34)		return hx::IsNull( o ) ? null() : o->__Field(field,hx::paccNever);
             	}
 
@@ -44,7 +44,7 @@ HXDLIN(  34)		return hx::IsNull( o ) ? null() : o->__Field(field,hx::paccNever);
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Reflect_obj,field,return )
 
 void Reflect_obj::setField( ::Dynamic o,::String field, ::Dynamic value){
-            	HX_STACKFRAME(&_hx_pos_303bc8d5db64860a_38_setField)
+            	HX_STACKFRAME(&_hx_pos_7f6386c53932414e_38_setField)
 HXDLIN(  38)		if (hx::IsNotNull( o )) {
 HXLINE(  39)			o->__SetField(field,value,hx::paccNever);
             		}
@@ -54,7 +54,7 @@ HXLINE(  39)			o->__SetField(field,value,hx::paccNever);
 STATIC_HX_DEFINE_DYNAMIC_FUNC3(Reflect_obj,setField,(void))
 
  ::Dynamic Reflect_obj::callMethod( ::Dynamic o, ::Dynamic func,::cpp::VirtualArray args){
-            	HX_STACKFRAME(&_hx_pos_303bc8d5db64860a_51_callMethod)
+            	HX_STACKFRAME(&_hx_pos_7f6386c53932414e_51_callMethod)
 HXLINE(  52)		if ((hx::IsNotNull( func ) && hx::IsEq( func->__GetType(),3 ))) {
 HXLINE(  53)			if (hx::IsNull( o )) {
 HXLINE(  53)				HX_STACK_DO_THROW(HX_INVALID_OBJECT);

@@ -9,8 +9,8 @@
 #include <hxinc/StringTools.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_1aa24e5654bb01ef_115_urlDecode,"StringTools","urlDecode",0x71b947f9,"StringTools.urlDecode","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/StringTools.hx",115,0x7b7983a4)
-HX_LOCAL_STACK_FRAME(_hx_pos_1aa24e5654bb01ef_223_endsWith,"StringTools","endsWith",0x0eb5bfe2,"StringTools.endsWith","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/StringTools.hx",223,0x7b7983a4)
+HX_LOCAL_STACK_FRAME(_hx_pos_cb3ec82c04c2cadf_115_urlDecode,"StringTools","urlDecode",0x71b947f9,"StringTools.urlDecode","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/StringTools.hx",115,0x4d20f56c)
+HX_LOCAL_STACK_FRAME(_hx_pos_cb3ec82c04c2cadf_223_endsWith,"StringTools","endsWith",0x0eb5bfe2,"StringTools.endsWith","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/StringTools.hx",223,0x4d20f56c)
 
 void StringTools_obj::__construct() { }
 
@@ -30,7 +30,7 @@ bool StringTools_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 ::String StringTools_obj::urlDecode(::String s){
-            	HX_STACKFRAME(&_hx_pos_1aa24e5654bb01ef_115_urlDecode)
+            	HX_STACKFRAME(&_hx_pos_cb3ec82c04c2cadf_115_urlDecode)
 HXDLIN( 115)		return ( (::String)(s.__URLDecode()) );
             	}
 
@@ -38,7 +38,7 @@ HXDLIN( 115)		return ( (::String)(s.__URLDecode()) );
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(StringTools_obj,urlDecode,return )
 
 bool StringTools_obj::endsWith(::String s,::String end){
-            	HX_STACKFRAME(&_hx_pos_1aa24e5654bb01ef_223_endsWith)
+            	HX_STACKFRAME(&_hx_pos_cb3ec82c04c2cadf_223_endsWith)
 HXLINE( 229)		if ((s.length < end.length)) {
 HXLINE( 230)			return false;
             		}

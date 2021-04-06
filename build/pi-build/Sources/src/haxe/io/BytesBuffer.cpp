@@ -8,13 +8,13 @@
 #include <hxinc/haxe/io/BytesBuffer.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_372df1d22e5a62fc_50_new,"haxe.io.BytesBuffer","new",0x022790dd,"haxe.io.BytesBuffer.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesBuffer.hx",50,0x4049b5e3)
-HX_LOCAL_STACK_FRAME(_hx_pos_372df1d22e5a62fc_181_getBytes,"haxe.io.BytesBuffer","getBytes",0x1e9f7258,"haxe.io.BytesBuffer.getBytes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesBuffer.hx",181,0x4049b5e3)
+HX_DEFINE_STACK_FRAME(_hx_pos_b6ac82b1a6cdbcdb_50_new,"haxe.io.BytesBuffer","new",0x022790dd,"haxe.io.BytesBuffer.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesBuffer.hx",50,0xece42fab)
+HX_LOCAL_STACK_FRAME(_hx_pos_b6ac82b1a6cdbcdb_181_getBytes,"haxe.io.BytesBuffer","getBytes",0x1e9f7258,"haxe.io.BytesBuffer.getBytes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/BytesBuffer.hx",181,0xece42fab)
 namespace haxe{
 namespace io{
 
 void BytesBuffer_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_372df1d22e5a62fc_50_new)
+            	HX_STACKFRAME(&_hx_pos_b6ac82b1a6cdbcdb_50_new)
 HXDLIN(  50)		this->b = ::Array_obj< unsigned char >::__new();
             	}
 
@@ -34,7 +34,7 @@ bool BytesBuffer_obj::_hx_isInstanceOf(int inClassId) {
 }
 
  ::haxe::io::Bytes BytesBuffer_obj::getBytes(){
-            	HX_GC_STACKFRAME(&_hx_pos_372df1d22e5a62fc_181_getBytes)
+            	HX_GC_STACKFRAME(&_hx_pos_b6ac82b1a6cdbcdb_181_getBytes)
 HXLINE( 200)		 ::haxe::io::Bytes bytes =  ::haxe::io::Bytes_obj::__alloc( HX_CTX ,this->b->length,this->b);
 HXLINE( 202)		this->b = null();
 HXLINE( 203)		return bytes;

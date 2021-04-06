@@ -1,4 +1,4 @@
-INC=-I./ -I..\Sources\include -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\include -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42 -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11 -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\nekoapi -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\include -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources -I..\..\..\..\..\..\..\..\..\opt\vc\include -I..\..\..\..\..\..\..\..\..\opt\vc\include\interface\vcos\pthreads -I..\..\..\..\..\..\..\..\..\opt\vc\include\interface\vmcs_host\linux -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources -I..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources 
+INC=-I./ -I..\Sources\include -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\include -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42 -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11 -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\nekoapi -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\include -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources -I..\..\..\..\..\..\..\..\..\opt\vc\include -I..\..\..\..\..\..\..\..\..\opt\vc\include\interface\vcos\pthreads -I..\..\..\..\..\..\..\..\..\opt\vc\include\interface\vmcs_host\linux -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources -I..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources 
 LIB=-static-libgcc -static-libstdc++ -pthread -ldl -lGLESv2 -lEGL -lbcm_host -lasound -lX11
 DEF=-DHXCPP_API_LEVEL=332 -DKORE_MULTITHREADED_AUDIO -DSTATIC_LINK -DPCRE_STATIC -DHXCPP_SET_PROP -DHXCPP_VISIT_ALLOCS -DKORE -DROTATE90 -DHAVE_CONFIG_H -DSUPPORT_UTF -DSUPPORT_UCP -DKORE_G1 -DKORE_G2 -DKORE_G3 -DKORE_A1 -DKORE_A2 -DKORE_PI -DKORE_OPENGL -DKORE_OPENGL_ES -DKORE_POSIX -DKORE_G4 -DKORE_G5 -DKORE_G5ONG4 -DKORE_A3 
 
@@ -6,8 +6,8 @@ CFLAGS=
 CPPFLAGS=
 App: hxcpp.h.gch date.o lambda.o main.o origin.o originpoint.o project.o reflect.o std.o stringtools.o text.o tokentype.o type.o __boot__.o __files__.o __lib__.o __resources__.o component.o divisionrect.o textbox.o mutex.o thread.o imap.o log.o timer.o unserializer.o intmap.o list.o objectmap.o stringmap.o listnode.o bytes.o bytesbuffer.o bytesinput.o bytesoutput.o encoding.o eof.o error.o fphelper.o input.o output.o path.o defaultresolver.o alignedquad.o assets.o canvas.o display.o displaymode.o framebuffer.o framebufferoptions.o frametask.o image.o kravur.o kravurimage.o loaderimpl.o resource.o scheduler.o screenrotation.o shaders.o sound.o system.o systemimpl.o systemoptions.o timetask.o video.o window.o windowoptions.o worker.o float32arrayprivate.o uint32arrayprivate.o float32array_impl_.o uint32array_impl_.o audiochannel.o audio.o audio1.o audiochannel_.o buffer.o streamchannel.o crc32.o mathtools.o mdct.o reader.o vorbisdecoder.o vorbisdecodestate.o vorbistools.o codebook.o comment.o floor.o floor0.o floor1.o header.o intpoint.o mapping.o mappingchannel.o mode.o page.o pageflag.o probedpage.o readererror.o readererrortype.o residue.o setting.o findpageresult.o graphics.o graphics_.o graphics1.o imagescalequality.o stbtruetype.o stbtt_aligned_quad.o stbtt_bakedchar.o stbtt_fontinfo.o stbtt_packedchar.o stbtt_pack_context.o stbtt_pack_range.o stbtt_temp_font_v_metrics.o stbtt_temp_glyph_h_metrics.o stbtt_temp_rect.o stbtt_temp_region.o stbtt_vertex.o stbtt__active_edge.o stbtt__bitmap.o stbtt__edge.o stbtt__point.o vectorofintpointer.o blendingfactor.o blendingoperation.o coloredshaderpainter.o comparemode.o constantlocation.o cubemap.o cullmode.o fragmentshader.o geometryshader.o graphics__.o graphics2.o imageshaderpainter.o indexbuffer.o mipmapfilter.o pipelinestate.o pipelinestatebase.o stencilaction.o stencilvalue.o tessellationcontrolshader.o tessellationevaluationshader.o texdir.o textshaderpainter.o textureaddressing.o texturefilter.o textureformat.o textureunit.o usage.o vertexbuffer.o vertexelement.o vertexshader.o vertexstructure.o commandlist.o fragmentshader_.o graphics___.o indexbuffer_.o pipelinestate_.o pipelinestatebase_.o rendertarget.o vertexbuffer_.o vertexshader_.o gamepad.o keyboard.o mouse.o mouseimpl.o pen.o sensor.o sensortype.o surface.o bytesblob.o keyboard_.o sound_.o video_.o constantlocation_.o graphics____.o graphics2_.o textureunit_.o graphics_____.o fastmatrix3.o fastmatrix4.o fastvector2.o fastvector3.o fastvector4.o matrix3.o matrix4.o quaternion.o vector2.o vector3.o vector4.o client.o controller.o controllerbuilder.o entity.o localclient.o network.o session.o state.o syncbuilder.o pose.o posestate.o sensorstate.o timewarpimage.o timewarpparms.o vrinterface.o vrinterfaceemulated.o bloblist.o fontlist.o imagelist.o soundlist.o videolist.o color_impl_.o windowfeatures_impl_.o filesystem.o file.o fileinput.o fileseek.o main_.o sha1.o socket.o regexp.o file_.o init.o interface.o misc.o process.o random.o socket_.o string.o sys.winrt.o xml.o aes.o aesni.o arc4.o asn1parse.o asn1write.o base64.o bignum.o blowfish.o camellia.o ccm.o certs.o cipher.o cipher_wrap.o cmac.o ctr_drbg.o debug.o des.o dhm.o ecdh.o ecdsa.o ecjpake.o ecp.o ecp_curves.o entropy.o entropy_poll.o error_.o gcm.o havege.o hmac_drbg.o md.o md2.o md4.o md5.o md_wrap.o memory_buffer_alloc.o net_sockets.o oid.o padlock.o pem.o pk.o pkcs11.o pkcs12.o pkcs5.o pkparse.o pkwrite.o pk_wrap.o platform.o ripemd160.o rsa.o rsa_internal.o sha1_.o sha256.o sha512.o ssl_cache.o ssl_ciphersuites.o ssl_cli.o ssl_cookie.o ssl_srv.o ssl_ticket.o ssl_tls.o threading.o timing.o version.o version_features.o x509.o x509write_crt.o x509write_csr.o x509_create.o x509_crl.o x509_crt.o x509_csr.o xtea.o pcre16_byte_order.o pcre16_chartables.o pcre16_compile.o pcre16_config.o pcre16_dfa_exec.o pcre16_exec.o pcre16_fullinfo.o pcre16_get.o pcre16_globals.o pcre16_jit_compile.o pcre16_maketables.o pcre16_newline.o pcre16_ord2utf16.o pcre16_refcount.o pcre16_string_utils.o pcre16_study.o pcre16_tables.o pcre16_ucd.o pcre16_utf16_utils.o pcre16_valid_utf16.o pcre16_version.o pcre16_xclass.o pcre32_byte_order.o pcre32_chartables.o pcre32_compile.o pcre32_config.o pcre32_dfa_exec.o pcre32_exec.o pcre32_fullinfo.o pcre32_get.o pcre32_globals.o pcre32_jit_compile.o pcre32_maketables.o pcre32_newline.o pcre32_ord2utf32.o pcre32_refcount.o pcre32_string_utils.o pcre32_study.o pcre32_tables.o pcre32_ucd.o pcre32_utf32_utils.o pcre32_valid_utf32.o pcre32_version.o pcre32_xclass.o pcreposix.o pcre_byte_order.o pcre_chartables.o pcre_compile.o pcre_config.o pcre_dfa_exec.o pcre_exec.o pcre_fullinfo.o pcre_get.o pcre_globals.o pcre_jit_compile.o pcre_maketables.o pcre_newline.o pcre_ord2utf8.o pcre_refcount.o pcre_string_utils.o pcre_study.o pcre_tables.o pcre_ucd.o pcre_valid_utf8.o pcre_version.o pcre_xclass.o adler32.o compress.o crc32_.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o uncompr.o zutil.o array.o dynamic.o enum.o hxcpp.o math.o string_.o anon.o boot.o cffi.o class.o date_.o debug_.o hash.o interface_.o lib.o object.o runlibs.o stdlibs.o thread_.o gccommon.o gcregcapture.o immix.o regexp_.o ssl.o file__.o process_.o random_.o socket__.o sys.o zlib.o audio_.o texttospeech.winrt.o computeimpl.o indexbufferimpl.o opengl.o openglwindow.o pipelinestateimpl.o rendertargetimpl.o shaderimpl.o shaderstoragebufferimpl.o texturearrayimpl.o textureimpl.o vertexbufferimpl.o vrinterface_.o commandlist5impl.o constantbuffer5impl.o g5ong4.o indexbuffer5impl.o pipelinestate5impl.o rendertarget5impl.o shader5impl.o texture5impl.o vertexbuffer5impl.o display_.o sound__.o system_.o mouse_.o event.o mutex_.o semaphore.o thread__.o threadlocal.o error__.o log_.o codestyle.o error___.o log__.o system__.o audio__.o sound___.o soundstream.o stb_vorbis.o audio___.o audio____.o color.o graphics______.o image_.o graphics_______.o kravur_.o graphics________.o texture.o graphics_________.o pipelinestate__.o texture_.o texturearray.o commandlist_.o constantbuffer.o graphics__________.o pipelinestate___.o texture__.o gamepad_.o keyboard__.o mouse__.o pen_.o sensor_.o surface_.o bufferreader.o filereader.winrt.o filewriter.o reader_.o writer.o lz4.o lz4frame.o lz4hc.o xxhash.o core.o quaternion_.o random__.o connection.o http.o socket___.o cameraimage.o sensorstate_.o vrpose.o vrposestate.o 
 	g++  -O2 date.o lambda.o main.o origin.o originpoint.o project.o reflect.o std.o stringtools.o text.o tokentype.o type.o __boot__.o __files__.o __lib__.o __resources__.o component.o divisionrect.o textbox.o mutex.o thread.o imap.o log.o timer.o unserializer.o intmap.o list.o objectmap.o stringmap.o listnode.o bytes.o bytesbuffer.o bytesinput.o bytesoutput.o encoding.o eof.o error.o fphelper.o input.o output.o path.o defaultresolver.o alignedquad.o assets.o canvas.o display.o displaymode.o framebuffer.o framebufferoptions.o frametask.o image.o kravur.o kravurimage.o loaderimpl.o resource.o scheduler.o screenrotation.o shaders.o sound.o system.o systemimpl.o systemoptions.o timetask.o video.o window.o windowoptions.o worker.o float32arrayprivate.o uint32arrayprivate.o float32array_impl_.o uint32array_impl_.o audiochannel.o audio.o audio1.o audiochannel_.o buffer.o streamchannel.o crc32.o mathtools.o mdct.o reader.o vorbisdecoder.o vorbisdecodestate.o vorbistools.o codebook.o comment.o floor.o floor0.o floor1.o header.o intpoint.o mapping.o mappingchannel.o mode.o page.o pageflag.o probedpage.o readererror.o readererrortype.o residue.o setting.o findpageresult.o graphics.o graphics_.o graphics1.o imagescalequality.o stbtruetype.o stbtt_aligned_quad.o stbtt_bakedchar.o stbtt_fontinfo.o stbtt_packedchar.o stbtt_pack_context.o stbtt_pack_range.o stbtt_temp_font_v_metrics.o stbtt_temp_glyph_h_metrics.o stbtt_temp_rect.o stbtt_temp_region.o stbtt_vertex.o stbtt__active_edge.o stbtt__bitmap.o stbtt__edge.o stbtt__point.o vectorofintpointer.o blendingfactor.o blendingoperation.o coloredshaderpainter.o comparemode.o constantlocation.o cubemap.o cullmode.o fragmentshader.o geometryshader.o graphics__.o graphics2.o imageshaderpainter.o indexbuffer.o mipmapfilter.o pipelinestate.o pipelinestatebase.o stencilaction.o stencilvalue.o tessellationcontrolshader.o tessellationevaluationshader.o texdir.o textshaderpainter.o textureaddressing.o texturefilter.o textureformat.o textureunit.o usage.o vertexbuffer.o vertexelement.o vertexshader.o vertexstructure.o commandlist.o fragmentshader_.o graphics___.o indexbuffer_.o pipelinestate_.o pipelinestatebase_.o rendertarget.o vertexbuffer_.o vertexshader_.o gamepad.o keyboard.o mouse.o mouseimpl.o pen.o sensor.o sensortype.o surface.o bytesblob.o keyboard_.o sound_.o video_.o constantlocation_.o graphics____.o graphics2_.o textureunit_.o graphics_____.o fastmatrix3.o fastmatrix4.o fastvector2.o fastvector3.o fastvector4.o matrix3.o matrix4.o quaternion.o vector2.o vector3.o vector4.o client.o controller.o controllerbuilder.o entity.o localclient.o network.o session.o state.o syncbuilder.o pose.o posestate.o sensorstate.o timewarpimage.o timewarpparms.o vrinterface.o vrinterfaceemulated.o bloblist.o fontlist.o imagelist.o soundlist.o videolist.o color_impl_.o windowfeatures_impl_.o filesystem.o file.o fileinput.o fileseek.o main_.o sha1.o socket.o regexp.o file_.o init.o interface.o misc.o process.o random.o socket_.o string.o sys.winrt.o xml.o aes.o aesni.o arc4.o asn1parse.o asn1write.o base64.o bignum.o blowfish.o camellia.o ccm.o certs.o cipher.o cipher_wrap.o cmac.o ctr_drbg.o debug.o des.o dhm.o ecdh.o ecdsa.o ecjpake.o ecp.o ecp_curves.o entropy.o entropy_poll.o error_.o gcm.o havege.o hmac_drbg.o md.o md2.o md4.o md5.o md_wrap.o memory_buffer_alloc.o net_sockets.o oid.o padlock.o pem.o pk.o pkcs11.o pkcs12.o pkcs5.o pkparse.o pkwrite.o pk_wrap.o platform.o ripemd160.o rsa.o rsa_internal.o sha1_.o sha256.o sha512.o ssl_cache.o ssl_ciphersuites.o ssl_cli.o ssl_cookie.o ssl_srv.o ssl_ticket.o ssl_tls.o threading.o timing.o version.o version_features.o x509.o x509write_crt.o x509write_csr.o x509_create.o x509_crl.o x509_crt.o x509_csr.o xtea.o pcre16_byte_order.o pcre16_chartables.o pcre16_compile.o pcre16_config.o pcre16_dfa_exec.o pcre16_exec.o pcre16_fullinfo.o pcre16_get.o pcre16_globals.o pcre16_jit_compile.o pcre16_maketables.o pcre16_newline.o pcre16_ord2utf16.o pcre16_refcount.o pcre16_string_utils.o pcre16_study.o pcre16_tables.o pcre16_ucd.o pcre16_utf16_utils.o pcre16_valid_utf16.o pcre16_version.o pcre16_xclass.o pcre32_byte_order.o pcre32_chartables.o pcre32_compile.o pcre32_config.o pcre32_dfa_exec.o pcre32_exec.o pcre32_fullinfo.o pcre32_get.o pcre32_globals.o pcre32_jit_compile.o pcre32_maketables.o pcre32_newline.o pcre32_ord2utf32.o pcre32_refcount.o pcre32_string_utils.o pcre32_study.o pcre32_tables.o pcre32_ucd.o pcre32_utf32_utils.o pcre32_valid_utf32.o pcre32_version.o pcre32_xclass.o pcreposix.o pcre_byte_order.o pcre_chartables.o pcre_compile.o pcre_config.o pcre_dfa_exec.o pcre_exec.o pcre_fullinfo.o pcre_get.o pcre_globals.o pcre_jit_compile.o pcre_maketables.o pcre_newline.o pcre_ord2utf8.o pcre_refcount.o pcre_string_utils.o pcre_study.o pcre_tables.o pcre_ucd.o pcre_valid_utf8.o pcre_version.o pcre_xclass.o adler32.o compress.o crc32_.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o uncompr.o zutil.o array.o dynamic.o enum.o hxcpp.o math.o string_.o anon.o boot.o cffi.o class.o date_.o debug_.o hash.o interface_.o lib.o object.o runlibs.o stdlibs.o thread_.o gccommon.o gcregcapture.o immix.o regexp_.o ssl.o file__.o process_.o random_.o socket__.o sys.o zlib.o audio_.o texttospeech.winrt.o computeimpl.o indexbufferimpl.o opengl.o openglwindow.o pipelinestateimpl.o rendertargetimpl.o shaderimpl.o shaderstoragebufferimpl.o texturearrayimpl.o textureimpl.o vertexbufferimpl.o vrinterface_.o commandlist5impl.o constantbuffer5impl.o g5ong4.o indexbuffer5impl.o pipelinestate5impl.o rendertarget5impl.o shader5impl.o texture5impl.o vertexbuffer5impl.o display_.o sound__.o system_.o mouse_.o event.o mutex_.o semaphore.o thread__.o threadlocal.o error__.o log_.o codestyle.o error___.o log__.o system__.o audio__.o sound___.o soundstream.o stb_vorbis.o audio___.o audio____.o color.o graphics______.o image_.o graphics_______.o kravur_.o graphics________.o texture.o graphics_________.o pipelinestate__.o texture_.o texturearray.o commandlist_.o constantbuffer.o graphics__________.o pipelinestate___.o texture__.o gamepad_.o keyboard__.o mouse__.o pen_.o sensor_.o surface_.o bufferreader.o filereader.winrt.o filewriter.o reader_.o writer.o lz4.o lz4frame.o lz4hc.o xxhash.o core.o quaternion_.o random__.o connection.o http.o socket___.o cameraimage.o sensorstate_.o vrpose.o vrposestate.o  -o "App" $(LIB)
-hxcpp.h.gch: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\include\hxcpp.h
-	g++  -O2 $(INC) $(DEF) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\include\hxcpp.h -o hxcpp.h.gch $(LIB)
+hxcpp.h.gch: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\include\hxcpp.h
+	g++  -O2 $(INC) $(DEF) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\include\hxcpp.h -o hxcpp.h.gch $(LIB)
 
 date.o: ..\Sources\src\Date.cpp
 	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\Sources\src\Date.cpp -o date.o $(LIB)
@@ -663,836 +663,836 @@ fileinput.o: ..\Sources\src\sys\io\FileInput.cpp
 fileseek.o: ..\Sources\src\sys\io\FileSeek.cpp
 	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\Sources\src\sys\io\FileSeek.cpp -o fileseek.o $(LIB)
 
-main_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\main.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\main.cpp -o main_.o $(LIB)
+main_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\main.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\main.cpp -o main_.o $(LIB)
 
-sha1.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\common\sha1.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\common\sha1.cpp -o sha1.o $(LIB)
+sha1.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\common\sha1.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\common\sha1.cpp -o sha1.o $(LIB)
 
-socket.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\common\socket.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\common\socket.cpp -o socket.o $(LIB)
+socket.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\common\socket.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\common\socket.cpp -o socket.o $(LIB)
 
-regexp.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\regexp\RegExp.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\regexp\RegExp.cpp -o regexp.o $(LIB)
+regexp.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\regexp\RegExp.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\regexp\RegExp.cpp -o regexp.o $(LIB)
 
-file_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\File.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\File.cpp -o file_.o $(LIB)
+file_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\File.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\File.cpp -o file_.o $(LIB)
 
-init.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Init.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Init.cpp -o init.o $(LIB)
+init.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Init.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Init.cpp -o init.o $(LIB)
 
-interface.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Interface.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Interface.cpp -o interface.o $(LIB)
+interface.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Interface.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Interface.cpp -o interface.o $(LIB)
 
-misc.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Misc.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Misc.cpp -o misc.o $(LIB)
+misc.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Misc.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Misc.cpp -o misc.o $(LIB)
 
-process.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Process.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Process.cpp -o process.o $(LIB)
+process.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Process.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Process.cpp -o process.o $(LIB)
 
-random.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Random.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Random.cpp -o random.o $(LIB)
+random.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Random.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Random.cpp -o random.o $(LIB)
 
-socket_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Socket.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Socket.cpp -o socket_.o $(LIB)
+socket_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Socket.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Socket.cpp -o socket_.o $(LIB)
 
-string.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\String.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\String.cpp -o string.o $(LIB)
+string.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\String.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\String.cpp -o string.o $(LIB)
 
-sys.winrt.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Sys.winrt.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Sys.winrt.cpp -o sys.winrt.o $(LIB)
+sys.winrt.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Sys.winrt.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Sys.winrt.cpp -o sys.winrt.o $(LIB)
 
-xml.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Xml.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Xml.cpp -o xml.o $(LIB)
+xml.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Xml.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\libs\std\Xml.cpp -o xml.o $(LIB)
 
-aes.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\aes.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\aes.c -o aes.o $(LIB)
+aes.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\aes.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\aes.c -o aes.o $(LIB)
 
-aesni.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\aesni.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\aesni.c -o aesni.o $(LIB)
+aesni.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\aesni.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\aesni.c -o aesni.o $(LIB)
 
-arc4.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\arc4.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\arc4.c -o arc4.o $(LIB)
+arc4.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\arc4.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\arc4.c -o arc4.o $(LIB)
 
-asn1parse.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\asn1parse.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\asn1parse.c -o asn1parse.o $(LIB)
+asn1parse.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\asn1parse.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\asn1parse.c -o asn1parse.o $(LIB)
 
-asn1write.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\asn1write.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\asn1write.c -o asn1write.o $(LIB)
+asn1write.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\asn1write.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\asn1write.c -o asn1write.o $(LIB)
 
-base64.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\base64.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\base64.c -o base64.o $(LIB)
+base64.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\base64.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\base64.c -o base64.o $(LIB)
 
-bignum.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\bignum.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\bignum.c -o bignum.o $(LIB)
+bignum.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\bignum.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\bignum.c -o bignum.o $(LIB)
 
-blowfish.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\blowfish.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\blowfish.c -o blowfish.o $(LIB)
+blowfish.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\blowfish.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\blowfish.c -o blowfish.o $(LIB)
 
-camellia.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\camellia.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\camellia.c -o camellia.o $(LIB)
+camellia.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\camellia.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\camellia.c -o camellia.o $(LIB)
 
-ccm.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ccm.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ccm.c -o ccm.o $(LIB)
+ccm.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ccm.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ccm.c -o ccm.o $(LIB)
 
-certs.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\certs.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\certs.c -o certs.o $(LIB)
+certs.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\certs.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\certs.c -o certs.o $(LIB)
 
-cipher.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cipher.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cipher.c -o cipher.o $(LIB)
+cipher.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cipher.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cipher.c -o cipher.o $(LIB)
 
-cipher_wrap.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cipher_wrap.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cipher_wrap.c -o cipher_wrap.o $(LIB)
+cipher_wrap.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cipher_wrap.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cipher_wrap.c -o cipher_wrap.o $(LIB)
 
-cmac.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cmac.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cmac.c -o cmac.o $(LIB)
+cmac.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cmac.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\cmac.c -o cmac.o $(LIB)
 
-ctr_drbg.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ctr_drbg.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ctr_drbg.c -o ctr_drbg.o $(LIB)
+ctr_drbg.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ctr_drbg.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ctr_drbg.c -o ctr_drbg.o $(LIB)
 
-debug.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\debug.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\debug.c -o debug.o $(LIB)
+debug.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\debug.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\debug.c -o debug.o $(LIB)
 
-des.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\des.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\des.c -o des.o $(LIB)
+des.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\des.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\des.c -o des.o $(LIB)
 
-dhm.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\dhm.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\dhm.c -o dhm.o $(LIB)
+dhm.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\dhm.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\dhm.c -o dhm.o $(LIB)
 
-ecdh.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecdh.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecdh.c -o ecdh.o $(LIB)
+ecdh.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecdh.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecdh.c -o ecdh.o $(LIB)
 
-ecdsa.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecdsa.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecdsa.c -o ecdsa.o $(LIB)
+ecdsa.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecdsa.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecdsa.c -o ecdsa.o $(LIB)
 
-ecjpake.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecjpake.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecjpake.c -o ecjpake.o $(LIB)
+ecjpake.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecjpake.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecjpake.c -o ecjpake.o $(LIB)
 
-ecp.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecp.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecp.c -o ecp.o $(LIB)
+ecp.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecp.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecp.c -o ecp.o $(LIB)
 
-ecp_curves.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecp_curves.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecp_curves.c -o ecp_curves.o $(LIB)
+ecp_curves.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecp_curves.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ecp_curves.c -o ecp_curves.o $(LIB)
 
-entropy.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\entropy.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\entropy.c -o entropy.o $(LIB)
+entropy.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\entropy.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\entropy.c -o entropy.o $(LIB)
 
-entropy_poll.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\entropy_poll.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\entropy_poll.c -o entropy_poll.o $(LIB)
+entropy_poll.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\entropy_poll.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\entropy_poll.c -o entropy_poll.o $(LIB)
 
-error_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\error.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\error.c -o error_.o $(LIB)
+error_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\error.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\error.c -o error_.o $(LIB)
 
-gcm.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\gcm.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\gcm.c -o gcm.o $(LIB)
+gcm.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\gcm.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\gcm.c -o gcm.o $(LIB)
 
-havege.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\havege.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\havege.c -o havege.o $(LIB)
+havege.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\havege.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\havege.c -o havege.o $(LIB)
 
-hmac_drbg.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\hmac_drbg.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\hmac_drbg.c -o hmac_drbg.o $(LIB)
+hmac_drbg.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\hmac_drbg.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\hmac_drbg.c -o hmac_drbg.o $(LIB)
 
-md.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md.c -o md.o $(LIB)
+md.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md.c -o md.o $(LIB)
 
-md2.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md2.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md2.c -o md2.o $(LIB)
+md2.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md2.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md2.c -o md2.o $(LIB)
 
-md4.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md4.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md4.c -o md4.o $(LIB)
+md4.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md4.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md4.c -o md4.o $(LIB)
 
-md5.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md5.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md5.c -o md5.o $(LIB)
+md5.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md5.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md5.c -o md5.o $(LIB)
 
-md_wrap.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md_wrap.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md_wrap.c -o md_wrap.o $(LIB)
+md_wrap.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md_wrap.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\md_wrap.c -o md_wrap.o $(LIB)
 
-memory_buffer_alloc.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\memory_buffer_alloc.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\memory_buffer_alloc.c -o memory_buffer_alloc.o $(LIB)
+memory_buffer_alloc.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\memory_buffer_alloc.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\memory_buffer_alloc.c -o memory_buffer_alloc.o $(LIB)
 
-net_sockets.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\net_sockets.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\net_sockets.c -o net_sockets.o $(LIB)
+net_sockets.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\net_sockets.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\net_sockets.c -o net_sockets.o $(LIB)
 
-oid.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\oid.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\oid.c -o oid.o $(LIB)
+oid.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\oid.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\oid.c -o oid.o $(LIB)
 
-padlock.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\padlock.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\padlock.c -o padlock.o $(LIB)
+padlock.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\padlock.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\padlock.c -o padlock.o $(LIB)
 
-pem.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pem.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pem.c -o pem.o $(LIB)
+pem.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pem.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pem.c -o pem.o $(LIB)
 
-pk.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pk.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pk.c -o pk.o $(LIB)
+pk.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pk.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pk.c -o pk.o $(LIB)
 
-pkcs11.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs11.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs11.c -o pkcs11.o $(LIB)
+pkcs11.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs11.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs11.c -o pkcs11.o $(LIB)
 
-pkcs12.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs12.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs12.c -o pkcs12.o $(LIB)
+pkcs12.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs12.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs12.c -o pkcs12.o $(LIB)
 
-pkcs5.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs5.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs5.c -o pkcs5.o $(LIB)
+pkcs5.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs5.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkcs5.c -o pkcs5.o $(LIB)
 
-pkparse.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkparse.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkparse.c -o pkparse.o $(LIB)
+pkparse.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkparse.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkparse.c -o pkparse.o $(LIB)
 
-pkwrite.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkwrite.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkwrite.c -o pkwrite.o $(LIB)
+pkwrite.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkwrite.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pkwrite.c -o pkwrite.o $(LIB)
 
-pk_wrap.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pk_wrap.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pk_wrap.c -o pk_wrap.o $(LIB)
+pk_wrap.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pk_wrap.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\pk_wrap.c -o pk_wrap.o $(LIB)
 
-platform.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\platform.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\platform.c -o platform.o $(LIB)
+platform.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\platform.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\platform.c -o platform.o $(LIB)
 
-ripemd160.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ripemd160.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ripemd160.c -o ripemd160.o $(LIB)
+ripemd160.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ripemd160.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ripemd160.c -o ripemd160.o $(LIB)
 
-rsa.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\rsa.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\rsa.c -o rsa.o $(LIB)
+rsa.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\rsa.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\rsa.c -o rsa.o $(LIB)
 
-rsa_internal.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\rsa_internal.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\rsa_internal.c -o rsa_internal.o $(LIB)
+rsa_internal.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\rsa_internal.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\rsa_internal.c -o rsa_internal.o $(LIB)
 
-sha1_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha1.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha1.c -o sha1_.o $(LIB)
+sha1_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha1.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha1.c -o sha1_.o $(LIB)
 
-sha256.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha256.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha256.c -o sha256.o $(LIB)
+sha256.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha256.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha256.c -o sha256.o $(LIB)
 
-sha512.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha512.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha512.c -o sha512.o $(LIB)
+sha512.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha512.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\sha512.c -o sha512.o $(LIB)
 
-ssl_cache.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cache.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cache.c -o ssl_cache.o $(LIB)
+ssl_cache.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cache.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cache.c -o ssl_cache.o $(LIB)
 
-ssl_ciphersuites.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_ciphersuites.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_ciphersuites.c -o ssl_ciphersuites.o $(LIB)
+ssl_ciphersuites.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_ciphersuites.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_ciphersuites.c -o ssl_ciphersuites.o $(LIB)
 
-ssl_cli.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cli.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cli.c -o ssl_cli.o $(LIB)
+ssl_cli.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cli.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cli.c -o ssl_cli.o $(LIB)
 
-ssl_cookie.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cookie.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cookie.c -o ssl_cookie.o $(LIB)
+ssl_cookie.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cookie.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_cookie.c -o ssl_cookie.o $(LIB)
 
-ssl_srv.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_srv.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_srv.c -o ssl_srv.o $(LIB)
+ssl_srv.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_srv.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_srv.c -o ssl_srv.o $(LIB)
 
-ssl_ticket.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_ticket.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_ticket.c -o ssl_ticket.o $(LIB)
+ssl_ticket.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_ticket.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_ticket.c -o ssl_ticket.o $(LIB)
 
-ssl_tls.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_tls.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_tls.c -o ssl_tls.o $(LIB)
+ssl_tls.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_tls.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\ssl_tls.c -o ssl_tls.o $(LIB)
 
-threading.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\threading.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\threading.c -o threading.o $(LIB)
+threading.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\threading.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\threading.c -o threading.o $(LIB)
 
-timing.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\timing.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\timing.c -o timing.o $(LIB)
+timing.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\timing.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\timing.c -o timing.o $(LIB)
 
-version.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\version.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\version.c -o version.o $(LIB)
+version.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\version.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\version.c -o version.o $(LIB)
 
-version_features.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\version_features.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\version_features.c -o version_features.o $(LIB)
+version_features.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\version_features.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\version_features.c -o version_features.o $(LIB)
 
-x509.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509.c -o x509.o $(LIB)
+x509.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509.c -o x509.o $(LIB)
 
-x509write_crt.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509write_crt.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509write_crt.c -o x509write_crt.o $(LIB)
+x509write_crt.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509write_crt.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509write_crt.c -o x509write_crt.o $(LIB)
 
-x509write_csr.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509write_csr.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509write_csr.c -o x509write_csr.o $(LIB)
+x509write_csr.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509write_csr.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509write_csr.c -o x509write_csr.o $(LIB)
 
-x509_create.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_create.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_create.c -o x509_create.o $(LIB)
+x509_create.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_create.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_create.c -o x509_create.o $(LIB)
 
-x509_crl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_crl.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_crl.c -o x509_crl.o $(LIB)
+x509_crl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_crl.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_crl.c -o x509_crl.o $(LIB)
 
-x509_crt.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_crt.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_crt.c -o x509_crt.o $(LIB)
+x509_crt.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_crt.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_crt.c -o x509_crt.o $(LIB)
 
-x509_csr.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_csr.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_csr.c -o x509_csr.o $(LIB)
+x509_csr.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_csr.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\x509_csr.c -o x509_csr.o $(LIB)
 
-xtea.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\xtea.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\xtea.c -o xtea.o $(LIB)
+xtea.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\xtea.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\mbedtls-2.9.0\library\xtea.c -o xtea.o $(LIB)
 
-pcre16_byte_order.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_byte_order.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_byte_order.c -o pcre16_byte_order.o $(LIB)
+pcre16_byte_order.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_byte_order.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_byte_order.c -o pcre16_byte_order.o $(LIB)
 
-pcre16_chartables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_chartables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_chartables.c -o pcre16_chartables.o $(LIB)
+pcre16_chartables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_chartables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_chartables.c -o pcre16_chartables.o $(LIB)
 
-pcre16_compile.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_compile.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_compile.c -o pcre16_compile.o $(LIB)
+pcre16_compile.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_compile.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_compile.c -o pcre16_compile.o $(LIB)
 
-pcre16_config.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_config.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_config.c -o pcre16_config.o $(LIB)
+pcre16_config.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_config.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_config.c -o pcre16_config.o $(LIB)
 
-pcre16_dfa_exec.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_dfa_exec.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_dfa_exec.c -o pcre16_dfa_exec.o $(LIB)
+pcre16_dfa_exec.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_dfa_exec.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_dfa_exec.c -o pcre16_dfa_exec.o $(LIB)
 
-pcre16_exec.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_exec.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_exec.c -o pcre16_exec.o $(LIB)
+pcre16_exec.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_exec.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_exec.c -o pcre16_exec.o $(LIB)
 
-pcre16_fullinfo.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_fullinfo.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_fullinfo.c -o pcre16_fullinfo.o $(LIB)
+pcre16_fullinfo.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_fullinfo.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_fullinfo.c -o pcre16_fullinfo.o $(LIB)
 
-pcre16_get.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_get.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_get.c -o pcre16_get.o $(LIB)
+pcre16_get.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_get.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_get.c -o pcre16_get.o $(LIB)
 
-pcre16_globals.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_globals.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_globals.c -o pcre16_globals.o $(LIB)
+pcre16_globals.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_globals.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_globals.c -o pcre16_globals.o $(LIB)
 
-pcre16_jit_compile.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_jit_compile.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_jit_compile.c -o pcre16_jit_compile.o $(LIB)
+pcre16_jit_compile.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_jit_compile.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_jit_compile.c -o pcre16_jit_compile.o $(LIB)
 
-pcre16_maketables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_maketables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_maketables.c -o pcre16_maketables.o $(LIB)
+pcre16_maketables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_maketables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_maketables.c -o pcre16_maketables.o $(LIB)
 
-pcre16_newline.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_newline.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_newline.c -o pcre16_newline.o $(LIB)
+pcre16_newline.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_newline.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_newline.c -o pcre16_newline.o $(LIB)
 
-pcre16_ord2utf16.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_ord2utf16.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_ord2utf16.c -o pcre16_ord2utf16.o $(LIB)
+pcre16_ord2utf16.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_ord2utf16.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_ord2utf16.c -o pcre16_ord2utf16.o $(LIB)
 
-pcre16_refcount.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_refcount.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_refcount.c -o pcre16_refcount.o $(LIB)
+pcre16_refcount.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_refcount.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_refcount.c -o pcre16_refcount.o $(LIB)
 
-pcre16_string_utils.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_string_utils.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_string_utils.c -o pcre16_string_utils.o $(LIB)
+pcre16_string_utils.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_string_utils.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_string_utils.c -o pcre16_string_utils.o $(LIB)
 
-pcre16_study.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_study.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_study.c -o pcre16_study.o $(LIB)
+pcre16_study.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_study.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_study.c -o pcre16_study.o $(LIB)
 
-pcre16_tables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_tables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_tables.c -o pcre16_tables.o $(LIB)
+pcre16_tables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_tables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_tables.c -o pcre16_tables.o $(LIB)
 
-pcre16_ucd.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_ucd.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_ucd.c -o pcre16_ucd.o $(LIB)
+pcre16_ucd.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_ucd.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_ucd.c -o pcre16_ucd.o $(LIB)
 
-pcre16_utf16_utils.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_utf16_utils.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_utf16_utils.c -o pcre16_utf16_utils.o $(LIB)
+pcre16_utf16_utils.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_utf16_utils.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_utf16_utils.c -o pcre16_utf16_utils.o $(LIB)
 
-pcre16_valid_utf16.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_valid_utf16.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_valid_utf16.c -o pcre16_valid_utf16.o $(LIB)
+pcre16_valid_utf16.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_valid_utf16.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_valid_utf16.c -o pcre16_valid_utf16.o $(LIB)
 
-pcre16_version.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_version.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_version.c -o pcre16_version.o $(LIB)
+pcre16_version.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_version.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_version.c -o pcre16_version.o $(LIB)
 
-pcre16_xclass.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_xclass.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_xclass.c -o pcre16_xclass.o $(LIB)
+pcre16_xclass.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_xclass.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre16_xclass.c -o pcre16_xclass.o $(LIB)
 
-pcre32_byte_order.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_byte_order.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_byte_order.c -o pcre32_byte_order.o $(LIB)
+pcre32_byte_order.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_byte_order.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_byte_order.c -o pcre32_byte_order.o $(LIB)
 
-pcre32_chartables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_chartables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_chartables.c -o pcre32_chartables.o $(LIB)
+pcre32_chartables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_chartables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_chartables.c -o pcre32_chartables.o $(LIB)
 
-pcre32_compile.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_compile.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_compile.c -o pcre32_compile.o $(LIB)
+pcre32_compile.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_compile.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_compile.c -o pcre32_compile.o $(LIB)
 
-pcre32_config.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_config.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_config.c -o pcre32_config.o $(LIB)
+pcre32_config.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_config.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_config.c -o pcre32_config.o $(LIB)
 
-pcre32_dfa_exec.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_dfa_exec.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_dfa_exec.c -o pcre32_dfa_exec.o $(LIB)
+pcre32_dfa_exec.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_dfa_exec.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_dfa_exec.c -o pcre32_dfa_exec.o $(LIB)
 
-pcre32_exec.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_exec.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_exec.c -o pcre32_exec.o $(LIB)
+pcre32_exec.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_exec.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_exec.c -o pcre32_exec.o $(LIB)
 
-pcre32_fullinfo.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_fullinfo.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_fullinfo.c -o pcre32_fullinfo.o $(LIB)
+pcre32_fullinfo.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_fullinfo.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_fullinfo.c -o pcre32_fullinfo.o $(LIB)
 
-pcre32_get.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_get.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_get.c -o pcre32_get.o $(LIB)
+pcre32_get.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_get.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_get.c -o pcre32_get.o $(LIB)
 
-pcre32_globals.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_globals.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_globals.c -o pcre32_globals.o $(LIB)
+pcre32_globals.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_globals.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_globals.c -o pcre32_globals.o $(LIB)
 
-pcre32_jit_compile.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_jit_compile.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_jit_compile.c -o pcre32_jit_compile.o $(LIB)
+pcre32_jit_compile.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_jit_compile.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_jit_compile.c -o pcre32_jit_compile.o $(LIB)
 
-pcre32_maketables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_maketables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_maketables.c -o pcre32_maketables.o $(LIB)
+pcre32_maketables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_maketables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_maketables.c -o pcre32_maketables.o $(LIB)
 
-pcre32_newline.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_newline.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_newline.c -o pcre32_newline.o $(LIB)
+pcre32_newline.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_newline.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_newline.c -o pcre32_newline.o $(LIB)
 
-pcre32_ord2utf32.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_ord2utf32.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_ord2utf32.c -o pcre32_ord2utf32.o $(LIB)
+pcre32_ord2utf32.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_ord2utf32.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_ord2utf32.c -o pcre32_ord2utf32.o $(LIB)
 
-pcre32_refcount.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_refcount.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_refcount.c -o pcre32_refcount.o $(LIB)
+pcre32_refcount.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_refcount.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_refcount.c -o pcre32_refcount.o $(LIB)
 
-pcre32_string_utils.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_string_utils.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_string_utils.c -o pcre32_string_utils.o $(LIB)
+pcre32_string_utils.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_string_utils.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_string_utils.c -o pcre32_string_utils.o $(LIB)
 
-pcre32_study.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_study.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_study.c -o pcre32_study.o $(LIB)
+pcre32_study.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_study.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_study.c -o pcre32_study.o $(LIB)
 
-pcre32_tables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_tables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_tables.c -o pcre32_tables.o $(LIB)
+pcre32_tables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_tables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_tables.c -o pcre32_tables.o $(LIB)
 
-pcre32_ucd.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_ucd.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_ucd.c -o pcre32_ucd.o $(LIB)
+pcre32_ucd.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_ucd.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_ucd.c -o pcre32_ucd.o $(LIB)
 
-pcre32_utf32_utils.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_utf32_utils.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_utf32_utils.c -o pcre32_utf32_utils.o $(LIB)
+pcre32_utf32_utils.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_utf32_utils.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_utf32_utils.c -o pcre32_utf32_utils.o $(LIB)
 
-pcre32_valid_utf32.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_valid_utf32.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_valid_utf32.c -o pcre32_valid_utf32.o $(LIB)
+pcre32_valid_utf32.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_valid_utf32.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_valid_utf32.c -o pcre32_valid_utf32.o $(LIB)
 
-pcre32_version.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_version.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_version.c -o pcre32_version.o $(LIB)
+pcre32_version.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_version.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_version.c -o pcre32_version.o $(LIB)
 
-pcre32_xclass.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_xclass.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_xclass.c -o pcre32_xclass.o $(LIB)
+pcre32_xclass.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_xclass.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre32_xclass.c -o pcre32_xclass.o $(LIB)
 
-pcreposix.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcreposix.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcreposix.c -o pcreposix.o $(LIB)
+pcreposix.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcreposix.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcreposix.c -o pcreposix.o $(LIB)
 
-pcre_byte_order.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_byte_order.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_byte_order.c -o pcre_byte_order.o $(LIB)
+pcre_byte_order.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_byte_order.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_byte_order.c -o pcre_byte_order.o $(LIB)
 
-pcre_chartables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_chartables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_chartables.c -o pcre_chartables.o $(LIB)
+pcre_chartables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_chartables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_chartables.c -o pcre_chartables.o $(LIB)
 
-pcre_compile.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_compile.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_compile.c -o pcre_compile.o $(LIB)
+pcre_compile.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_compile.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_compile.c -o pcre_compile.o $(LIB)
 
-pcre_config.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_config.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_config.c -o pcre_config.o $(LIB)
+pcre_config.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_config.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_config.c -o pcre_config.o $(LIB)
 
-pcre_dfa_exec.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_dfa_exec.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_dfa_exec.c -o pcre_dfa_exec.o $(LIB)
+pcre_dfa_exec.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_dfa_exec.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_dfa_exec.c -o pcre_dfa_exec.o $(LIB)
 
-pcre_exec.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_exec.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_exec.c -o pcre_exec.o $(LIB)
+pcre_exec.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_exec.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_exec.c -o pcre_exec.o $(LIB)
 
-pcre_fullinfo.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_fullinfo.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_fullinfo.c -o pcre_fullinfo.o $(LIB)
+pcre_fullinfo.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_fullinfo.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_fullinfo.c -o pcre_fullinfo.o $(LIB)
 
-pcre_get.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_get.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_get.c -o pcre_get.o $(LIB)
+pcre_get.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_get.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_get.c -o pcre_get.o $(LIB)
 
-pcre_globals.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_globals.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_globals.c -o pcre_globals.o $(LIB)
+pcre_globals.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_globals.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_globals.c -o pcre_globals.o $(LIB)
 
-pcre_jit_compile.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_jit_compile.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_jit_compile.c -o pcre_jit_compile.o $(LIB)
+pcre_jit_compile.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_jit_compile.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_jit_compile.c -o pcre_jit_compile.o $(LIB)
 
-pcre_maketables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_maketables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_maketables.c -o pcre_maketables.o $(LIB)
+pcre_maketables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_maketables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_maketables.c -o pcre_maketables.o $(LIB)
 
-pcre_newline.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_newline.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_newline.c -o pcre_newline.o $(LIB)
+pcre_newline.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_newline.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_newline.c -o pcre_newline.o $(LIB)
 
-pcre_ord2utf8.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_ord2utf8.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_ord2utf8.c -o pcre_ord2utf8.o $(LIB)
+pcre_ord2utf8.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_ord2utf8.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_ord2utf8.c -o pcre_ord2utf8.o $(LIB)
 
-pcre_refcount.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_refcount.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_refcount.c -o pcre_refcount.o $(LIB)
+pcre_refcount.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_refcount.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_refcount.c -o pcre_refcount.o $(LIB)
 
-pcre_string_utils.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_string_utils.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_string_utils.c -o pcre_string_utils.o $(LIB)
+pcre_string_utils.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_string_utils.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_string_utils.c -o pcre_string_utils.o $(LIB)
 
-pcre_study.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_study.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_study.c -o pcre_study.o $(LIB)
+pcre_study.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_study.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_study.c -o pcre_study.o $(LIB)
 
-pcre_tables.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_tables.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_tables.c -o pcre_tables.o $(LIB)
+pcre_tables.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_tables.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_tables.c -o pcre_tables.o $(LIB)
 
-pcre_ucd.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_ucd.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_ucd.c -o pcre_ucd.o $(LIB)
+pcre_ucd.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_ucd.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_ucd.c -o pcre_ucd.o $(LIB)
 
-pcre_valid_utf8.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_valid_utf8.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_valid_utf8.c -o pcre_valid_utf8.o $(LIB)
+pcre_valid_utf8.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_valid_utf8.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_valid_utf8.c -o pcre_valid_utf8.o $(LIB)
 
-pcre_version.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_version.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_version.c -o pcre_version.o $(LIB)
+pcre_version.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_version.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_version.c -o pcre_version.o $(LIB)
 
-pcre_xclass.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_xclass.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_xclass.c -o pcre_xclass.o $(LIB)
+pcre_xclass.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_xclass.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\pcre-8.42\pcre_xclass.c -o pcre_xclass.o $(LIB)
 
-adler32.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\adler32.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\adler32.c -o adler32.o $(LIB)
+adler32.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\adler32.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\adler32.c -o adler32.o $(LIB)
 
-compress.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\compress.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\compress.c -o compress.o $(LIB)
+compress.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\compress.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\compress.c -o compress.o $(LIB)
 
-crc32_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\crc32.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\crc32.c -o crc32_.o $(LIB)
+crc32_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\crc32.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\crc32.c -o crc32_.o $(LIB)
 
-deflate.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\deflate.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\deflate.c -o deflate.o $(LIB)
+deflate.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\deflate.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\deflate.c -o deflate.o $(LIB)
 
-infback.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\infback.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\infback.c -o infback.o $(LIB)
+infback.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\infback.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\infback.c -o infback.o $(LIB)
 
-inffast.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inffast.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inffast.c -o inffast.o $(LIB)
+inffast.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inffast.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inffast.c -o inffast.o $(LIB)
 
-inflate.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inflate.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inflate.c -o inflate.o $(LIB)
+inflate.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inflate.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inflate.c -o inflate.o $(LIB)
 
-inftrees.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inftrees.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inftrees.c -o inftrees.o $(LIB)
+inftrees.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inftrees.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\inftrees.c -o inftrees.o $(LIB)
 
-trees.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\trees.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\trees.c -o trees.o $(LIB)
+trees.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\trees.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\trees.c -o trees.o $(LIB)
 
-uncompr.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\uncompr.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\uncompr.c -o uncompr.o $(LIB)
+uncompr.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\uncompr.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\uncompr.c -o uncompr.o $(LIB)
 
-zutil.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\zutil.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\zutil.c -o zutil.o $(LIB)
+zutil.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\zutil.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\project\thirdparty\zlib-1.2.11\zutil.c -o zutil.o $(LIB)
 
-array.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Array.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Array.cpp -o array.o $(LIB)
+array.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Array.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Array.cpp -o array.o $(LIB)
 
-dynamic.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Dynamic.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Dynamic.cpp -o dynamic.o $(LIB)
+dynamic.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Dynamic.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Dynamic.cpp -o dynamic.o $(LIB)
 
-enum.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Enum.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Enum.cpp -o enum.o $(LIB)
+enum.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Enum.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Enum.cpp -o enum.o $(LIB)
 
-hxcpp.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hxcpp.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hxcpp.cpp -o hxcpp.o $(LIB)
+hxcpp.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hxcpp.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hxcpp.cpp -o hxcpp.o $(LIB)
 
-math.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Math.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Math.cpp -o math.o $(LIB)
+math.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Math.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\Math.cpp -o math.o $(LIB)
 
-string_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\String.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\String.cpp -o string_.o $(LIB)
+string_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\String.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\String.cpp -o string_.o $(LIB)
 
-anon.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Anon.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Anon.cpp -o anon.o $(LIB)
+anon.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Anon.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Anon.cpp -o anon.o $(LIB)
 
-boot.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Boot.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Boot.cpp -o boot.o $(LIB)
+boot.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Boot.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Boot.cpp -o boot.o $(LIB)
 
-cffi.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\CFFI.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\CFFI.cpp -o cffi.o $(LIB)
+cffi.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\CFFI.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\CFFI.cpp -o cffi.o $(LIB)
 
-class.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Class.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Class.cpp -o class.o $(LIB)
+class.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Class.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Class.cpp -o class.o $(LIB)
 
-date_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Date.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Date.cpp -o date_.o $(LIB)
+date_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Date.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Date.cpp -o date_.o $(LIB)
 
-debug_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Debug.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Debug.cpp -o debug_.o $(LIB)
+debug_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Debug.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Debug.cpp -o debug_.o $(LIB)
 
-hash.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Hash.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Hash.cpp -o hash.o $(LIB)
+hash.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Hash.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Hash.cpp -o hash.o $(LIB)
 
-interface_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Interface.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Interface.cpp -o interface_.o $(LIB)
+interface_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Interface.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Interface.cpp -o interface_.o $(LIB)
 
-lib.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Lib.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Lib.cpp -o lib.o $(LIB)
+lib.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Lib.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Lib.cpp -o lib.o $(LIB)
 
-object.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Object.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Object.cpp -o object.o $(LIB)
+object.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Object.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Object.cpp -o object.o $(LIB)
 
-runlibs.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\RunLibs.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\RunLibs.cpp -o runlibs.o $(LIB)
+runlibs.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\RunLibs.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\RunLibs.cpp -o runlibs.o $(LIB)
 
-stdlibs.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\StdLibs.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\StdLibs.cpp -o stdlibs.o $(LIB)
+stdlibs.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\StdLibs.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\StdLibs.cpp -o stdlibs.o $(LIB)
 
-thread_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Thread.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Thread.cpp -o thread_.o $(LIB)
+thread_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Thread.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\Thread.cpp -o thread_.o $(LIB)
 
-gccommon.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\GcCommon.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\GcCommon.cpp -o gccommon.o $(LIB)
+gccommon.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\GcCommon.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\GcCommon.cpp -o gccommon.o $(LIB)
 
-gcregcapture.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\GcRegCapture.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\GcRegCapture.cpp -o gcregcapture.o $(LIB)
+gcregcapture.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\GcRegCapture.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\GcRegCapture.cpp -o gcregcapture.o $(LIB)
 
-immix.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\Immix.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\Immix.cpp -o immix.o $(LIB)
+immix.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\Immix.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\gc\Immix.cpp -o immix.o $(LIB)
 
-regexp_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\regexp\RegExp.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\regexp\RegExp.cpp -o regexp_.o $(LIB)
+regexp_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\regexp\RegExp.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\regexp\RegExp.cpp -o regexp_.o $(LIB)
 
-ssl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\ssl\SSL.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\ssl\SSL.cpp -o ssl.o $(LIB)
+ssl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\ssl\SSL.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\ssl\SSL.cpp -o ssl.o $(LIB)
 
-file__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\File.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\File.cpp -o file__.o $(LIB)
+file__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\File.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\File.cpp -o file__.o $(LIB)
 
-process_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Process.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Process.cpp -o process_.o $(LIB)
+process_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Process.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Process.cpp -o process_.o $(LIB)
 
-random_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Random.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Random.cpp -o random_.o $(LIB)
+random_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Random.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Random.cpp -o random_.o $(LIB)
 
-socket__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Socket.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Socket.cpp -o socket__.o $(LIB)
+socket__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Socket.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Socket.cpp -o socket__.o $(LIB)
 
-sys.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Sys.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Sys.cpp -o sys.o $(LIB)
+sys.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Sys.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\std\Sys.cpp -o sys.o $(LIB)
 
-zlib.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\zlib\ZLib.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\zlib\ZLib.cpp -o zlib.o $(LIB)
+zlib.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\zlib\ZLib.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\Kore\khacpp\src\hx\libs\zlib\ZLib.cpp -o zlib.o $(LIB)
 
-audio_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources\Kore\Audio.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources\Kore\Audio.cpp -o audio_.o $(LIB)
+audio_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources\Kore\Audio.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources\Kore\Audio.cpp -o audio_.o $(LIB)
 
-texttospeech.winrt.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources\Kore\TextToSpeech.winrt.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources\Kore\TextToSpeech.winrt.cpp -o texttospeech.winrt.o $(LIB)
+texttospeech.winrt.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources\Kore\TextToSpeech.winrt.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Audio3\A3onA2\Sources\Kore\TextToSpeech.winrt.cpp -o texttospeech.winrt.o $(LIB)
 
-computeimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ComputeImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ComputeImpl.cpp -o computeimpl.o $(LIB)
+computeimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ComputeImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ComputeImpl.cpp -o computeimpl.o $(LIB)
 
-indexbufferimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\IndexBufferImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\IndexBufferImpl.cpp -o indexbufferimpl.o $(LIB)
+indexbufferimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\IndexBufferImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\IndexBufferImpl.cpp -o indexbufferimpl.o $(LIB)
 
-opengl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\OpenGL.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\OpenGL.cpp -o opengl.o $(LIB)
+opengl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\OpenGL.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\OpenGL.cpp -o opengl.o $(LIB)
 
-openglwindow.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\OpenGLWindow.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\OpenGLWindow.cpp -o openglwindow.o $(LIB)
+openglwindow.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\OpenGLWindow.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\OpenGLWindow.cpp -o openglwindow.o $(LIB)
 
-pipelinestateimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\PipelineStateImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\PipelineStateImpl.cpp -o pipelinestateimpl.o $(LIB)
+pipelinestateimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\PipelineStateImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\PipelineStateImpl.cpp -o pipelinestateimpl.o $(LIB)
 
-rendertargetimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\RenderTargetImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\RenderTargetImpl.cpp -o rendertargetimpl.o $(LIB)
+rendertargetimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\RenderTargetImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\RenderTargetImpl.cpp -o rendertargetimpl.o $(LIB)
 
-shaderimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ShaderImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ShaderImpl.cpp -o shaderimpl.o $(LIB)
+shaderimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ShaderImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ShaderImpl.cpp -o shaderimpl.o $(LIB)
 
-shaderstoragebufferimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ShaderStorageBufferImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ShaderStorageBufferImpl.cpp -o shaderstoragebufferimpl.o $(LIB)
+shaderstoragebufferimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ShaderStorageBufferImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\ShaderStorageBufferImpl.cpp -o shaderstoragebufferimpl.o $(LIB)
 
-texturearrayimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\TextureArrayImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\TextureArrayImpl.cpp -o texturearrayimpl.o $(LIB)
+texturearrayimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\TextureArrayImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\TextureArrayImpl.cpp -o texturearrayimpl.o $(LIB)
 
-textureimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\TextureImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\TextureImpl.cpp -o textureimpl.o $(LIB)
+textureimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\TextureImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\TextureImpl.cpp -o textureimpl.o $(LIB)
 
-vertexbufferimpl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\VertexBufferImpl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\VertexBufferImpl.cpp -o vertexbufferimpl.o $(LIB)
+vertexbufferimpl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\VertexBufferImpl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\VertexBufferImpl.cpp -o vertexbufferimpl.o $(LIB)
 
-vrinterface_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\VrInterface.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\VrInterface.cpp -o vrinterface_.o $(LIB)
+vrinterface_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\VrInterface.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics4\OpenGL\Sources\Kore\VrInterface.cpp -o vrinterface_.o $(LIB)
 
-commandlist5impl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\CommandList5Impl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\CommandList5Impl.cpp -o commandlist5impl.o $(LIB)
+commandlist5impl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\CommandList5Impl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\CommandList5Impl.cpp -o commandlist5impl.o $(LIB)
 
-constantbuffer5impl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\ConstantBuffer5Impl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\ConstantBuffer5Impl.cpp -o constantbuffer5impl.o $(LIB)
+constantbuffer5impl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\ConstantBuffer5Impl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\ConstantBuffer5Impl.cpp -o constantbuffer5impl.o $(LIB)
 
-g5ong4.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\G5onG4.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\G5onG4.cpp -o g5ong4.o $(LIB)
+g5ong4.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\G5onG4.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\G5onG4.cpp -o g5ong4.o $(LIB)
 
-indexbuffer5impl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\IndexBuffer5Impl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\IndexBuffer5Impl.cpp -o indexbuffer5impl.o $(LIB)
+indexbuffer5impl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\IndexBuffer5Impl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\IndexBuffer5Impl.cpp -o indexbuffer5impl.o $(LIB)
 
-pipelinestate5impl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\PipelineState5Impl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\PipelineState5Impl.cpp -o pipelinestate5impl.o $(LIB)
+pipelinestate5impl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\PipelineState5Impl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\PipelineState5Impl.cpp -o pipelinestate5impl.o $(LIB)
 
-rendertarget5impl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\RenderTarget5Impl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\RenderTarget5Impl.cpp -o rendertarget5impl.o $(LIB)
+rendertarget5impl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\RenderTarget5Impl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\RenderTarget5Impl.cpp -o rendertarget5impl.o $(LIB)
 
-shader5impl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\Shader5Impl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\Shader5Impl.cpp -o shader5impl.o $(LIB)
+shader5impl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\Shader5Impl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\Shader5Impl.cpp -o shader5impl.o $(LIB)
 
-texture5impl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\Texture5Impl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\Texture5Impl.cpp -o texture5impl.o $(LIB)
+texture5impl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\Texture5Impl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\Texture5Impl.cpp -o texture5impl.o $(LIB)
 
-vertexbuffer5impl.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\VertexBuffer5Impl.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\VertexBuffer5Impl.cpp -o vertexbuffer5impl.o $(LIB)
+vertexbuffer5impl.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\VertexBuffer5Impl.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\Graphics5\G5onG4\Sources\Kore\VertexBuffer5Impl.cpp -o vertexbuffer5impl.o $(LIB)
 
-display_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Display.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Display.cpp -o display_.o $(LIB)
+display_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Display.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Display.cpp -o display_.o $(LIB)
 
-sound__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Sound.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Sound.cpp -o sound__.o $(LIB)
+sound__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Sound.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Sound.cpp -o sound__.o $(LIB)
 
-system_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\System.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\System.cpp -o system_.o $(LIB)
+system_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\System.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\System.cpp -o system_.o $(LIB)
 
-mouse_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Input\Mouse.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Input\Mouse.cpp -o mouse_.o $(LIB)
+mouse_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Input\Mouse.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\Pi\Sources\Kore\Input\Mouse.cpp -o mouse_.o $(LIB)
 
-event.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Event.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Event.cpp -o event.o $(LIB)
+event.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Event.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Event.cpp -o event.o $(LIB)
 
-mutex_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Mutex.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Mutex.cpp -o mutex_.o $(LIB)
+mutex_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Mutex.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Mutex.cpp -o mutex_.o $(LIB)
 
-semaphore.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Semaphore.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Semaphore.cpp -o semaphore.o $(LIB)
+semaphore.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Semaphore.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Semaphore.cpp -o semaphore.o $(LIB)
 
-thread__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Thread.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Thread.cpp -o thread__.o $(LIB)
+thread__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Thread.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\Thread.cpp -o thread__.o $(LIB)
 
-threadlocal.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\ThreadLocal.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\ThreadLocal.cpp -o threadlocal.o $(LIB)
+threadlocal.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\ThreadLocal.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Backends\System\POSIX\Sources\Kore\ThreadLocal.cpp -o threadlocal.o $(LIB)
 
-error__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\C\Kore\Error.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\C\Kore\Error.c -o error__.o $(LIB)
+error__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\C\Kore\Error.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\C\Kore\Error.c -o error__.o $(LIB)
 
-log_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\C\Kore\Log.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\C\Kore\Log.c -o log_.o $(LIB)
+log_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\C\Kore\Log.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\C\Kore\Log.c -o log_.o $(LIB)
 
-codestyle.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\CodeStyle.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\CodeStyle.cpp -o codestyle.o $(LIB)
+codestyle.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\CodeStyle.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\CodeStyle.cpp -o codestyle.o $(LIB)
 
-error___.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Error.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Error.cpp -o error___.o $(LIB)
+error___.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Error.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Error.cpp -o error___.o $(LIB)
 
-log__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Log.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Log.cpp -o log__.o $(LIB)
+log__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Log.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Log.cpp -o log__.o $(LIB)
 
-system__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\System.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\System.cpp -o system__.o $(LIB)
+system__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\System.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\System.cpp -o system__.o $(LIB)
 
-audio__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\Audio.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\Audio.cpp -o audio__.o $(LIB)
+audio__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\Audio.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\Audio.cpp -o audio__.o $(LIB)
 
-sound___.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\Sound.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\Sound.cpp -o sound___.o $(LIB)
+sound___.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\Sound.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\Sound.cpp -o sound___.o $(LIB)
 
-soundstream.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\SoundStream.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\SoundStream.cpp -o soundstream.o $(LIB)
+soundstream.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\SoundStream.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\SoundStream.cpp -o soundstream.o $(LIB)
 
-stb_vorbis.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\stb_vorbis.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\stb_vorbis.c -o stb_vorbis.o $(LIB)
+stb_vorbis.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\stb_vorbis.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio1\stb_vorbis.c -o stb_vorbis.o $(LIB)
 
-audio___.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio2\Audio.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio2\Audio.cpp -o audio___.o $(LIB)
+audio___.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio2\Audio.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio2\Audio.cpp -o audio___.o $(LIB)
 
-audio____.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio3\Audio.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio3\Audio.cpp -o audio____.o $(LIB)
+audio____.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio3\Audio.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Audio3\Audio.cpp -o audio____.o $(LIB)
 
-color.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Color.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Color.cpp -o color.o $(LIB)
+color.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Color.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Color.cpp -o color.o $(LIB)
 
-graphics______.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Graphics.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Graphics.cpp -o graphics______.o $(LIB)
+graphics______.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Graphics.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Graphics.cpp -o graphics______.o $(LIB)
 
-image_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Image.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Image.cpp -o image_.o $(LIB)
+image_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Image.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics1\Image.cpp -o image_.o $(LIB)
 
-graphics_______.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics2\Graphics.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics2\Graphics.cpp -o graphics_______.o $(LIB)
+graphics_______.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics2\Graphics.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics2\Graphics.cpp -o graphics_______.o $(LIB)
 
-kravur_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics2\Kravur.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics2\Kravur.cpp -o kravur_.o $(LIB)
+kravur_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics2\Kravur.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics2\Kravur.cpp -o kravur_.o $(LIB)
 
-graphics________.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics3\Graphics.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics3\Graphics.cpp -o graphics________.o $(LIB)
+graphics________.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics3\Graphics.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics3\Graphics.cpp -o graphics________.o $(LIB)
 
-texture.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics3\Texture.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics3\Texture.cpp -o texture.o $(LIB)
+texture.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics3\Texture.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics3\Texture.cpp -o texture.o $(LIB)
 
-graphics_________.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\Graphics.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\Graphics.cpp -o graphics_________.o $(LIB)
+graphics_________.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\Graphics.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\Graphics.cpp -o graphics_________.o $(LIB)
 
-pipelinestate__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\PipelineState.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\PipelineState.cpp -o pipelinestate__.o $(LIB)
+pipelinestate__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\PipelineState.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\PipelineState.cpp -o pipelinestate__.o $(LIB)
 
-texture_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\Texture.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\Texture.cpp -o texture_.o $(LIB)
+texture_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\Texture.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\Texture.cpp -o texture_.o $(LIB)
 
-texturearray.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\TextureArray.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\TextureArray.cpp -o texturearray.o $(LIB)
+texturearray.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\TextureArray.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics4\TextureArray.cpp -o texturearray.o $(LIB)
 
-commandlist_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\CommandList.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\CommandList.cpp -o commandlist_.o $(LIB)
+commandlist_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\CommandList.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\CommandList.cpp -o commandlist_.o $(LIB)
 
-constantbuffer.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\ConstantBuffer.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\ConstantBuffer.cpp -o constantbuffer.o $(LIB)
+constantbuffer.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\ConstantBuffer.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\ConstantBuffer.cpp -o constantbuffer.o $(LIB)
 
-graphics__________.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\Graphics.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\Graphics.cpp -o graphics__________.o $(LIB)
+graphics__________.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\Graphics.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\Graphics.cpp -o graphics__________.o $(LIB)
 
-pipelinestate___.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\PipelineState.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\PipelineState.cpp -o pipelinestate___.o $(LIB)
+pipelinestate___.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\PipelineState.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\PipelineState.cpp -o pipelinestate___.o $(LIB)
 
-texture__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\Texture.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\Texture.cpp -o texture__.o $(LIB)
+texture__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\Texture.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Graphics5\Texture.cpp -o texture__.o $(LIB)
 
-gamepad_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Gamepad.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Gamepad.cpp -o gamepad_.o $(LIB)
+gamepad_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Gamepad.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Gamepad.cpp -o gamepad_.o $(LIB)
 
-keyboard__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Keyboard.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Keyboard.cpp -o keyboard__.o $(LIB)
+keyboard__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Keyboard.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Keyboard.cpp -o keyboard__.o $(LIB)
 
-mouse__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Mouse.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Mouse.cpp -o mouse__.o $(LIB)
+mouse__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Mouse.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Mouse.cpp -o mouse__.o $(LIB)
 
-pen_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Pen.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Pen.cpp -o pen_.o $(LIB)
+pen_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Pen.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Pen.cpp -o pen_.o $(LIB)
 
-sensor_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Sensor.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Sensor.cpp -o sensor_.o $(LIB)
+sensor_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Sensor.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Sensor.cpp -o sensor_.o $(LIB)
 
-surface_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Surface.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Surface.cpp -o surface_.o $(LIB)
+surface_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Surface.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Input\Surface.cpp -o surface_.o $(LIB)
 
-bufferreader.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\BufferReader.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\BufferReader.cpp -o bufferreader.o $(LIB)
+bufferreader.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\BufferReader.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\BufferReader.cpp -o bufferreader.o $(LIB)
 
-filereader.winrt.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\FileReader.winrt.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\FileReader.winrt.cpp -o filereader.winrt.o $(LIB)
+filereader.winrt.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\FileReader.winrt.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\FileReader.winrt.cpp -o filereader.winrt.o $(LIB)
 
-filewriter.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\FileWriter.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\FileWriter.cpp -o filewriter.o $(LIB)
+filewriter.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\FileWriter.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\FileWriter.cpp -o filewriter.o $(LIB)
 
-reader_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\Reader.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\Reader.cpp -o reader_.o $(LIB)
+reader_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\Reader.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\Reader.cpp -o reader_.o $(LIB)
 
-writer.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\Writer.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\Writer.cpp -o writer.o $(LIB)
+writer.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\Writer.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\Writer.cpp -o writer.o $(LIB)
 
-lz4.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4.c -o lz4.o $(LIB)
+lz4.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4.c -o lz4.o $(LIB)
 
-lz4frame.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4frame.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4frame.c -o lz4frame.o $(LIB)
+lz4frame.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4frame.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4frame.c -o lz4frame.o $(LIB)
 
-lz4hc.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4hc.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4hc.c -o lz4hc.o $(LIB)
+lz4hc.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4hc.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\lz4hc.c -o lz4hc.o $(LIB)
 
-xxhash.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\xxhash.c
-	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\xxhash.c -o xxhash.o $(LIB)
+xxhash.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\xxhash.c
+	gcc  -O2 $(INC) $(DEF) $(CFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\IO\lz4\xxhash.c -o xxhash.o $(LIB)
 
-core.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Core.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Core.cpp -o core.o $(LIB)
+core.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Core.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Core.cpp -o core.o $(LIB)
 
-quaternion_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Quaternion.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Quaternion.cpp -o quaternion_.o $(LIB)
+quaternion_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Quaternion.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Quaternion.cpp -o quaternion_.o $(LIB)
 
-random__.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Random.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Random.cpp -o random__.o $(LIB)
+random__.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Random.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Math\Random.cpp -o random__.o $(LIB)
 
-connection.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Connection.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Connection.cpp -o connection.o $(LIB)
+connection.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Connection.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Connection.cpp -o connection.o $(LIB)
 
-http.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Http.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Http.cpp -o http.o $(LIB)
+http.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Http.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Http.cpp -o http.o $(LIB)
 
-socket___.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Socket.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Socket.cpp -o socket___.o $(LIB)
+socket___.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Socket.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Network\Socket.cpp -o socket___.o $(LIB)
 
-cameraimage.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\CameraImage.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\CameraImage.cpp -o cameraimage.o $(LIB)
+cameraimage.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\CameraImage.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\CameraImage.cpp -o cameraimage.o $(LIB)
 
-sensorstate_.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\SensorState.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\SensorState.cpp -o sensorstate_.o $(LIB)
+sensorstate_.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\SensorState.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\SensorState.cpp -o sensorstate_.o $(LIB)
 
-vrpose.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\VrPose.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\VrPose.cpp -o vrpose.o $(LIB)
+vrpose.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\VrPose.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\VrPose.cpp -o vrpose.o $(LIB)
 
-vrposestate.o: ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\VrPoseState.cpp
-	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\KodeStudio\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\VrPoseState.cpp -o vrposestate.o $(LIB)
+vrposestate.o: ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\VrPoseState.cpp
+	g++  -O2 $(INC) $(DEF) $(CPPFLAGS) -c ..\..\..\..\..\..\..\..\..\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Kore\Sources\Kore\Vr\VrPoseState.cpp -o vrposestate.o $(LIB)

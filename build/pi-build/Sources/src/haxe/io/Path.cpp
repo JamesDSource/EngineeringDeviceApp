@@ -5,8 +5,8 @@
 #include <hxinc/haxe/io/Path.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_e33ce1c4e90a8f57_260_addTrailingSlash,"haxe.io.Path","addTrailingSlash",0x8b4f8e69,"haxe.io.Path.addTrailingSlash","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Path.hx",260,0xf7627229)
-HX_LOCAL_STACK_FRAME(_hx_pos_e33ce1c4e90a8f57_285_removeTrailingSlashes,"haxe.io.Path","removeTrailingSlashes",0x2dc73462,"haxe.io.Path.removeTrailingSlashes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Path.hx",285,0xf7627229)
+HX_LOCAL_STACK_FRAME(_hx_pos_5c90517addb2d3b9_260_addTrailingSlash,"haxe.io.Path","addTrailingSlash",0x8b4f8e69,"haxe.io.Path.addTrailingSlash","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Path.hx",260,0x983e8f61)
+HX_LOCAL_STACK_FRAME(_hx_pos_5c90517addb2d3b9_285_removeTrailingSlashes,"haxe.io.Path","removeTrailingSlashes",0x2dc73462,"haxe.io.Path.removeTrailingSlashes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/haxe/io/Path.hx",285,0x983e8f61)
 namespace haxe{
 namespace io{
 
@@ -28,7 +28,7 @@ bool Path_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 ::String Path_obj::addTrailingSlash(::String path){
-            	HX_STACKFRAME(&_hx_pos_e33ce1c4e90a8f57_260_addTrailingSlash)
+            	HX_STACKFRAME(&_hx_pos_5c90517addb2d3b9_260_addTrailingSlash)
 HXLINE( 261)		if ((path.length == 0)) {
 HXLINE( 262)			return HX_("/",2f,00,00,00);
             		}
@@ -57,7 +57,7 @@ HXLINE( 265)		return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Path_obj,addTrailingSlash,return )
 
 ::String Path_obj::removeTrailingSlashes(::String path){
-            	HX_STACKFRAME(&_hx_pos_e33ce1c4e90a8f57_285_removeTrailingSlashes)
+            	HX_STACKFRAME(&_hx_pos_5c90517addb2d3b9_285_removeTrailingSlashes)
 HXLINE( 286)		while(true){
 HXLINE( 287)			 ::Dynamic _g = path.charCodeAt((path.length - 1));
 HXDLIN( 287)			if (hx::IsNull( _g )) {

@@ -8,12 +8,12 @@
 #include <hxinc/Std.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_ff5fb71f64c31d0d_27_new,"Date","new",0x9aa26240,"Date.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Date.hx",27,0xb2545c41)
-HX_LOCAL_STACK_FRAME(_hx_pos_ff5fb71f64c31d0d_57_fromTime,"Date","fromTime",0x44fd3cb7,"Date.fromTime","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Date.hx",57,0xb2545c41)
-HX_LOCAL_STACK_FRAME(_hx_pos_ff5fb71f64c31d0d_64_fromString,"Date","fromString",0x5ead97fb,"Date.fromString","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Date.hx",64,0xb2545c41)
+HX_DEFINE_STACK_FRAME(_hx_pos_9b2079699c010f76_27_new,"Date","new",0x9aa26240,"Date.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Date.hx",27,0xd211d009)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b2079699c010f76_57_fromTime,"Date","fromTime",0x44fd3cb7,"Date.fromTime","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Date.hx",57,0xd211d009)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b2079699c010f76_64_fromString,"Date","fromString",0x5ead97fb,"Date.fromString","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/Date.hx",64,0xd211d009)
 
 void Date_obj::__construct(int year,int month,int day,int hour,int min,int sec){
-            	HX_STACKFRAME(&_hx_pos_ff5fb71f64c31d0d_27_new)
+            	HX_STACKFRAME(&_hx_pos_9b2079699c010f76_27_new)
 HXDLIN(  27)		this->mSeconds =  ::__hxcpp_new_date(year,month,day,hour,min,sec);
             	}
 
@@ -33,7 +33,7 @@ bool Date_obj::_hx_isInstanceOf(int inClassId) {
 }
 
  ::Date Date_obj::fromTime(Float t){
-            	HX_GC_STACKFRAME(&_hx_pos_ff5fb71f64c31d0d_57_fromTime)
+            	HX_GC_STACKFRAME(&_hx_pos_9b2079699c010f76_57_fromTime)
 HXLINE(  58)		 ::Date result =  ::Date_obj::__alloc( HX_CTX ,0,0,0,0,0,0);
 HXLINE(  59)		result->mSeconds = (t * ((Float)0.001));
 HXLINE(  60)		return result;
@@ -43,7 +43,7 @@ HXLINE(  60)		return result;
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Date_obj,fromTime,return )
 
  ::Date Date_obj::fromString(::String s){
-            	HX_GC_STACKFRAME(&_hx_pos_ff5fb71f64c31d0d_64_fromString)
+            	HX_GC_STACKFRAME(&_hx_pos_9b2079699c010f76_64_fromString)
 HXDLIN(  64)		switch((int)(s.length)){
             			case (int)8: {
 HXLINE(  66)				::Array< ::String > k = s.split(HX_(":",3a,00,00,00));

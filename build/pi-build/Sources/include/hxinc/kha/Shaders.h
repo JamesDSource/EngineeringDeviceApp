@@ -54,18 +54,18 @@ class HXCPP_CLASS_ATTRIBUTES Shaders_obj : public hx::Object
 		::String __ToString() const { return HX_("Shaders",8e,a9,d7,2c); }
 
 		static void __boot();
-		static ::String painter_colored_fragData0;
-		static  ::kha::graphics4::FragmentShader painter_colored_frag;
 		static ::String painter_colored_vertData0;
 		static  ::kha::graphics4::VertexShader painter_colored_vert;
-		static ::String painter_image_fragData0;
-		static  ::kha::graphics4::FragmentShader painter_image_frag;
+		static ::String painter_colored_fragData0;
+		static  ::kha::graphics4::FragmentShader painter_colored_frag;
 		static ::String painter_image_vertData0;
 		static  ::kha::graphics4::VertexShader painter_image_vert;
-		static ::String painter_text_fragData0;
-		static  ::kha::graphics4::FragmentShader painter_text_frag;
 		static ::String painter_text_vertData0;
 		static  ::kha::graphics4::VertexShader painter_text_vert;
+		static ::String painter_image_fragData0;
+		static  ::kha::graphics4::FragmentShader painter_image_frag;
+		static ::String painter_text_fragData0;
+		static  ::kha::graphics4::FragmentShader painter_text_frag;
 		static ::String painter_video_fragData0;
 		static  ::kha::graphics4::FragmentShader painter_video_frag;
 		static ::String painter_video_vertData0;

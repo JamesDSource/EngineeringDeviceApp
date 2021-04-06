@@ -5,14 +5,14 @@
 #include <hxinc/cpp/vm/Mutex.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_35ac2ef3f0c07f34_28_new,"cpp.vm.Mutex","new",0xabb3ca05,"cpp.vm.Mutex.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Mutex.hx",28,0x2396a39b)
-HX_LOCAL_STACK_FRAME(_hx_pos_35ac2ef3f0c07f34_31_acquire,"cpp.vm.Mutex","acquire",0xc3527bfb,"cpp.vm.Mutex.acquire","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Mutex.hx",31,0x2396a39b)
-HX_LOCAL_STACK_FRAME(_hx_pos_35ac2ef3f0c07f34_37_release,"cpp.vm.Mutex","release",0x675bb5ec,"cpp.vm.Mutex.release","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Mutex.hx",37,0x2396a39b)
+HX_DEFINE_STACK_FRAME(_hx_pos_93451540d927e8bc_28_new,"cpp.vm.Mutex","new",0xabb3ca05,"cpp.vm.Mutex.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Mutex.hx",28,0xc472c0d3)
+HX_LOCAL_STACK_FRAME(_hx_pos_93451540d927e8bc_31_acquire,"cpp.vm.Mutex","acquire",0xc3527bfb,"cpp.vm.Mutex.acquire","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Mutex.hx",31,0xc472c0d3)
+HX_LOCAL_STACK_FRAME(_hx_pos_93451540d927e8bc_37_release,"cpp.vm.Mutex","release",0x675bb5ec,"cpp.vm.Mutex.release","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/vm/Mutex.hx",37,0xc472c0d3)
 namespace cpp{
 namespace vm{
 
 void Mutex_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_35ac2ef3f0c07f34_28_new)
+            	HX_STACKFRAME(&_hx_pos_93451540d927e8bc_28_new)
 HXDLIN(  28)		this->m =  ::__hxcpp_mutex_create();
             	}
 
@@ -32,7 +32,7 @@ bool Mutex_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void Mutex_obj::acquire(){
-            	HX_STACKFRAME(&_hx_pos_35ac2ef3f0c07f34_31_acquire)
+            	HX_STACKFRAME(&_hx_pos_93451540d927e8bc_31_acquire)
 HXDLIN(  31)		 ::__hxcpp_mutex_acquire(this->m);
             	}
 
@@ -40,7 +40,7 @@ HXDLIN(  31)		 ::__hxcpp_mutex_acquire(this->m);
 HX_DEFINE_DYNAMIC_FUNC0(Mutex_obj,acquire,(void))
 
 void Mutex_obj::release(){
-            	HX_STACKFRAME(&_hx_pos_35ac2ef3f0c07f34_37_release)
+            	HX_STACKFRAME(&_hx_pos_93451540d927e8bc_37_release)
 HXDLIN(  37)		 ::__hxcpp_mutex_release(this->m);
             	}
 

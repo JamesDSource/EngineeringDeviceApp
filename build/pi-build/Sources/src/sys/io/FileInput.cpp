@@ -20,15 +20,15 @@
 #include <hxinc/sys/io/FileSeek.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_b44393625cbeb751_32_new,"sys.io.FileInput","new",0x565591b9,"sys.io.FileInput.new","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/FileInput.hx",32,0x764efb08)
-HX_LOCAL_STACK_FRAME(_hx_pos_b44393625cbeb751_36_readByte,"sys.io.FileInput","readByte",0x25e0b585,"sys.io.FileInput.readByte","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/FileInput.hx",36,0x764efb08)
-HX_LOCAL_STACK_FRAME(_hx_pos_b44393625cbeb751_47_readBytes,"sys.io.FileInput","readBytes",0xfebe1f4e,"sys.io.FileInput.readBytes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/FileInput.hx",47,0x764efb08)
-HX_LOCAL_STACK_FRAME(_hx_pos_b44393625cbeb751_63_seek,"sys.io.FileInput","seek",0x37d7f1ff,"sys.io.FileInput.seek","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/FileInput.hx",63,0x764efb08)
+HX_DEFINE_STACK_FRAME(_hx_pos_0b931d05b2894261_32_new,"sys.io.FileInput","new",0x565591b9,"sys.io.FileInput.new","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/FileInput.hx",32,0xb44efad0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0b931d05b2894261_36_readByte,"sys.io.FileInput","readByte",0x25e0b585,"sys.io.FileInput.readByte","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/FileInput.hx",36,0xb44efad0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0b931d05b2894261_47_readBytes,"sys.io.FileInput","readBytes",0xfebe1f4e,"sys.io.FileInput.readBytes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/FileInput.hx",47,0xb44efad0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0b931d05b2894261_63_seek,"sys.io.FileInput","seek",0x37d7f1ff,"sys.io.FileInput.seek","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/FileInput.hx",63,0xb44efad0)
 namespace sys{
 namespace io{
 
 void FileInput_obj::__construct( ::Dynamic f){
-            	HX_STACKFRAME(&_hx_pos_b44393625cbeb751_32_new)
+            	HX_STACKFRAME(&_hx_pos_0b931d05b2894261_32_new)
 HXDLIN(  32)		this->_hx___f = f;
             	}
 
@@ -52,7 +52,7 @@ bool FileInput_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 int FileInput_obj::readByte(){
-            	HX_GC_STACKFRAME(&_hx_pos_b44393625cbeb751_36_readByte)
+            	HX_GC_STACKFRAME(&_hx_pos_0b931d05b2894261_36_readByte)
 HXDLIN(  36)		try {
             			HX_STACK_CATCHABLE( ::Dynamic, 0);
 HXLINE(  37)			return _hx_std_file_read_char(this->_hx___f);
@@ -77,7 +77,7 @@ HXLINE(  36)		return 0;
 
 
 int FileInput_obj::readBytes( ::haxe::io::Bytes s,int p,int l){
-            	HX_GC_STACKFRAME(&_hx_pos_b44393625cbeb751_47_readBytes)
+            	HX_GC_STACKFRAME(&_hx_pos_0b931d05b2894261_47_readBytes)
 HXDLIN(  47)		try {
             			HX_STACK_CATCHABLE( ::Dynamic, 0);
 HXLINE(  48)			return _hx_std_file_read(this->_hx___f,s->b,p,l);
@@ -102,7 +102,7 @@ HXLINE(  47)		return 0;
 
 
 void FileInput_obj::seek(int p, ::sys::io::FileSeek pos){
-            	HX_STACKFRAME(&_hx_pos_b44393625cbeb751_63_seek)
+            	HX_STACKFRAME(&_hx_pos_0b931d05b2894261_63_seek)
 HXDLIN(  63)		int _hx_tmp;
 HXDLIN(  63)		if (hx::IsEq( pos,::sys::io::FileSeek_obj::SeekBegin_dyn() )) {
 HXDLIN(  63)			_hx_tmp = 0;

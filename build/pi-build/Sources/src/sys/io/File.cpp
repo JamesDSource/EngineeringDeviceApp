@@ -14,8 +14,8 @@
 #include <hxinc/sys/io/FileInput.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_9ce805a134573d4d_33_getBytes,"sys.io.File","getBytes",0xbe457600,"sys.io.File.getBytes","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/File.hx",33,0x1116e94a)
-HX_LOCAL_STACK_FRAME(_hx_pos_9ce805a134573d4d_51_read,"sys.io.File","read",0x203d07e1,"sys.io.File.read","c:\\Users\\james\\Desktop\\KodeStudio\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/File.hx",51,0x1116e94a)
+HX_LOCAL_STACK_FRAME(_hx_pos_3adf901840687cc5_33_getBytes,"sys.io.File","getBytes",0xbe457600,"sys.io.File.getBytes","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/File.hx",33,0x6ba6fe82)
+HX_LOCAL_STACK_FRAME(_hx_pos_3adf901840687cc5_51_read,"sys.io.File","read",0x203d07e1,"sys.io.File.read","c:\\Program Files\\WindowsApps\\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\\resources\\app\\kodeExtensions\\kha\\Kha\\Tools\\haxe\\std/cpp/_std/sys/io/File.hx",51,0x6ba6fe82)
 namespace sys{
 namespace io{
 
@@ -37,7 +37,7 @@ bool File_obj::_hx_isInstanceOf(int inClassId) {
 }
 
  ::haxe::io::Bytes File_obj::getBytes(::String path){
-            	HX_STACKFRAME(&_hx_pos_9ce805a134573d4d_33_getBytes)
+            	HX_STACKFRAME(&_hx_pos_3adf901840687cc5_33_getBytes)
 HXLINE(  34)		::Array< unsigned char > data = _hx_std_file_contents_bytes(path);
 HXLINE(  35)		return ::haxe::io::Bytes_obj::ofData(data);
             	}
@@ -47,7 +47,7 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(File_obj,getBytes,return )
 
  ::sys::io::FileInput File_obj::read(::String path,hx::Null< bool >  __o_binary){
             		bool binary = __o_binary.Default(true);
-            	HX_GC_STACKFRAME(&_hx_pos_9ce805a134573d4d_51_read)
+            	HX_GC_STACKFRAME(&_hx_pos_3adf901840687cc5_51_read)
 HXDLIN(  51)		::String _hx_tmp;
 HXDLIN(  51)		if (binary) {
 HXDLIN(  51)			_hx_tmp = HX_("rb",b0,63,00,00);

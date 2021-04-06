@@ -6,7 +6,7 @@
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_STACK_FRAME(_hx_pos_ff5fb71f64c31d0d_27_new)
+HX_DECLARE_STACK_FRAME(_hx_pos_9b2079699c010f76_27_new)
 HX_DECLARE_CLASS0(Date)
 
 
@@ -37,7 +37,7 @@ class HXCPP_CLASS_ATTRIBUTES Date_obj : public hx::Object
 			Date_obj *__this = (Date_obj*)(hx::Ctx::alloc(_hx_ctx, sizeof(Date_obj), false, "Date"));
 			*(void **)__this = Date_obj::_hx_vtable;
 {
-            	HX_STACKFRAME(&_hx_pos_ff5fb71f64c31d0d_27_new)
+            	HX_STACKFRAME(&_hx_pos_9b2079699c010f76_27_new)
 HXDLIN(  27)		( ( ::Date)(__this) )->mSeconds =  ::__hxcpp_new_date(year,month,day,hour,min,sec);
             	}
 		
