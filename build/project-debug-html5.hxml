@@ -1,6 +1,6 @@
--cp c:\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Sources
--cp c:\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\HTML5
--cp c:\Users\jolen\OneDrive\Documents\GitHub\EngineeringDeviceApp\Sources
+-cp c:\Users\james\Desktop\KodeStudio\resources\app\kodeExtensions\kha\Kha\Sources
+-cp c:\Users\james\Desktop\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\HTML5
+-cp c:\Users\james\Desktop\School\PLTW Engineering\EngineeringApp\Sources
 -D sys_g1
 -D sys_g2
 -D sys_g3

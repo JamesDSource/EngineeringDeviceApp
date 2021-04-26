@@ -1,3 +1,5 @@
+import kha.input.Mouse;
+import kha.Color;
 import Origin.OriginPoint;
 import kha.math.Vector2;
 import kha.Framebuffer;
@@ -11,8 +13,16 @@ class Project {
 	private var masterDivision: DivisionRect;
 
 	private var toDoList: DivisionRect;
+	private var toolBar: DivisionRect;
+	private var calender: DivisionRect;
+	private var pomodoroTimer: DivisionRect;
+	private var meditation: DivisionRect;
+
+	private var leftMargin = 25;
 
 	private var font: kha.Font;
+
+	private var hoveringOver: Component = null;
 
  	public function new(windowWidth: Float, windowHeight: Float) {
 		 this.windowWidth = windowWidth;
@@ -20,13 +30,24 @@ class Project {
 	 }
 
 	public function init() {
-		masterDivision = new DivisionRect(new Vector2(0, 0), windowWidth, windowHeight);
+		masterDivision = new DivisionRect(new Vector2(0, 0), windowWidth, windowHeight, Color.Blue);
 		masterDivision.origin = new Vector2();
 
-		var tb = new Textbox(new Vector2(0, 0), "This is a text string<nl>with a new line");
-		masterDivision.addChild(tb);
+		toDoList = new DivisionRect(new Vector2(leftMargin, 25), 675, 220, Color.White);
+		toolBar = new DivisionRect(new Vector2(725, 25), 50, 220, Color.White);
+		calender = new DivisionRect(new Vector2(leftMargin, 270), 275, 185, Color.White);
+		pomodoroTimer = new DivisionRect(new Vector2(325, 270), 250, 185, Color.White);
+		meditation = new DivisionRect(new Vector2(600, 270), 175, 185, Color.White);
+
+		masterDivision.addChild(toDoList);
+		masterDivision.addChild(toolBar);
+		masterDivision.addChild(calender);
+		masterDivision.addChild(pomodoroTimer);
+		masterDivision.addChild(meditation);
 
 		font = kha.Assets.fonts.get("RobotoMono");
+
+		Mouse.get().notify(null, null, onMouseMove, null);
 	}
 	
 	public function update() {
@@ -40,6 +61,12 @@ class Project {
 			graphics.font = font;
 			masterDivision.draw(graphics);
 			graphics.end();
+		}
+	}
+
+	private function onMouseMove(x: Int, y: Int, cx: Int, cy: Int) {
+		if(x > 0 && y > 0 && x < windowWidth && y < windowHeight) {
+			hoveringOver = masterDivision.isOver(x, y);
 		}
 	}
 }
