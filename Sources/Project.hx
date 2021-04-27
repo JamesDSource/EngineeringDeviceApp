@@ -10,6 +10,8 @@ class Project {
 	public var windowWidth: Float;
 	public var windowHeight: Float;
 
+	public var navy = Color.fromBytes(51, 63, 88, 255);
+
 	private var masterDivision: DivisionRect;
 
 	private var toDoList: DivisionRect;
@@ -30,7 +32,7 @@ class Project {
 	 }
 
 	public function init() {
-		masterDivision = new DivisionRect(new Vector2(0, 0), windowWidth, windowHeight, Color.Blue);
+		masterDivision = new DivisionRect(new Vector2(0, 0), windowWidth, windowHeight, navy);
 		masterDivision.origin = new Vector2();
 
 		toDoList = new DivisionRect(new Vector2(leftMargin, 25), 675, 220, Color.White);

@@ -105,6 +105,9 @@ Lambda.array = function(it) {
 	return a;
 };
 var Project = function(windowWidth,windowHeight) {
+	this.hoveringOver = null;
+	this.leftMargin = 25;
+	this.navy = kha__$Color_Color_$Impl_$.fromBytes(51,63,88,255);
 	this.windowWidth = windowWidth;
 	this.windowHeight = windowHeight;
 };
@@ -113,14 +116,31 @@ Project.__name__ = true;
 Project.prototype = {
 	windowWidth: null
 	,windowHeight: null
+	,navy: null
 	,masterDivision: null
 	,toDoList: null
+	,toolBar: null
+	,calender: null
+	,pomodoroTimer: null
+	,meditation: null
+	,leftMargin: null
 	,font: null
+	,hoveringOver: null
 	,init: function() {
-		this.masterDivision = new components_DivisionRect(new kha_math_Vector2(0,0),this.windowWidth,this.windowHeight);
+		this.masterDivision = new components_DivisionRect(new kha_math_Vector2(0,0),this.windowWidth,this.windowHeight,this.navy);
 		this.masterDivision.origin = new kha_math_Vector2();
-		this.toDoList = new components_DivisionRect(new kha_math_Vector2(25,25),675,220);
+		this.toDoList = new components_DivisionRect(new kha_math_Vector2(this.leftMargin,25),675,220,-1);
+		this.toolBar = new components_DivisionRect(new kha_math_Vector2(725,25),50,220,-1);
+		this.calender = new components_DivisionRect(new kha_math_Vector2(this.leftMargin,270),275,185,-1);
+		this.pomodoroTimer = new components_DivisionRect(new kha_math_Vector2(325,270),250,185,-1);
+		this.meditation = new components_DivisionRect(new kha_math_Vector2(600,270),175,185,-1);
+		this.masterDivision.addChild(this.toDoList);
+		this.masterDivision.addChild(this.toolBar);
+		this.masterDivision.addChild(this.calender);
+		this.masterDivision.addChild(this.pomodoroTimer);
+		this.masterDivision.addChild(this.meditation);
 		this.font = kha_Assets.fonts.get("RobotoMono");
+		kha_input_Mouse.get().notify(null,null,$bind(this,this.onMouseMove),null);
 	}
 	,update: function() {
 	}
@@ -131,6 +151,11 @@ Project.prototype = {
 			graphics.set_font(this.font);
 			this.masterDivision.draw(graphics);
 			graphics.end();
+		}
+	}
+	,onMouseMove: function(x,y,cx,cy) {
+		if(x > 0 && y > 0 && x < this.windowWidth && y < this.windowHeight) {
+			this.hoveringOver = this.masterDivision.isOver(x,y);
 		}
 	}
 	,__class__: Project
@@ -311,11 +336,15 @@ components_Component.prototype = {
 	,isOver: null
 	,__class__: components_Component
 };
-var components_DivisionRect = function(position,width,height) {
+var components_DivisionRect = function(position,width,height,color) {
+	if(color == null) {
+		color = -16777216;
+	}
 	this.children = [];
 	this.position = position;
 	this.width = width;
 	this.height = height;
+	this.color = color;
 };
 $hxClasses["components.DivisionRect"] = components_DivisionRect;
 components_DivisionRect.__name__ = true;
@@ -326,27 +355,14 @@ components_DivisionRect.prototype = {
 	,width: null
 	,height: null
 	,children: null
+	,color: null
 	,draw: function(graphics) {
 		var _this = this.origin;
 		var vec = this.position;
 		var globalPos_x = _this.x + vec.x;
 		var globalPos_y = _this.y + vec.y;
-		graphics.fillRect(0,0,this.width,this.height);
-		graphics.set_color(-1);
-		graphics.drawRect(25,25,675,220);
-		graphics.fillRect(25,25,675,220);
-		graphics.set_color(-1);
-		graphics.drawRect(725,25,50,220);
-		graphics.fillRect(725,25,50,220);
-		graphics.set_color(-1);
-		graphics.drawRect(25,270,275,185);
-		graphics.fillRect(25,270,275,185);
-		graphics.set_color(-1);
-		graphics.drawRect(325,270,250,185);
-		graphics.fillRect(325,270,250,185);
-		graphics.set_color(-1);
-		graphics.drawRect(600,270,175,185);
-		graphics.fillRect(600,270,175,185);
+		graphics.set_color(this.color);
+		graphics.fillRect(globalPos_x,globalPos_y,this.width,this.height);
 		var _g = 0;
 		var _g1 = this.children;
 		while(_g < _g1.length) {
@@ -356,9 +372,24 @@ components_DivisionRect.prototype = {
 		}
 	}
 	,getBoundingBox: function() {
-		return { topLeft : null, bottomRight : null};
+		var _this = this.origin;
+		var vec = this.position;
+		var orgGlobal = new kha_math_Vector2(_this.x + vec.x,_this.y + vec.y);
+		var vec_x = this.width;
+		var vec_y = this.height;
+		return { topLeft : orgGlobal, bottomRight : new kha_math_Vector2(orgGlobal.x + vec_x,orgGlobal.y + vec_y)};
 	}
 	,isOver: function(x,y) {
+		var _g = 0;
+		var _g1 = this.children;
+		while(_g < _g1.length) {
+			var child = _g1[_g];
+			++_g;
+			var bounds = child.getBoundingBox();
+			if(x >= bounds.topLeft.x && x <= bounds.bottomRight.x && y >= bounds.topLeft.y && y <= bounds.bottomRight.y) {
+				return child.isOver(x,y);
+			}
+		}
 		return null;
 	}
 	,addChild: function(child) {
@@ -1609,13 +1640,38 @@ js_html__$ArrayBuffer_ArrayBufferCompat.sliceImpl = function(begin,end) {
 	return resultArray.buffer;
 };
 var kha__$Assets_ImageList = function() {
-	this.names = [];
+	this.names = ["EngineeringProject"];
+	this.EngineeringProjectDescription = { name : "EngineeringProject", original_height : 478, original_width : 798, files : ["EngineeringProject.png"], type : "image"};
+	this.EngineeringProjectName = "EngineeringProject";
+	this.EngineeringProject = null;
 };
 $hxClasses["kha._Assets.ImageList"] = kha__$Assets_ImageList;
 kha__$Assets_ImageList.__name__ = true;
 kha__$Assets_ImageList.prototype = {
 	get: function(name) {
 		return Reflect.field(this,name);
+	}
+	,EngineeringProject: null
+	,EngineeringProjectName: null
+	,EngineeringProjectDescription: null
+	,EngineeringProjectLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "EngineeringProjectLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadImage("EngineeringProject",function(image) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "EngineeringProjectLoad"});
+	}
+	,EngineeringProjectUnload: function() {
+		this.EngineeringProject.unload();
+		this.EngineeringProject = null;
 	}
 	,names: null
 	,__class__: kha__$Assets_ImageList
@@ -3633,21 +3689,21 @@ kha_Shaders.init = function() {
 	blobs4.push(kha_internal_BytesBlob.fromBytes(bytes9));
 	kha_Shaders.painter_text_frag = new kha_graphics4_FragmentShader(blobs4,["painter-text.frag.essl","painter-text-webgl2.frag.essl"]);
 	var blobs5 = [];
-	var data10 = Reflect.field(kha_Shaders,"painter_video_fragData" + 0);
+	var data10 = Reflect.field(kha_Shaders,"painter_text_vertData" + 0);
 	var bytes10 = haxe_Unserializer.run(data10);
 	blobs5.push(kha_internal_BytesBlob.fromBytes(bytes10));
-	var data11 = Reflect.field(kha_Shaders,"painter_video_fragData" + 1);
+	var data11 = Reflect.field(kha_Shaders,"painter_text_vertData" + 1);
 	var bytes11 = haxe_Unserializer.run(data11);
 	blobs5.push(kha_internal_BytesBlob.fromBytes(bytes11));
-	kha_Shaders.painter_video_frag = new kha_graphics4_FragmentShader(blobs5,["painter-video.frag.essl","painter-video-webgl2.frag.essl"]);
+	kha_Shaders.painter_text_vert = new kha_graphics4_VertexShader(blobs5,["painter-text.vert.essl","painter-text-webgl2.vert.essl"]);
 	var blobs6 = [];
-	var data12 = Reflect.field(kha_Shaders,"painter_text_vertData" + 0);
+	var data12 = Reflect.field(kha_Shaders,"painter_video_fragData" + 0);
 	var bytes12 = haxe_Unserializer.run(data12);
 	blobs6.push(kha_internal_BytesBlob.fromBytes(bytes12));
-	var data13 = Reflect.field(kha_Shaders,"painter_text_vertData" + 1);
+	var data13 = Reflect.field(kha_Shaders,"painter_video_fragData" + 1);
 	var bytes13 = haxe_Unserializer.run(data13);
 	blobs6.push(kha_internal_BytesBlob.fromBytes(bytes13));
-	kha_Shaders.painter_text_vert = new kha_graphics4_VertexShader(blobs6,["painter-text.vert.essl","painter-text-webgl2.vert.essl"]);
+	kha_Shaders.painter_video_frag = new kha_graphics4_FragmentShader(blobs6,["painter-video.frag.essl","painter-video-webgl2.frag.essl"]);
 	var blobs7 = [];
 	var data14 = Reflect.field(kha_Shaders,"painter_video_vertData" + 0);
 	var bytes14 = haxe_Unserializer.run(data14);
@@ -20680,22 +20736,22 @@ kha_Scheduler.timeWarpSaveTime = 10.0;
 kha_Scheduler.DIF_COUNT = 3;
 kha_Scheduler.maxframetime = 0.5;
 kha_Scheduler.startTime = 0;
-kha_Shaders.painter_colored_fragData0 = "s198:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdmFyeWluZyBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9GcmFnRGF0YVswXSA9IGZyYWdtZW50Q29sb3I7Cn0KCg";
-kha_Shaders.painter_colored_fragData1 = "s223:I3ZlcnNpb24gMzAwIGVzCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOwppbiBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBGcmFnQ29sb3IgPSBmcmFnbWVudENvbG9yOwp9Cgo";
-kha_Shaders.painter_colored_vertData0 = "s331:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgZnJhZ21lbnRDb2xvcjsKYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9Qb3NpdGlvbiA9IHByb2plY3Rpb25NYXRyaXggKiB2ZWM0KHZlcnRleFBvc2l0aW9uLCAxLjApOwogICAgZnJhZ21lbnRDb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
-kha_Shaders.painter_colored_vertData1 = "s311:I3ZlcnNpb24gMzAwIGVzCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmluIHZlYzMgdmVydGV4UG9zaXRpb247Cm91dCB2ZWM0IGZyYWdtZW50Q29sb3I7CmluIHZlYzQgdmVydGV4Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9Qb3NpdGlvbiA9IHByb2plY3Rpb25NYXRyaXggKiB2ZWM0KHZlcnRleFBvc2l0aW9uLCAxLjApOwogICAgZnJhZ21lbnRDb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
-kha_Shaders.painter_image_fragData0 = "s471:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKdmFyeWluZyBoaWdocCB2ZWMyIHRleENvb3JkOwp2YXJ5aW5nIGhpZ2hwIHZlYzQgY29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBoaWdocCB2ZWM0IHRleGNvbG9yID0gdGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpICogY29sb3I7CiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7CiAgICB0ZXhjb2xvciA9IHZlYzQoXzMyLngsIF8zMi55LCBfMzIueiwgdGV4Y29sb3Iudyk7CiAgICBnbF9GcmFnRGF0YVswXSA9IHRleGNvbG9yOwp9Cgo";
-kha_Shaders.painter_image_fragData1 = "s487:I3ZlcnNpb24gMzAwIGVzCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsKaW4gaGlnaHAgdmVjNCBjb2xvcjsKb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOwoKdm9pZCBtYWluKCkKewogICAgaGlnaHAgdmVjNCB0ZXhjb2xvciA9IHRleHR1cmUodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsKICAgIGhpZ2hwIHZlYzMgXzMyID0gdGV4Y29sb3IueHl6ICogY29sb3IudzsKICAgIHRleGNvbG9yID0gdmVjNChfMzIueCwgXzMyLnksIF8zMi56LCB0ZXhjb2xvci53KTsKICAgIEZyYWdDb2xvciA9IHRleGNvbG9yOwp9Cgo";
-kha_Shaders.painter_image_vertData0 = "s415:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgY29sb3I7CmF0dHJpYnV0ZSB2ZWM0IHZlcnRleENvbG9yOwoKdm9pZCBtYWluKCkKewogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsKICAgIHRleENvb3JkID0gdGV4UG9zaXRpb247CiAgICBjb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
-kha_Shaders.painter_image_vertData1 = "s380:I3ZlcnNpb24gMzAwIGVzCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmluIHZlYzMgdmVydGV4UG9zaXRpb247Cm91dCB2ZWMyIHRleENvb3JkOwppbiB2ZWMyIHRleFBvc2l0aW9uOwpvdXQgdmVjNCBjb2xvcjsKaW4gdmVjNCB2ZXJ0ZXhDb2xvcjsKCnZvaWQgbWFpbigpCnsKICAgIGdsX1Bvc2l0aW9uID0gcHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCk7CiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOwogICAgY29sb3IgPSB2ZXJ0ZXhDb2xvcjsKfQoK";
-kha_Shaders.painter_text_fragData0 = "s351:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKdmFyeWluZyBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7CnZhcnlpbmcgaGlnaHAgdmVjMiB0ZXhDb29yZDsKCnZvaWQgbWFpbigpCnsKICAgIGdsX0ZyYWdEYXRhWzBdID0gdmVjNChmcmFnbWVudENvbG9yLnh5eiwgdGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpLnggKiBmcmFnbWVudENvbG9yLncpOwp9Cgo";
-kha_Shaders.painter_text_fragData1 = "s367:I3ZlcnNpb24gMzAwIGVzCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOwppbiBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7CmluIGhpZ2hwIHZlYzIgdGV4Q29vcmQ7Cgp2b2lkIG1haW4oKQp7CiAgICBGcmFnQ29sb3IgPSB2ZWM0KGZyYWdtZW50Q29sb3IueHl6LCB0ZXh0dXJlKHRleCwgdGV4Q29vcmQpLnggKiBmcmFnbWVudENvbG9yLncpOwp9Cgo";
-kha_Shaders.painter_video_fragData0 = "s471:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKdmFyeWluZyBoaWdocCB2ZWMyIHRleENvb3JkOwp2YXJ5aW5nIGhpZ2hwIHZlYzQgY29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBoaWdocCB2ZWM0IHRleGNvbG9yID0gdGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpICogY29sb3I7CiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7CiAgICB0ZXhjb2xvciA9IHZlYzQoXzMyLngsIF8zMi55LCBfMzIueiwgdGV4Y29sb3Iudyk7CiAgICBnbF9GcmFnRGF0YVswXSA9IHRleGNvbG9yOwp9Cgo";
-kha_Shaders.painter_video_fragData1 = "s487:I3ZlcnNpb24gMzAwIGVzCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsKaW4gaGlnaHAgdmVjNCBjb2xvcjsKb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOwoKdm9pZCBtYWluKCkKewogICAgaGlnaHAgdmVjNCB0ZXhjb2xvciA9IHRleHR1cmUodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsKICAgIGhpZ2hwIHZlYzMgXzMyID0gdGV4Y29sb3IueHl6ICogY29sb3IudzsKICAgIHRleGNvbG9yID0gdmVjNChfMzIueCwgXzMyLnksIF8zMi56LCB0ZXhjb2xvci53KTsKICAgIEZyYWdDb2xvciA9IHRleGNvbG9yOwp9Cgo";
-kha_Shaders.painter_text_vertData0 = "s436:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgZnJhZ21lbnRDb2xvcjsKYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9Qb3NpdGlvbiA9IHByb2plY3Rpb25NYXRyaXggKiB2ZWM0KHZlcnRleFBvc2l0aW9uLCAxLjApOwogICAgdGV4Q29vcmQgPSB0ZXhQb3NpdGlvbjsKICAgIGZyYWdtZW50Q29sb3IgPSB2ZXJ0ZXhDb2xvcjsKfQoK";
-kha_Shaders.painter_text_vertData1 = "s402:I3ZlcnNpb24gMzAwIGVzCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmluIHZlYzMgdmVydGV4UG9zaXRpb247Cm91dCB2ZWMyIHRleENvb3JkOwppbiB2ZWMyIHRleFBvc2l0aW9uOwpvdXQgdmVjNCBmcmFnbWVudENvbG9yOwppbiB2ZWM0IHZlcnRleENvbG9yOwoKdm9pZCBtYWluKCkKewogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsKICAgIHRleENvb3JkID0gdGV4UG9zaXRpb247CiAgICBmcmFnbWVudENvbG9yID0gdmVydGV4Q29sb3I7Cn0KCg";
-kha_Shaders.painter_video_vertData0 = "s415:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgY29sb3I7CmF0dHJpYnV0ZSB2ZWM0IHZlcnRleENvbG9yOwoKdm9pZCBtYWluKCkKewogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsKICAgIHRleENvb3JkID0gdGV4UG9zaXRpb247CiAgICBjb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
-kha_Shaders.painter_video_vertData1 = "s380:I3ZlcnNpb24gMzAwIGVzCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmluIHZlYzMgdmVydGV4UG9zaXRpb247Cm91dCB2ZWMyIHRleENvb3JkOwppbiB2ZWMyIHRleFBvc2l0aW9uOwpvdXQgdmVjNCBjb2xvcjsKaW4gdmVjNCB2ZXJ0ZXhDb2xvcjsKCnZvaWQgbWFpbigpCnsKICAgIGdsX1Bvc2l0aW9uID0gcHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCk7CiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOwogICAgY29sb3IgPSB2ZXJ0ZXhDb2xvcjsKfQoK";
+kha_Shaders.painter_colored_fragData0 = "s212:I3ZlcnNpb24gMTAwDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnZhcnlpbmcgaGlnaHAgdmVjNCBmcmFnbWVudENvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGdsX0ZyYWdEYXRhWzBdID0gZnJhZ21lbnRDb2xvcjsNCn0NCg0K";
+kha_Shaders.painter_colored_fragData1 = "s239:I3ZlcnNpb24gMzAwIGVzDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCm91dCBoaWdocCB2ZWM0IEZyYWdDb2xvcjsNCmluIGhpZ2hwIHZlYzQgZnJhZ21lbnRDb2xvcjsNCg0Kdm9pZCBtYWluKCkNCnsNCiAgICBGcmFnQ29sb3IgPSBmcmFnbWVudENvbG9yOw0KfQ0KDQo";
+kha_Shaders.painter_colored_vertData0 = "s350:I3ZlcnNpb24gMTAwDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQphdHRyaWJ1dGUgdmVjMyB2ZXJ0ZXhQb3NpdGlvbjsNCnZhcnlpbmcgdmVjNCBmcmFnbWVudENvbG9yOw0KYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICBmcmFnbWVudENvbG9yID0gdmVydGV4Q29sb3I7DQp9DQoNCg";
+kha_Shaders.painter_colored_vertData1 = "s330:I3ZlcnNpb24gMzAwIGVzDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQppbiB2ZWMzIHZlcnRleFBvc2l0aW9uOw0Kb3V0IHZlYzQgZnJhZ21lbnRDb2xvcjsNCmluIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICBmcmFnbWVudENvbG9yID0gdmVydGV4Q29sb3I7DQp9DQoNCg";
+kha_Shaders.painter_image_fragData0 = "s494:I3ZlcnNpb24gMTAwDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KdmFyeWluZyBoaWdocCB2ZWMyIHRleENvb3JkOw0KdmFyeWluZyBoaWdocCB2ZWM0IGNvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGhpZ2hwIHZlYzQgdGV4Y29sb3IgPSB0ZXh0dXJlMkQodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsNCiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7DQogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOw0KICAgIGdsX0ZyYWdEYXRhWzBdID0gdGV4Y29sb3I7DQp9DQoNCg";
+kha_Shaders.painter_image_fragData1 = "s511:I3ZlcnNpb24gMzAwIGVzDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsNCmluIGhpZ2hwIHZlYzQgY29sb3I7DQpvdXQgaGlnaHAgdmVjNCBGcmFnQ29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgaGlnaHAgdmVjNCB0ZXhjb2xvciA9IHRleHR1cmUodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsNCiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7DQogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOw0KICAgIEZyYWdDb2xvciA9IHRleGNvbG9yOw0KfQ0KDQo";
+kha_Shaders.painter_image_vertData0 = "s438:I3ZlcnNpb24gMTAwDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQphdHRyaWJ1dGUgdmVjMyB2ZXJ0ZXhQb3NpdGlvbjsNCnZhcnlpbmcgdmVjMiB0ZXhDb29yZDsNCmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOw0KdmFyeWluZyB2ZWM0IGNvbG9yOw0KYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOw0KICAgIGNvbG9yID0gdmVydGV4Q29sb3I7DQp9DQoNCg";
+kha_Shaders.painter_image_vertData1 = "s403:I3ZlcnNpb24gMzAwIGVzDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQppbiB2ZWMzIHZlcnRleFBvc2l0aW9uOw0Kb3V0IHZlYzIgdGV4Q29vcmQ7DQppbiB2ZWMyIHRleFBvc2l0aW9uOw0Kb3V0IHZlYzQgY29sb3I7DQppbiB2ZWM0IHZlcnRleENvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGdsX1Bvc2l0aW9uID0gcHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCk7DQogICAgdGV4Q29vcmQgPSB0ZXhQb3NpdGlvbjsNCiAgICBjb2xvciA9IHZlcnRleENvbG9yOw0KfQ0KDQo";
+kha_Shaders.painter_text_fragData0 = "s370:I3ZlcnNpb24gMTAwDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KdmFyeWluZyBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7DQp2YXJ5aW5nIGhpZ2hwIHZlYzIgdGV4Q29vcmQ7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfRnJhZ0RhdGFbMF0gPSB2ZWM0KGZyYWdtZW50Q29sb3IueHl6LCB0ZXh0dXJlMkQodGV4LCB0ZXhDb29yZCkueCAqIGZyYWdtZW50Q29sb3Iudyk7DQp9DQoNCg";
+kha_Shaders.painter_text_fragData1 = "s387:I3ZlcnNpb24gMzAwIGVzDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0Kb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOw0KaW4gaGlnaHAgdmVjNCBmcmFnbWVudENvbG9yOw0KaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsNCg0Kdm9pZCBtYWluKCkNCnsNCiAgICBGcmFnQ29sb3IgPSB2ZWM0KGZyYWdtZW50Q29sb3IueHl6LCB0ZXh0dXJlKHRleCwgdGV4Q29vcmQpLnggKiBmcmFnbWVudENvbG9yLncpOw0KfQ0KDQo";
+kha_Shaders.painter_text_vertData0 = "s459:I3ZlcnNpb24gMTAwDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQphdHRyaWJ1dGUgdmVjMyB2ZXJ0ZXhQb3NpdGlvbjsNCnZhcnlpbmcgdmVjMiB0ZXhDb29yZDsNCmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOw0KdmFyeWluZyB2ZWM0IGZyYWdtZW50Q29sb3I7DQphdHRyaWJ1dGUgdmVjNCB2ZXJ0ZXhDb2xvcjsNCg0Kdm9pZCBtYWluKCkNCnsNCiAgICBnbF9Qb3NpdGlvbiA9IHByb2plY3Rpb25NYXRyaXggKiB2ZWM0KHZlcnRleFBvc2l0aW9uLCAxLjApOw0KICAgIHRleENvb3JkID0gdGV4UG9zaXRpb247DQogICAgZnJhZ21lbnRDb2xvciA9IHZlcnRleENvbG9yOw0KfQ0KDQo";
+kha_Shaders.painter_text_vertData1 = "s424:I3ZlcnNpb24gMzAwIGVzDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQppbiB2ZWMzIHZlcnRleFBvc2l0aW9uOw0Kb3V0IHZlYzIgdGV4Q29vcmQ7DQppbiB2ZWMyIHRleFBvc2l0aW9uOw0Kb3V0IHZlYzQgZnJhZ21lbnRDb2xvcjsNCmluIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOw0KICAgIGZyYWdtZW50Q29sb3IgPSB2ZXJ0ZXhDb2xvcjsNCn0NCg0K";
+kha_Shaders.painter_video_fragData0 = "s494:I3ZlcnNpb24gMTAwDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KdmFyeWluZyBoaWdocCB2ZWMyIHRleENvb3JkOw0KdmFyeWluZyBoaWdocCB2ZWM0IGNvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGhpZ2hwIHZlYzQgdGV4Y29sb3IgPSB0ZXh0dXJlMkQodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsNCiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7DQogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOw0KICAgIGdsX0ZyYWdEYXRhWzBdID0gdGV4Y29sb3I7DQp9DQoNCg";
+kha_Shaders.painter_video_fragData1 = "s511:I3ZlcnNpb24gMzAwIGVzDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsNCmluIGhpZ2hwIHZlYzQgY29sb3I7DQpvdXQgaGlnaHAgdmVjNCBGcmFnQ29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgaGlnaHAgdmVjNCB0ZXhjb2xvciA9IHRleHR1cmUodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsNCiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7DQogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOw0KICAgIEZyYWdDb2xvciA9IHRleGNvbG9yOw0KfQ0KDQo";
+kha_Shaders.painter_video_vertData0 = "s438:I3ZlcnNpb24gMTAwDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQphdHRyaWJ1dGUgdmVjMyB2ZXJ0ZXhQb3NpdGlvbjsNCnZhcnlpbmcgdmVjMiB0ZXhDb29yZDsNCmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOw0KdmFyeWluZyB2ZWM0IGNvbG9yOw0KYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOw0KICAgIGNvbG9yID0gdmVydGV4Q29sb3I7DQp9DQoNCg";
+kha_Shaders.painter_video_vertData1 = "s403:I3ZlcnNpb24gMzAwIGVzDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQppbiB2ZWMzIHZlcnRleFBvc2l0aW9uOw0Kb3V0IHZlYzIgdGV4Q29vcmQ7DQppbiB2ZWMyIHRleFBvc2l0aW9uOw0Kb3V0IHZlYzQgY29sb3I7DQppbiB2ZWM0IHZlcnRleENvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGdsX1Bvc2l0aW9uID0gcHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCk7DQogICAgdGV4Q29vcmQgPSB0ZXhQb3NpdGlvbjsNCiAgICBjb2xvciA9IHZlcnRleENvbG9yOw0KfQ0KDQo";
 kha_System.renderListeners = [];
 kha_System.foregroundListeners = [];
 kha_System.resumeListeners = [];
