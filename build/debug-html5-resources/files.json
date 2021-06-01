@@ -1,6 +1,13 @@
 {
 	"files": [
 		{
+			"name": "BackToWork",
+			"files": [
+				"BackToWork.ogg"
+			],
+			"type": "sound"
+		},
+		{
 			"name": "EngineeringProject",
 			"files": [
 				"EngineeringProject.png"
@@ -10,11 +17,72 @@
 			"original_height": 478
 		},
 		{
+			"name": "Pause",
+			"files": [
+				"Pause.png"
+			],
+			"type": "image",
+			"original_width": 32,
+			"original_height": 32
+		},
+		{
+			"name": "Play",
+			"files": [
+				"Play.png"
+			],
+			"type": "image",
+			"original_width": 32,
+			"original_height": 32
+		},
+		{
 			"name": "RobotoMono",
 			"files": [
 				"RobotoMono.ttf"
 			],
 			"type": "font"
+		},
+		{
+			"name": "Reset",
+			"files": [
+				"Reset.png"
+			],
+			"type": "image",
+			"original_width": 32,
+			"original_height": 32
+		},
+		{
+			"name": "TakeABreak",
+			"files": [
+				"TakeABreak.ogg"
+			],
+			"type": "sound"
+		},
+		{
+			"name": "pencilicon",
+			"files": [
+				"pencilicon.png"
+			],
+			"type": "image",
+			"original_width": 171,
+			"original_height": 171
+		},
+		{
+			"name": "meditationicon",
+			"files": [
+				"meditationicon.png"
+			],
+			"type": "image",
+			"original_width": 121,
+			"original_height": 116
+		},
+		{
+			"name": "penciliconScaled",
+			"files": [
+				"penciliconScaled.png"
+			],
+			"type": "image",
+			"original_width": 50,
+			"original_height": 50
 		},
 		{
 			"name": "painter_colored_frag",
@@ -100,37 +168,6 @@
 			]
 		},
 		{
-			"name": "painter_image_frag",
-			"files": [
-				"painter-image.frag.essl",
-				"painter-image-webgl2.frag.essl"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "texCoord",
-					"type": "vec2"
-				},
-				{
-					"name": "color",
-					"type": "vec4"
-				}
-			],
-			"outputs": [
-				{
-					"name": "FragColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [
-				{
-					"name": "tex",
-					"type": "sampler2D"
-				}
-			],
-			"types": []
-		},
-		{
 			"name": "painter_image_vert",
 			"files": [
 				"painter-image.vert.essl",
@@ -214,6 +251,37 @@
 				{
 					"name": "texCoord",
 					"type": "vec2"
+				}
+			],
+			"outputs": [
+				{
+					"name": "FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			],
+			"types": []
+		},
+		{
+			"name": "painter_image_frag",
+			"files": [
+				"painter-image.frag.essl",
+				"painter-image-webgl2.frag.essl"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "color",
+					"type": "vec4"
 				}
 			],
 			"outputs": [

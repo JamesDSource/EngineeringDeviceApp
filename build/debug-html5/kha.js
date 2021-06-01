@@ -104,10 +104,104 @@ Lambda.array = function(it) {
 	}
 	return a;
 };
+var kha__$Color_Color_$Impl_$ = $hx_exports["kha"]["_Color"]["Color_Impl_"] = {};
+$hxClasses["kha._Color.Color_Impl_"] = kha__$Color_Color_$Impl_$;
+kha__$Color_Color_$Impl_$.__name__ = true;
+kha__$Color_Color_$Impl_$.fromValue = function(value) {
+	return kha__$Color_Color_$Impl_$._new(value);
+};
+kha__$Color_Color_$Impl_$.fromBytes = function(r,g,b,a) {
+	if(a == null) {
+		a = 255;
+	}
+	return kha__$Color_Color_$Impl_$._new(a << 24 | r << 16 | g << 8 | b);
+};
+kha__$Color_Color_$Impl_$.fromFloats = function(r,g,b,a) {
+	if(a == null) {
+		a = 1;
+	}
+	return kha__$Color_Color_$Impl_$._new((a * 255 | 0) << 24 | (r * 255 | 0) << 16 | (g * 255 | 0) << 8 | (b * 255 | 0));
+};
+kha__$Color_Color_$Impl_$.fromString = function(value) {
+	if((value.length == 7 || value.length == 9) && value.charCodeAt(0) == 35) {
+		var colorValue = Std.parseInt("0x" + HxOverrides.substr(value,1,null));
+		if(value.length == 7) {
+			colorValue += -16777216;
+		}
+		return kha__$Color_Color_$Impl_$._new(colorValue);
+	} else {
+		throw new js__$Boot_HaxeError("Invalid Color string: '" + value + "'");
+	}
+};
+kha__$Color_Color_$Impl_$._new = function(value) {
+	var this1 = value;
+	return this1;
+};
+kha__$Color_Color_$Impl_$.get_value = function(this1) {
+	return this1;
+};
+kha__$Color_Color_$Impl_$.set_value = function(this1,value) {
+	this1 = value;
+	return this1;
+};
+kha__$Color_Color_$Impl_$.get_Rb = function(this1) {
+	return (this1 & 16711680) >>> 16;
+};
+kha__$Color_Color_$Impl_$.get_Gb = function(this1) {
+	return (this1 & 65280) >>> 8;
+};
+kha__$Color_Color_$Impl_$.get_Bb = function(this1) {
+	return this1 & 255;
+};
+kha__$Color_Color_$Impl_$.get_Ab = function(this1) {
+	return this1 >>> 24;
+};
+kha__$Color_Color_$Impl_$.set_Rb = function(this1,i) {
+	this1 = this1 >>> 24 << 24 | i << 16 | (this1 & 65280) >>> 8 << 8 | this1 & 255;
+	return i;
+};
+kha__$Color_Color_$Impl_$.set_Gb = function(this1,i) {
+	this1 = this1 >>> 24 << 24 | (this1 & 16711680) >>> 16 << 16 | i << 8 | this1 & 255;
+	return i;
+};
+kha__$Color_Color_$Impl_$.set_Bb = function(this1,i) {
+	this1 = this1 >>> 24 << 24 | (this1 & 16711680) >>> 16 << 16 | (this1 & 65280) >>> 8 << 8 | i;
+	return i;
+};
+kha__$Color_Color_$Impl_$.set_Ab = function(this1,i) {
+	this1 = i << 24 | (this1 & 16711680) >>> 16 << 16 | (this1 & 65280) >>> 8 << 8 | this1 & 255;
+	return i;
+};
+kha__$Color_Color_$Impl_$.get_R = function(this1) {
+	return ((this1 & 16711680) >>> 16) * 0.00392156862745098;
+};
+kha__$Color_Color_$Impl_$.get_G = function(this1) {
+	return ((this1 & 65280) >>> 8) * 0.00392156862745098;
+};
+kha__$Color_Color_$Impl_$.get_B = function(this1) {
+	return (this1 & 255) * 0.00392156862745098;
+};
+kha__$Color_Color_$Impl_$.get_A = function(this1) {
+	return (this1 >>> 24) * 0.00392156862745098;
+};
+kha__$Color_Color_$Impl_$.set_R = function(this1,f) {
+	this1 = ((this1 >>> 24) * 0.00392156862745098 * 255 | 0) << 24 | (f * 255 | 0) << 16 | (((this1 & 65280) >>> 8) * 0.00392156862745098 * 255 | 0) << 8 | ((this1 & 255) * 0.00392156862745098 * 255 | 0);
+	return f;
+};
+kha__$Color_Color_$Impl_$.set_G = function(this1,f) {
+	this1 = ((this1 >>> 24) * 0.00392156862745098 * 255 | 0) << 24 | (((this1 & 16711680) >>> 16) * 0.00392156862745098 * 255 | 0) << 16 | (f * 255 | 0) << 8 | ((this1 & 255) * 0.00392156862745098 * 255 | 0);
+	return f;
+};
+kha__$Color_Color_$Impl_$.set_B = function(this1,f) {
+	this1 = ((this1 >>> 24) * 0.00392156862745098 * 255 | 0) << 24 | (((this1 & 16711680) >>> 16) * 0.00392156862745098 * 255 | 0) << 16 | (((this1 & 65280) >>> 8) * 0.00392156862745098 * 255 | 0) << 8 | (f * 255 | 0);
+	return f;
+};
+kha__$Color_Color_$Impl_$.set_A = function(this1,f) {
+	this1 = (f * 255 | 0) << 24 | (((this1 & 16711680) >>> 16) * 0.00392156862745098 * 255 | 0) << 16 | (((this1 & 65280) >>> 8) * 0.00392156862745098 * 255 | 0) << 8 | ((this1 & 255) * 0.00392156862745098 * 255 | 0);
+	return f;
+};
 var Project = function(windowWidth,windowHeight) {
-	this.hoveringOver = null;
 	this.leftMargin = 25;
-	this.navy = kha__$Color_Color_$Impl_$.fromBytes(51,63,88,255);
 	this.windowWidth = windowWidth;
 	this.windowHeight = windowHeight;
 };
@@ -116,33 +210,48 @@ Project.__name__ = true;
 Project.prototype = {
 	windowWidth: null
 	,windowHeight: null
-	,navy: null
 	,masterDivision: null
-	,toDoList: null
-	,toolBar: null
-	,calender: null
-	,pomodoroTimer: null
-	,meditation: null
+	,todoListDiv: null
+	,toolBarDiv: null
+	,calenderDiv: null
+	,pomodoroTimerDiv: null
+	,meditationDiv: null
 	,leftMargin: null
 	,font: null
-	,hoveringOver: null
 	,init: function() {
-		this.masterDivision = new components_DivisionRect(new kha_math_Vector2(0,0),this.windowWidth,this.windowHeight,this.navy);
+		this.masterDivision = new components_DivisionRect(new kha_math_Vector2(0,0),this.windowWidth,this.windowHeight,Project.NAVY);
 		this.masterDivision.origin = new kha_math_Vector2();
-		this.toDoList = new components_DivisionRect(new kha_math_Vector2(this.leftMargin,25),675,220,-1);
-		this.toolBar = new components_DivisionRect(new kha_math_Vector2(725,25),50,220,-1);
-		this.calender = new components_DivisionRect(new kha_math_Vector2(this.leftMargin,270),275,185,-1);
-		this.pomodoroTimer = new components_DivisionRect(new kha_math_Vector2(325,270),250,185,-1);
-		this.meditation = new components_DivisionRect(new kha_math_Vector2(600,270),175,185,-1);
-		this.masterDivision.addChild(this.toDoList);
-		this.masterDivision.addChild(this.toolBar);
-		this.masterDivision.addChild(this.calender);
-		this.masterDivision.addChild(this.pomodoroTimer);
-		this.masterDivision.addChild(this.meditation);
-		this.font = kha_Assets.fonts.get("RobotoMono");
-		kha_input_Mouse.get().notify(null,null,$bind(this,this.onMouseMove),null);
+		this.todoListDiv = new components_DivisionRect(new kha_math_Vector2(this.leftMargin,25),675,220,-1);
+		this.toolBarDiv = new components_DivisionRect(new kha_math_Vector2(725,25),50,220,-1);
+		this.calenderDiv = new components_DivisionRect(new kha_math_Vector2(this.leftMargin,270),275,185,-1);
+		this.pomodoroTimerDiv = new components_DivisionRect(new kha_math_Vector2(325,270),250,185,-1);
+		this.meditationDiv = new components_DivisionRect(new kha_math_Vector2(600,270),175,185,-1);
+		this.masterDivision.addChild(this.todoListDiv);
+		this.masterDivision.addChild(this.toolBarDiv);
+		this.masterDivision.addChild(this.calenderDiv);
+		this.masterDivision.addChild(this.pomodoroTimerDiv);
+		this.masterDivision.addChild(this.meditationDiv);
+		var listMargin = 8;
+		var list = new components_TodoList(new kha_math_Vector2(listMargin,listMargin),this.todoListDiv.width - listMargin * 2,this.todoListDiv.height - listMargin * 2,10,4);
+		this.todoListDiv.addChild(list);
+		var pencilIcon = kha_Assets.images.penciliconScaled;
+		var pencilSprite = new components_Sprite(new kha_math_Vector2(),pencilIcon);
+		this.toolBarDiv.addChild(pencilSprite);
+		var meditationIcon = kha_Assets.images.meditationicon;
+		var meditationSprite = new components_Sprite(new kha_math_Vector2(this.meditationDiv.width / 2,16),meditationIcon,OriginPoint.topCenter);
+		this.meditationDiv.addChild(meditationSprite);
+		var pomodoroTimer = new components_PomodoroTimer(new kha_math_Vector2(),this.pomodoroTimerDiv.width,this.pomodoroTimerDiv.height);
+		this.pomodoroTimerDiv.addChild(pomodoroTimer);
+		var dateDisplay = new components_Date(new kha_math_Vector2(this.calenderDiv.width / 2));
+		dateDisplay.setTextSize(32,13,28);
+		dateDisplay.originPoint = OriginPoint.topCenter;
+		this.calenderDiv.addChild(dateDisplay);
+		this.font = kha_Assets.fonts.RobotoMono;
+		kha_input_Mouse.get().notify($bind(this,this.onMouseClicked),null,$bind(this,this.onMouseMove),null);
 	}
 	,update: function() {
+		Timer.update();
+		this.masterDivision.update();
 	}
 	,render: function(frames) {
 		if(frames.length > 0) {
@@ -155,8 +264,11 @@ Project.prototype = {
 	}
 	,onMouseMove: function(x,y,cx,cy) {
 		if(x > 0 && y > 0 && x < this.windowWidth && y < this.windowHeight) {
-			this.hoveringOver = this.masterDivision.isOver(x,y);
+			Project.hoveringOver = this.masterDivision.isOver(x,y);
 		}
+	}
+	,onMouseClicked: function(mb,x,y) {
+		this.masterDivision.mouseClicked(mb,x,y,true);
 	}
 	,__class__: Project
 };
@@ -270,6 +382,119 @@ StringTools.endsWith = function(s,end) {
 		return false;
 	}
 };
+var TokenType = $hxEnums["TokenType"] = { __ename__ : true, __constructs__ : ["text","newLine"]
+	,text: {_hx_index:0,__enum__:"TokenType",toString:$estr}
+	,newLine: {_hx_index:1,__enum__:"TokenType",toString:$estr}
+};
+var Text = function() { };
+$hxClasses["Text"] = Text;
+Text.__name__ = true;
+Text.textSize = function(text,hSeperation,vSeperation,preGenTokens) {
+	var newLines = 0;
+	var longestLineLength = 0;
+	var tokens = preGenTokens != null ? preGenTokens : Text.getTokens(text);
+	var _g = 0;
+	while(_g < tokens.length) {
+		var token = tokens[_g];
+		++_g;
+		switch(token.type._hx_index) {
+		case 0:
+			var str = js_Boot.__cast(token.value , String);
+			if(str.length > longestLineLength) {
+				longestLineLength = str.length;
+			}
+			break;
+		case 1:
+			++newLines;
+			break;
+		}
+	}
+	return new kha_math_Vector2(longestLineLength * hSeperation,(newLines + 1) * vSeperation);
+};
+Text.drawText = function(graphics,text,position,hSeperation,vSeperation,origin) {
+	if(origin == null) {
+		origin = OriginPoint.topLeft;
+	}
+	var tokens = Text.getTokens(text);
+	var textSize = Text.textSize(text,hSeperation,vSeperation,tokens);
+	var offsets = Origin.getOriginOffset(origin,textSize);
+	var startingPos_x = position.x + offsets.x;
+	var startingPos_y = position.y + offsets.y;
+	var currentPos_x = startingPos_x;
+	var currentPos_y = startingPos_y;
+	var _g = 0;
+	while(_g < tokens.length) {
+		var token = tokens[_g];
+		++_g;
+		switch(token.type._hx_index) {
+		case 0:
+			var str = js_Boot.__cast(token.value , String);
+			var _g1 = 0;
+			var _g11 = str.length;
+			while(_g1 < _g11) {
+				var i = _g1++;
+				graphics.drawString(str.charAt(i),currentPos_x,currentPos_y);
+				currentPos_x += hSeperation;
+			}
+			break;
+		case 1:
+			currentPos_x = startingPos_x;
+			currentPos_y += vSeperation;
+			break;
+		}
+	}
+};
+Text.getTokens = function(text) {
+	var tokens = [];
+	var textReturn = "";
+	var i = -1;
+	while(i + 1 < text.length) {
+		++i;
+		var char = text.charAt(i);
+		textReturn += char;
+		if(char == "<") {
+			var peek = i;
+			var cmd = "";
+			while(peek < text.length) {
+				++peek;
+				if(text.charAt(peek) == ">") {
+					break;
+				} else {
+					cmd += text.charAt(peek);
+				}
+			}
+			i = peek;
+			if(cmd == "nl") {
+				tokens.push({ type : TokenType.newLine, value : null});
+			} else {
+				throw new js__$Boot_HaxeError("Unknown command");
+			}
+		} else {
+			var peek1 = i - 1;
+			var tokenString = "";
+			while(peek1 < text.length) if(peek1 + 1 < text.length) {
+				if(text.charAt(peek1 + 1) == "<") {
+					break;
+				} else {
+					++peek1;
+					tokenString += text.charAt(peek1);
+				}
+			} else {
+				++peek1;
+			}
+			i = peek1;
+			tokens.push({ type : TokenType.text, value : tokenString});
+		}
+	}
+	return tokens;
+};
+var Timer = function() { };
+$hxClasses["Timer"] = Timer;
+Timer.__name__ = true;
+Timer.update = function() {
+	Timer.delta = kha_Scheduler.time() - Timer.current;
+	Timer.current = kha_Scheduler.time();
+};
 var Type = function() { };
 $hxClasses["Type"] = Type;
 Type.__name__ = true;
@@ -334,8 +559,135 @@ components_Component.prototype = {
 	,draw: null
 	,getBoundingBox: null
 	,isOver: null
+	,mouseClicked: null
+	,update: null
 	,__class__: components_Component
 };
+var components_Textbox = function(position,text) {
+	this.vSeperation = 24;
+	this.hSeperation = 12;
+	this.fontSize = 24;
+	this.originPoint = OriginPoint.topLeft;
+	this.position = position;
+	this.setText(text);
+};
+$hxClasses["components.Textbox"] = components_Textbox;
+components_Textbox.__name__ = true;
+components_Textbox.__interfaces__ = [components_Component];
+components_Textbox.prototype = {
+	origin: null
+	,position: null
+	,originPoint: null
+	,text: null
+	,textSize: null
+	,fontSize: null
+	,hSeperation: null
+	,vSeperation: null
+	,setTextSize: function(fontSize,hSeperation,vSeperation) {
+		this.fontSize = fontSize;
+		this.hSeperation = hSeperation;
+		this.vSeperation = vSeperation;
+		this.setText(this.text);
+	}
+	,setText: function(text) {
+		this.text = text;
+		this.textSize = Text.textSize(text,this.hSeperation,this.vSeperation);
+	}
+	,getText: function() {
+		return this.text;
+	}
+	,draw: function(graphics) {
+		graphics.set_color(Project.NAVY);
+		graphics.set_fontSize(this.fontSize);
+		var _this = this.position;
+		var vec = this.origin;
+		Text.drawText(graphics,this.text,new kha_math_Vector2(_this.x + vec.x,_this.y + vec.y),this.hSeperation,this.vSeperation,this.originPoint);
+	}
+	,getBoundingBox: function() {
+		return null;
+	}
+	,isOver: function(x,y) {
+		return this;
+	}
+	,mouseClicked: function(mb,x,y,hoveringOver) {
+	}
+	,update: function() {
+	}
+	,__class__: components_Textbox
+};
+var components_Date = function(position) {
+	components_Textbox.call(this,position,"");
+};
+$hxClasses["components.Date"] = components_Date;
+components_Date.__name__ = true;
+components_Date.__super__ = components_Textbox;
+components_Date.prototype = $extend(components_Textbox.prototype,{
+	update: function() {
+		var date = new Date();
+		var month = date.getMonth() + 1;
+		var day = date.getDate();
+		var str = "";
+		switch(month) {
+		case 1:
+			str += "January";
+			break;
+		case 2:
+			str += "February";
+			break;
+		case 3:
+			str += "March";
+			break;
+		case 4:
+			str += "April";
+			break;
+		case 5:
+			str += "May";
+			break;
+		case 6:
+			str += "June";
+			break;
+		case 7:
+			str += "July";
+			break;
+		case 8:
+			str += "August";
+			break;
+		case 9:
+			str += "September";
+			break;
+		case 10:
+			str += "October";
+			break;
+		case 11:
+			str += "November";
+			break;
+		case 12:
+			str += "December";
+			break;
+		}
+		str += " " + day;
+		switch(day % 10) {
+		case 1:
+			str += "st";
+			break;
+		case 2:
+			str += "nd";
+			break;
+		case 3:
+			str += "rd";
+			break;
+		case 0:case 4:case 5:case 6:case 7:case 8:case 9:
+			str += "th";
+			break;
+		default:
+		}
+		var hours = date.getHours() % 12;
+		var minutes = date.getMinutes();
+		str += " " + date.getFullYear() + "<nl>" + hours + ":" + (minutes < 10 ? "0" + minutes : minutes == null ? "null" : "" + minutes) + " " + (date.getHours() > 12 ? "PM" : "AM");
+		this.setText(str);
+	}
+	,__class__: components_Date
+});
 var components_DivisionRect = function(position,width,height,color) {
 	if(color == null) {
 		color = -16777216;
@@ -386,7 +738,7 @@ components_DivisionRect.prototype = {
 			var child = _g1[_g];
 			++_g;
 			var bounds = child.getBoundingBox();
-			if(x >= bounds.topLeft.x && x <= bounds.bottomRight.x && y >= bounds.topLeft.y && y <= bounds.bottomRight.y) {
+			if(bounds != null && x >= bounds.topLeft.x && x <= bounds.bottomRight.x && y >= bounds.topLeft.y && y <= bounds.bottomRight.y) {
 				return child.isOver(x,y);
 			}
 		}
@@ -398,7 +750,381 @@ components_DivisionRect.prototype = {
 		var vec = this.position;
 		child.origin = new kha_math_Vector2(_this.x + vec.x,_this.y + vec.y);
 	}
+	,mouseClicked: function(mb,x,y,hoveringOver) {
+		var _g = 0;
+		var _g1 = this.children;
+		while(_g < _g1.length) {
+			var child = _g1[_g];
+			++_g;
+			var hoveringOverChild = false;
+			var bounds = child.getBoundingBox();
+			if(bounds != null && x >= bounds.topLeft.x && x <= bounds.bottomRight.x && y >= bounds.topLeft.y && y <= bounds.bottomRight.y) {
+				hoveringOverChild = true;
+			}
+			child.mouseClicked(mb,x,y,hoveringOverChild);
+		}
+	}
+	,update: function() {
+		var _g = 0;
+		var _g1 = this.children;
+		while(_g < _g1.length) {
+			var child = _g1[_g];
+			++_g;
+			child.update();
+		}
+	}
 	,__class__: components_DivisionRect
+};
+var components_PomodoroTimer = function(position,width,height) {
+	this.work = true;
+	this.timeLeft = 0;
+	this.timerIteration = 0;
+	this.WORKTIME = 1500;
+	this.BREAKTIMEEXTENDED = 1800;
+	this.BREAKTIME = 300;
+	this.WORKMESSAGE = "Work";
+	this.BREAKMESSAGE = "Relax";
+	this.playing = false;
+	this.buttonMargin = 8;
+	this.buttonSize = 58;
+	this.buttonHovering = null;
+	this.circleButtons = [];
+	this.timeLeft = this.WORKTIME;
+	this.position = position;
+	this.width = width;
+	this.height = height;
+	this.toggleTimerButton = { position : new kha_math_Vector2(width / 2 - this.buttonSize / 2 - this.buttonMargin,height - this.buttonSize / 2 - this.buttonMargin), radius : this.buttonSize / 2, callBack : $bind(this,this.toggleTimer), overlay : kha_Assets.images.Play};
+	this.resetButton = { position : new kha_math_Vector2(width / 2 + this.buttonSize / 2 + this.buttonMargin,height - this.buttonSize / 2 - this.buttonMargin), radius : this.buttonSize / 2, callBack : $bind(this,this.resetTimer), overlay : kha_Assets.images.Reset};
+	this.circleButtons.push(this.toggleTimerButton);
+	this.circleButtons.push(this.resetButton);
+};
+$hxClasses["components.PomodoroTimer"] = components_PomodoroTimer;
+components_PomodoroTimer.__name__ = true;
+components_PomodoroTimer.__interfaces__ = [components_Component];
+components_PomodoroTimer.prototype = {
+	origin: null
+	,position: null
+	,width: null
+	,height: null
+	,circleButtons: null
+	,buttonHovering: null
+	,buttonSize: null
+	,buttonMargin: null
+	,toggleTimerButton: null
+	,resetButton: null
+	,playing: null
+	,BREAKMESSAGE: null
+	,WORKMESSAGE: null
+	,BREAKTIME: null
+	,BREAKTIMEEXTENDED: null
+	,WORKTIME: null
+	,timerIteration: null
+	,timeLeft: null
+	,work: null
+	,draw: function(graphics) {
+		var bbox = this.getBoundingBox();
+		var _g = 0;
+		var _g1 = this.circleButtons;
+		while(_g < _g1.length) {
+			var button = _g1[_g];
+			++_g;
+			var _this = bbox.topLeft;
+			var vec = button.position;
+			var pos_x = _this.x + vec.x;
+			var pos_y = _this.y + vec.y;
+			graphics.set_color(-16777216);
+			kha_graphics2_GraphicsExtension.fillCircle(graphics,pos_x,pos_y + 6,button.radius);
+			graphics.set_color(Project.NAVY);
+			kha_graphics2_GraphicsExtension.fillCircle(graphics,pos_x,pos_y,button.radius);
+			if(button.overlay != null) {
+				graphics.set_color(Project.BAIGE);
+				var img = button.overlay;
+				graphics.drawImage(img,pos_x - img.get_width() / 2,pos_y - img.get_height() / 2);
+			}
+		}
+		graphics.set_color(Project.NAVY);
+		graphics.set_fontSize(42);
+		var _this1 = bbox.topLeft;
+		var vec_x = this.width / 2;
+		var vec_y = 0;
+		var textPos = new kha_math_Vector2(_this1.x + vec_x,_this1.y + vec_y);
+		Text.drawText(graphics,this.work ? this.WORKMESSAGE : this.BREAKMESSAGE,textPos,20,12,OriginPoint.topCenter);
+		textPos.y += graphics.get_fontSize() + 2;
+		graphics.set_color(Project.BAIGE);
+		graphics.drawLine(textPos.x - 72,textPos.y,textPos.x + 72,textPos.y,2);
+		textPos.y += 2;
+		var seconds = Math.floor(this.timeLeft % 60);
+		var minutes = Math.floor(this.timeLeft / 60);
+		var timerStr = "" + (minutes < 10 ? "0" + minutes : minutes == null ? "null" : "" + minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds == null ? "null" : "" + seconds);
+		graphics.set_fontSize(62);
+		graphics.set_color(-16777216);
+		var vec_x1 = 0;
+		var vec_y1 = 2;
+		Text.drawText(graphics,timerStr,new kha_math_Vector2(textPos.x + vec_x1,textPos.y + vec_y1),24,12,OriginPoint.topCenter);
+		graphics.set_color(Project.NAVY);
+		Text.drawText(graphics,timerStr,textPos,24,12,OriginPoint.topCenter);
+	}
+	,getBoundingBox: function() {
+		var _this = this.origin;
+		var vec = this.position;
+		var tmp = new kha_math_Vector2(_this.x + vec.x,_this.y + vec.y);
+		var _this1 = this.origin;
+		var vec1 = this.position;
+		var _this_x = _this1.x + vec1.x;
+		var _this_y = _this1.y + vec1.y;
+		var vec_x = this.width;
+		var vec_y = this.height;
+		return { topLeft : tmp, bottomRight : new kha_math_Vector2(_this_x + vec_x,_this_y + vec_y)};
+	}
+	,isOver: function(x,y) {
+		this.buttonHovering = null;
+		var _g = 0;
+		var _g1 = this.circleButtons;
+		while(_g < _g1.length) {
+			var button = _g1[_g];
+			++_g;
+			var _this = this.origin;
+			var vec = this.position;
+			var _this_x = _this.x + vec.x;
+			var _this_y = _this.y + vec.y;
+			var vec1 = button.position;
+			var pos_x = _this_x + vec1.x;
+			var pos_y = _this_y + vec1.y;
+			var vec_x = x;
+			var vec_y = y;
+			if(new kha_math_Vector2(pos_x - vec_x,pos_y - vec_y).get_length() <= button.radius) {
+				this.buttonHovering = button;
+				break;
+			}
+		}
+		return this;
+	}
+	,mouseClicked: function(mb,x,y,hoveringOver) {
+		if(mb == 0 && hoveringOver && this.buttonHovering != null) {
+			this.buttonHovering.callBack(this.buttonHovering);
+		}
+	}
+	,update: function() {
+		if(this.playing) {
+			this.timeLeft -= Timer.delta * 60;
+			if(this.timeLeft <= 0) {
+				this.work = !this.work;
+				var sndFX;
+				if(this.work) {
+					this.timeLeft = this.WORKTIME;
+					sndFX = kha_Assets.sounds.BackToWork;
+				} else {
+					this.timerIteration++;
+					this.timeLeft = this.timerIteration % 4 == 0 ? this.BREAKTIMEEXTENDED : this.BREAKTIME;
+					sndFX = kha_Assets.sounds.TakeABreak;
+				}
+				var snd = kha_audio2_Audio1.play(sndFX,false);
+				snd.set_volume(0.5);
+			}
+		}
+	}
+	,toggleTimer: function(button) {
+		this.playing = !this.playing;
+		if(this.playing) {
+			button.overlay = kha_Assets.images.Pause;
+		} else {
+			button.overlay = kha_Assets.images.Play;
+		}
+	}
+	,resetTimer: function(button) {
+		this.timerIteration = 0;
+		this.timeLeft = this.WORKTIME;
+		this.work = true;
+		if(this.playing) {
+			this.toggleTimer(this.toggleTimerButton);
+		}
+	}
+	,__class__: components_PomodoroTimer
+};
+var components_Sprite = function(position,image,imageOrigin) {
+	if(imageOrigin == null) {
+		imageOrigin = OriginPoint.topLeft;
+	}
+	this.position = position;
+	this.image = image;
+	this.imageOrigin = imageOrigin;
+};
+$hxClasses["components.Sprite"] = components_Sprite;
+components_Sprite.__name__ = true;
+components_Sprite.__interfaces__ = [components_Component];
+components_Sprite.prototype = {
+	origin: null
+	,position: null
+	,image: null
+	,imageOrigin: null
+	,draw: function(graphics) {
+		var drawPos = this.getTopLeft();
+		graphics.drawImage(this.image,drawPos.x,drawPos.y);
+	}
+	,getBoundingBox: function() {
+		var tl = this.getTopLeft();
+		var vec_x = this.image.get_width();
+		var vec_y = this.image.get_height();
+		return { topLeft : tl, bottomRight : new kha_math_Vector2(tl.x + vec_x,tl.y + vec_y)};
+	}
+	,isOver: function(x,y) {
+		return this;
+	}
+	,getTopLeft: function() {
+		var originOffset = Origin.getOriginOffset(this.imageOrigin,new kha_math_Vector2(this.image.get_width(),this.image.get_height()));
+		var _this = this.origin;
+		var vec = this.position;
+		var _this_x = _this.x + vec.x;
+		var _this_y = _this.y + vec.y;
+		return new kha_math_Vector2(_this_x + originOffset.x,_this_y + originOffset.y);
+	}
+	,mouseClicked: function(mb,x,y,hoveringOver) {
+	}
+	,update: function() {
+	}
+	,__class__: components_Sprite
+};
+var components_TodoList = function(position,width,height,elementsCount,elementsShown) {
+	this.t = 0;
+	this.squareSize = 0;
+	this.elementHeight = 0;
+	this.elementsOffset = 0;
+	this.elementEditing = null;
+	this.elementHovering = null;
+	this.elements = [];
+	this.origin = new kha_math_Vector2(0,0);
+	kha_input_Keyboard.get().notify($bind(this,this.onKeyCodeDown),null,$bind(this,this.onKeyCharDown));
+	kha_input_Mouse.get().notify(null,null,null,$bind(this,this.wheelListener));
+	this.position = position;
+	this.size = new kha_math_Vector2(width,height);
+	var _g = 0;
+	var _g1 = elementsCount;
+	while(_g < _g1) {
+		var i = _g++;
+		this.elements.push({ text : "", checked : false});
+	}
+	this.elementsShown = elementsShown;
+	this.elementHeight = this.size.y / elementsShown;
+	this.squareSize = this.elementHeight * 0.6;
+};
+$hxClasses["components.TodoList"] = components_TodoList;
+components_TodoList.__name__ = true;
+components_TodoList.__interfaces__ = [components_Component];
+components_TodoList.prototype = {
+	origin: null
+	,position: null
+	,size: null
+	,elements: null
+	,elementsShown: null
+	,elementHovering: null
+	,elementEditing: null
+	,elementsOffset: null
+	,elementHeight: null
+	,squareSize: null
+	,t: null
+	,draw: function(graphics) {
+		var bbox = this.getBoundingBox();
+		var bboxHeight = bbox.bottomRight.y - bbox.topLeft.y;
+		var scrollBarSize = this.size.x * 0.01;
+		var range_min = this.elementsOffset;
+		var range_max = Math.min(this.elements.length,this.elementsOffset + this.elementsShown) | 0;
+		var j = 0;
+		while(range_min < range_max) {
+			var i = range_min++;
+			graphics.set_color(Project.NAVY);
+			var element = this.elements[i];
+			var drawSquarePos = new kha_math_Vector2(0,j * this.elementHeight + this.elementHeight / 2 - this.squareSize / 2);
+			var _this = this.origin;
+			var vec = this.position;
+			var vec_x = _this.x + vec.x;
+			var vec_y = _this.y + vec.y;
+			drawSquarePos = new kha_math_Vector2(drawSquarePos.x + vec_x,drawSquarePos.y + vec_y);
+			if(element.checked) {
+				graphics.set_color(Project.PINK);
+				graphics.drawLine(drawSquarePos.x,drawSquarePos.y,drawSquarePos.x + this.squareSize,drawSquarePos.y + this.squareSize,4);
+				graphics.drawLine(drawSquarePos.x + this.squareSize,drawSquarePos.y,drawSquarePos.x,drawSquarePos.y + this.squareSize,4);
+				graphics.set_color(Project.NAVY);
+			}
+			graphics.drawRect(drawSquarePos.x,drawSquarePos.y,this.squareSize,this.squareSize,2);
+			var vec_x1 = this.squareSize * 1.5;
+			var vec_y1 = this.squareSize;
+			var drawLinePos_x = drawSquarePos.x + vec_x1;
+			var drawLinePos_y = drawSquarePos.y + vec_y1;
+			graphics.drawLine(drawLinePos_x,drawLinePos_y,bbox.bottomRight.x - scrollBarSize,drawLinePos_y,2);
+			graphics.set_color(Project.BLUE);
+			drawLinePos_y -= 34;
+			graphics.set_fontSize(32);
+			graphics.drawString(element.text + (this.elementEditing == i && (this.t / 30 | 0) % 2 == 0 ? "|" : ""),drawLinePos_x,drawLinePos_y);
+			++j;
+		}
+		graphics.set_color(Project.NAVY);
+		graphics.drawLine(bbox.bottomRight.x - scrollBarSize / 2,bbox.topLeft.y,bbox.bottomRight.x - scrollBarSize / 2,bbox.bottomRight.y,2);
+		var scrollProgress = this.elementsOffset / (this.elements.length - this.elementsShown);
+		var scrollBarHeight = this.elementsShown / this.elements.length * bboxHeight;
+		graphics.set_color(Project.PINK);
+		graphics.fillRect(bbox.bottomRight.x - scrollBarSize,bbox.topLeft.y + scrollProgress * (bboxHeight - scrollBarHeight),scrollBarSize,scrollBarHeight);
+	}
+	,getBoundingBox: function() {
+		var _this = this.origin;
+		var vec = this.position;
+		var tmp = new kha_math_Vector2(_this.x + vec.x,_this.y + vec.y);
+		var _this1 = this.origin;
+		var vec1 = this.position;
+		var _this_x = _this1.x + vec1.x;
+		var _this_y = _this1.y + vec1.y;
+		var vec2 = this.size;
+		return { topLeft : tmp, bottomRight : new kha_math_Vector2(_this_x + vec2.x,_this_y + vec2.y)};
+	}
+	,isOver: function(x,y) {
+		this.elementHovering = (y - (this.origin.y + this.position.y)) / this.elementHeight | 0;
+		this.elementHovering = Math.max(0,Math.min(this.elementHovering,this.elements.length - 1)) | 0;
+		this.elementHovering += this.elementsOffset;
+		return this;
+	}
+	,mouseClicked: function(mb,x,y,hoveringOver) {
+		if(mb == 0) {
+			if(hoveringOver) {
+				if(x > this.getBoundingBox().topLeft.x + this.squareSize) {
+					this.elementEditing = this.elementHovering;
+				} else {
+					this.elements[this.elementHovering].checked = !this.elements[this.elementHovering].checked;
+				}
+			} else {
+				this.elementEditing = null;
+			}
+		}
+	}
+	,update: function() {
+		this.t++;
+		if(this.t > 3000000) {
+			this.t = 0;
+		}
+	}
+	,onKeyCodeDown: function(keyCode) {
+		if(this.elementEditing != null) {
+			var str = this.elements[this.elementEditing].text;
+			switch(keyCode) {
+			case 8:
+				this.elements[this.elementEditing].text = str.substring(0,str.length - 1);
+				break;
+			case 27:
+				this.elementEditing = null;
+				break;
+			}
+		}
+	}
+	,onKeyCharDown: function(char) {
+		if(this.elementEditing != null) {
+			this.elements[this.elementEditing].text += char;
+		}
+	}
+	,wheelListener: function(scroll) {
+		if(this == Project.hoveringOver) {
+			this.elementsOffset += scroll;
+			this.elementsOffset = Math.max(0,Math.min(this.elements.length - this.elementsShown,this.elementsOffset)) | 0;
+		}
+	}
+	,__class__: components_TodoList
 };
 var haxe_IMap = function() { };
 $hxClasses["haxe.IMap"] = haxe_IMap;
@@ -1640,7 +2366,25 @@ js_html__$ArrayBuffer_ArrayBufferCompat.sliceImpl = function(begin,end) {
 	return resultArray.buffer;
 };
 var kha__$Assets_ImageList = function() {
-	this.names = ["EngineeringProject"];
+	this.names = ["EngineeringProject","Pause","Play","Reset","pencilicon","meditationicon","penciliconScaled"];
+	this.penciliconScaledDescription = { name : "penciliconScaled", original_height : 50, original_width : 50, files : ["penciliconScaled.png"], type : "image"};
+	this.penciliconScaledName = "penciliconScaled";
+	this.penciliconScaled = null;
+	this.meditationiconDescription = { name : "meditationicon", original_height : 116, original_width : 121, files : ["meditationicon.png"], type : "image"};
+	this.meditationiconName = "meditationicon";
+	this.meditationicon = null;
+	this.penciliconDescription = { name : "pencilicon", original_height : 171, original_width : 171, files : ["pencilicon.png"], type : "image"};
+	this.penciliconName = "pencilicon";
+	this.pencilicon = null;
+	this.ResetDescription = { name : "Reset", original_height : 32, original_width : 32, files : ["Reset.png"], type : "image"};
+	this.ResetName = "Reset";
+	this.Reset = null;
+	this.PlayDescription = { name : "Play", original_height : 32, original_width : 32, files : ["Play.png"], type : "image"};
+	this.PlayName = "Play";
+	this.Play = null;
+	this.PauseDescription = { name : "Pause", original_height : 32, original_width : 32, files : ["Pause.png"], type : "image"};
+	this.PauseName = "Pause";
+	this.Pause = null;
 	this.EngineeringProjectDescription = { name : "EngineeringProject", original_height : 478, original_width : 798, files : ["EngineeringProject.png"], type : "image"};
 	this.EngineeringProjectName = "EngineeringProject";
 	this.EngineeringProject = null;
@@ -1673,17 +2417,199 @@ kha__$Assets_ImageList.prototype = {
 		this.EngineeringProject.unload();
 		this.EngineeringProject = null;
 	}
+	,Pause: null
+	,PauseName: null
+	,PauseDescription: null
+	,PauseLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "PauseLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadImage("Pause",function(image) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "PauseLoad"});
+	}
+	,PauseUnload: function() {
+		this.Pause.unload();
+		this.Pause = null;
+	}
+	,Play: null
+	,PlayName: null
+	,PlayDescription: null
+	,PlayLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "PlayLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadImage("Play",function(image) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "PlayLoad"});
+	}
+	,PlayUnload: function() {
+		this.Play.unload();
+		this.Play = null;
+	}
+	,Reset: null
+	,ResetName: null
+	,ResetDescription: null
+	,ResetLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "ResetLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadImage("Reset",function(image) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "ResetLoad"});
+	}
+	,ResetUnload: function() {
+		this.Reset.unload();
+		this.Reset = null;
+	}
+	,pencilicon: null
+	,penciliconName: null
+	,penciliconDescription: null
+	,penciliconLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "penciliconLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadImage("pencilicon",function(image) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "penciliconLoad"});
+	}
+	,penciliconUnload: function() {
+		this.pencilicon.unload();
+		this.pencilicon = null;
+	}
+	,meditationicon: null
+	,meditationiconName: null
+	,meditationiconDescription: null
+	,meditationiconLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "meditationiconLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadImage("meditationicon",function(image) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "meditationiconLoad"});
+	}
+	,meditationiconUnload: function() {
+		this.meditationicon.unload();
+		this.meditationicon = null;
+	}
+	,penciliconScaled: null
+	,penciliconScaledName: null
+	,penciliconScaledDescription: null
+	,penciliconScaledLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "penciliconScaledLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadImage("penciliconScaled",function(image) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 130, className : "kha._Assets.ImageList", methodName : "penciliconScaledLoad"});
+	}
+	,penciliconScaledUnload: function() {
+		this.penciliconScaled.unload();
+		this.penciliconScaled = null;
+	}
 	,names: null
 	,__class__: kha__$Assets_ImageList
 };
 var kha__$Assets_SoundList = function() {
-	this.names = [];
+	this.names = ["BackToWork","TakeABreak"];
+	this.TakeABreakDescription = { name : "TakeABreak", files : ["TakeABreak.ogg"], type : "sound"};
+	this.TakeABreakName = "TakeABreak";
+	this.TakeABreak = null;
+	this.BackToWorkDescription = { name : "BackToWork", files : ["BackToWork.ogg"], type : "sound"};
+	this.BackToWorkName = "BackToWork";
+	this.BackToWork = null;
 };
 $hxClasses["kha._Assets.SoundList"] = kha__$Assets_SoundList;
 kha__$Assets_SoundList.__name__ = true;
 kha__$Assets_SoundList.prototype = {
 	get: function(name) {
 		return Reflect.field(this,name);
+	}
+	,BackToWork: null
+	,BackToWorkName: null
+	,BackToWorkDescription: null
+	,BackToWorkLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 134, className : "kha._Assets.SoundList", methodName : "BackToWorkLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadSound("BackToWork",function(sound) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 134, className : "kha._Assets.SoundList", methodName : "BackToWorkLoad"});
+	}
+	,BackToWorkUnload: function() {
+		this.BackToWork.unload();
+		this.BackToWork = null;
+	}
+	,TakeABreak: null
+	,TakeABreakName: null
+	,TakeABreakDescription: null
+	,TakeABreakLoad: function(done,failure) {
+		var tmp;
+		if(failure != null) {
+			tmp = failure;
+		} else {
+			var f = haxe_Log.trace;
+			var infos = { fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 134, className : "kha._Assets.SoundList", methodName : "TakeABreakLoad"};
+			tmp = function(v) {
+				f(v,infos);
+			};
+		}
+		kha_Assets.loadSound("TakeABreak",function(sound) {
+			done();
+		},tmp,{ fileName : "kha/internal/AssetsBuilder.hx", lineNumber : 134, className : "kha._Assets.SoundList", methodName : "TakeABreakLoad"});
+	}
+	,TakeABreakUnload: function() {
+		this.TakeABreak.unload();
+		this.TakeABreak = null;
 	}
 	,names: null
 	,__class__: kha__$Assets_SoundList
@@ -2488,102 +3414,6 @@ kha_CanvasImage.prototype = $extend(kha_Image.prototype,{
 	}
 	,__class__: kha_CanvasImage
 });
-var kha__$Color_Color_$Impl_$ = $hx_exports["kha"]["_Color"]["Color_Impl_"] = {};
-$hxClasses["kha._Color.Color_Impl_"] = kha__$Color_Color_$Impl_$;
-kha__$Color_Color_$Impl_$.__name__ = true;
-kha__$Color_Color_$Impl_$.fromValue = function(value) {
-	return kha__$Color_Color_$Impl_$._new(value);
-};
-kha__$Color_Color_$Impl_$.fromBytes = function(r,g,b,a) {
-	if(a == null) {
-		a = 255;
-	}
-	return kha__$Color_Color_$Impl_$._new(a << 24 | r << 16 | g << 8 | b);
-};
-kha__$Color_Color_$Impl_$.fromFloats = function(r,g,b,a) {
-	if(a == null) {
-		a = 1;
-	}
-	return kha__$Color_Color_$Impl_$._new((a * 255 | 0) << 24 | (r * 255 | 0) << 16 | (g * 255 | 0) << 8 | (b * 255 | 0));
-};
-kha__$Color_Color_$Impl_$.fromString = function(value) {
-	if((value.length == 7 || value.length == 9) && value.charCodeAt(0) == 35) {
-		var colorValue = Std.parseInt("0x" + HxOverrides.substr(value,1,null));
-		if(value.length == 7) {
-			colorValue += -16777216;
-		}
-		return kha__$Color_Color_$Impl_$._new(colorValue);
-	} else {
-		throw new js__$Boot_HaxeError("Invalid Color string: '" + value + "'");
-	}
-};
-kha__$Color_Color_$Impl_$._new = function(value) {
-	var this1 = value;
-	return this1;
-};
-kha__$Color_Color_$Impl_$.get_value = function(this1) {
-	return this1;
-};
-kha__$Color_Color_$Impl_$.set_value = function(this1,value) {
-	this1 = value;
-	return this1;
-};
-kha__$Color_Color_$Impl_$.get_Rb = function(this1) {
-	return (this1 & 16711680) >>> 16;
-};
-kha__$Color_Color_$Impl_$.get_Gb = function(this1) {
-	return (this1 & 65280) >>> 8;
-};
-kha__$Color_Color_$Impl_$.get_Bb = function(this1) {
-	return this1 & 255;
-};
-kha__$Color_Color_$Impl_$.get_Ab = function(this1) {
-	return this1 >>> 24;
-};
-kha__$Color_Color_$Impl_$.set_Rb = function(this1,i) {
-	this1 = this1 >>> 24 << 24 | i << 16 | (this1 & 65280) >>> 8 << 8 | this1 & 255;
-	return i;
-};
-kha__$Color_Color_$Impl_$.set_Gb = function(this1,i) {
-	this1 = this1 >>> 24 << 24 | (this1 & 16711680) >>> 16 << 16 | i << 8 | this1 & 255;
-	return i;
-};
-kha__$Color_Color_$Impl_$.set_Bb = function(this1,i) {
-	this1 = this1 >>> 24 << 24 | (this1 & 16711680) >>> 16 << 16 | (this1 & 65280) >>> 8 << 8 | i;
-	return i;
-};
-kha__$Color_Color_$Impl_$.set_Ab = function(this1,i) {
-	this1 = i << 24 | (this1 & 16711680) >>> 16 << 16 | (this1 & 65280) >>> 8 << 8 | this1 & 255;
-	return i;
-};
-kha__$Color_Color_$Impl_$.get_R = function(this1) {
-	return ((this1 & 16711680) >>> 16) * 0.00392156862745098;
-};
-kha__$Color_Color_$Impl_$.get_G = function(this1) {
-	return ((this1 & 65280) >>> 8) * 0.00392156862745098;
-};
-kha__$Color_Color_$Impl_$.get_B = function(this1) {
-	return (this1 & 255) * 0.00392156862745098;
-};
-kha__$Color_Color_$Impl_$.get_A = function(this1) {
-	return (this1 >>> 24) * 0.00392156862745098;
-};
-kha__$Color_Color_$Impl_$.set_R = function(this1,f) {
-	this1 = ((this1 >>> 24) * 0.00392156862745098 * 255 | 0) << 24 | (f * 255 | 0) << 16 | (((this1 & 65280) >>> 8) * 0.00392156862745098 * 255 | 0) << 8 | ((this1 & 255) * 0.00392156862745098 * 255 | 0);
-	return f;
-};
-kha__$Color_Color_$Impl_$.set_G = function(this1,f) {
-	this1 = ((this1 >>> 24) * 0.00392156862745098 * 255 | 0) << 24 | (((this1 & 16711680) >>> 16) * 0.00392156862745098 * 255 | 0) << 16 | (f * 255 | 0) << 8 | ((this1 & 255) * 0.00392156862745098 * 255 | 0);
-	return f;
-};
-kha__$Color_Color_$Impl_$.set_B = function(this1,f) {
-	this1 = ((this1 >>> 24) * 0.00392156862745098 * 255 | 0) << 24 | (((this1 & 16711680) >>> 16) * 0.00392156862745098 * 255 | 0) << 16 | (((this1 & 65280) >>> 8) * 0.00392156862745098 * 255 | 0) << 8 | (f * 255 | 0);
-	return f;
-};
-kha__$Color_Color_$Impl_$.set_A = function(this1,f) {
-	this1 = (f * 255 | 0) << 24 | (((this1 & 16711680) >>> 16) * 0.00392156862745098 * 255 | 0) << 16 | (((this1 & 65280) >>> 8) * 0.00392156862745098 * 255 | 0) << 8 | ((this1 & 255) * 0.00392156862745098 * 255 | 0);
-	return f;
-};
 var kha_Display = function() {
 };
 $hxClasses["kha.Display"] = kha_Display;
@@ -3665,29 +4495,29 @@ kha_Shaders.init = function() {
 	blobs1.push(kha_internal_BytesBlob.fromBytes(bytes3));
 	kha_Shaders.painter_colored_vert = new kha_graphics4_VertexShader(blobs1,["painter-colored.vert.essl","painter-colored-webgl2.vert.essl"]);
 	var blobs2 = [];
-	var data4 = Reflect.field(kha_Shaders,"painter_image_fragData" + 0);
+	var data4 = Reflect.field(kha_Shaders,"painter_image_vertData" + 0);
 	var bytes4 = haxe_Unserializer.run(data4);
 	blobs2.push(kha_internal_BytesBlob.fromBytes(bytes4));
-	var data5 = Reflect.field(kha_Shaders,"painter_image_fragData" + 1);
+	var data5 = Reflect.field(kha_Shaders,"painter_image_vertData" + 1);
 	var bytes5 = haxe_Unserializer.run(data5);
 	blobs2.push(kha_internal_BytesBlob.fromBytes(bytes5));
-	kha_Shaders.painter_image_frag = new kha_graphics4_FragmentShader(blobs2,["painter-image.frag.essl","painter-image-webgl2.frag.essl"]);
+	kha_Shaders.painter_image_vert = new kha_graphics4_VertexShader(blobs2,["painter-image.vert.essl","painter-image-webgl2.vert.essl"]);
 	var blobs3 = [];
-	var data6 = Reflect.field(kha_Shaders,"painter_image_vertData" + 0);
+	var data6 = Reflect.field(kha_Shaders,"painter_text_fragData" + 0);
 	var bytes6 = haxe_Unserializer.run(data6);
 	blobs3.push(kha_internal_BytesBlob.fromBytes(bytes6));
-	var data7 = Reflect.field(kha_Shaders,"painter_image_vertData" + 1);
+	var data7 = Reflect.field(kha_Shaders,"painter_text_fragData" + 1);
 	var bytes7 = haxe_Unserializer.run(data7);
 	blobs3.push(kha_internal_BytesBlob.fromBytes(bytes7));
-	kha_Shaders.painter_image_vert = new kha_graphics4_VertexShader(blobs3,["painter-image.vert.essl","painter-image-webgl2.vert.essl"]);
+	kha_Shaders.painter_text_frag = new kha_graphics4_FragmentShader(blobs3,["painter-text.frag.essl","painter-text-webgl2.frag.essl"]);
 	var blobs4 = [];
-	var data8 = Reflect.field(kha_Shaders,"painter_text_fragData" + 0);
+	var data8 = Reflect.field(kha_Shaders,"painter_image_fragData" + 0);
 	var bytes8 = haxe_Unserializer.run(data8);
 	blobs4.push(kha_internal_BytesBlob.fromBytes(bytes8));
-	var data9 = Reflect.field(kha_Shaders,"painter_text_fragData" + 1);
+	var data9 = Reflect.field(kha_Shaders,"painter_image_fragData" + 1);
 	var bytes9 = haxe_Unserializer.run(data9);
 	blobs4.push(kha_internal_BytesBlob.fromBytes(bytes9));
-	kha_Shaders.painter_text_frag = new kha_graphics4_FragmentShader(blobs4,["painter-text.frag.essl","painter-text-webgl2.frag.essl"]);
+	kha_Shaders.painter_image_frag = new kha_graphics4_FragmentShader(blobs4,["painter-image.frag.essl","painter-image-webgl2.frag.essl"]);
 	var blobs5 = [];
 	var data10 = Reflect.field(kha_Shaders,"painter_text_vertData" + 0);
 	var bytes10 = haxe_Unserializer.run(data10);
@@ -12181,9 +13011,306 @@ kha_graphics2_Graphics1.prototype = {
 	}
 	,__class__: kha_graphics2_Graphics1
 };
+var kha_graphics2_GraphicsExtension = function() { };
+$hxClasses["kha.graphics2.GraphicsExtension"] = kha_graphics2_GraphicsExtension;
+kha_graphics2_GraphicsExtension.__name__ = true;
+kha_graphics2_GraphicsExtension.drawArc = function(g2,cx,cy,radius,sAngle,eAngle,strength,ccw,segments) {
+	if(segments == null) {
+		segments = 0;
+	}
+	if(ccw == null) {
+		ccw = false;
+	}
+	if(strength == null) {
+		strength = 1;
+	}
+	if(kha_SystemImpl.gl == null) {
+		var g = g2;
+		radius -= strength / 2;
+		g.drawArc(cx,cy,radius,sAngle,eAngle,strength,ccw);
+		return;
+	}
+	sAngle %= Math.PI * 2;
+	eAngle %= Math.PI * 2;
+	if(ccw) {
+		if(eAngle > sAngle) {
+			eAngle -= Math.PI * 2;
+		}
+	} else if(eAngle < sAngle) {
+		eAngle += Math.PI * 2;
+	}
+	if(segments <= 0) {
+		segments = Math.floor(10 * Math.sqrt(radius));
+	}
+	var theta = (eAngle - sAngle) / segments;
+	var c = Math.cos(theta);
+	var s = Math.sin(theta);
+	var x = Math.cos(sAngle) * radius;
+	var y = Math.sin(sAngle) * radius;
+	var _g = 0;
+	var _g1 = segments;
+	while(_g < _g1) {
+		var n = _g++;
+		var px = x + cx;
+		var py = y + cy;
+		var t = x;
+		x = c * x - s * y;
+		y = c * y + s * t;
+		g2.drawLine(px,py,x + cx,y + cy,strength);
+	}
+};
+kha_graphics2_GraphicsExtension.fillArc = function(g2,cx,cy,radius,sAngle,eAngle,ccw,segments) {
+	if(segments == null) {
+		segments = 0;
+	}
+	if(ccw == null) {
+		ccw = false;
+	}
+	if(kha_SystemImpl.gl == null) {
+		var g = g2;
+		g.fillArc(cx,cy,radius,sAngle,eAngle,ccw);
+		return;
+	}
+	sAngle %= Math.PI * 2;
+	eAngle %= Math.PI * 2;
+	if(ccw) {
+		if(eAngle > sAngle) {
+			eAngle -= Math.PI * 2;
+		}
+	} else if(eAngle < sAngle) {
+		eAngle += Math.PI * 2;
+	}
+	if(segments <= 0) {
+		segments = Math.floor(10 * Math.sqrt(radius));
+	}
+	var theta = (eAngle - sAngle) / segments;
+	var c = Math.cos(theta);
+	var s = Math.sin(theta);
+	var x = Math.cos(sAngle) * radius;
+	var y = Math.sin(sAngle) * radius;
+	var sx = x + cx;
+	var sy = y + cy;
+	var _g = 0;
+	var _g1 = segments;
+	while(_g < _g1) {
+		var n = _g++;
+		var px = x + cx;
+		var py = y + cy;
+		var t = x;
+		x = c * x - s * y;
+		y = c * y + s * t;
+		g2.fillTriangle(px,py,x + cx,y + cy,sx,sy);
+	}
+};
+kha_graphics2_GraphicsExtension.drawCircle = function(g2,cx,cy,radius,strength,segments) {
+	if(segments == null) {
+		segments = 0;
+	}
+	if(strength == null) {
+		strength = 1;
+	}
+	if(kha_SystemImpl.gl == null) {
+		var g = g2;
+		radius -= strength / 2;
+		g.drawCircle(cx,cy,radius,strength);
+		return;
+	}
+	if(segments <= 0) {
+		segments = Math.floor(10 * Math.sqrt(radius));
+	}
+	var theta = 2 * Math.PI / segments;
+	var c = Math.cos(theta);
+	var s = Math.sin(theta);
+	var x = radius;
+	var y = 0.0;
+	var _g = 0;
+	var _g1 = segments;
+	while(_g < _g1) {
+		var n = _g++;
+		var px = x + cx;
+		var py = y + cy;
+		var t = x;
+		x = c * x - s * y;
+		y = c * y + s * t;
+		g2.drawLine(px,py,x + cx,y + cy,strength);
+	}
+};
+kha_graphics2_GraphicsExtension.fillCircle = function(g2,cx,cy,radius,segments) {
+	if(segments == null) {
+		segments = 0;
+	}
+	if(kha_SystemImpl.gl == null) {
+		var g = g2;
+		g.fillCircle(cx,cy,radius);
+		return;
+	}
+	if(segments <= 0) {
+		segments = Math.floor(10 * Math.sqrt(radius));
+	}
+	var theta = 2 * Math.PI / segments;
+	var c = Math.cos(theta);
+	var s = Math.sin(theta);
+	var x = radius;
+	var y = 0.0;
+	var _g = 0;
+	var _g1 = segments;
+	while(_g < _g1) {
+		var n = _g++;
+		var px = x + cx;
+		var py = y + cy;
+		var t = x;
+		x = c * x - s * y;
+		y = c * y + s * t;
+		g2.fillTriangle(px,py,x + cx,y + cy,cx,cy);
+	}
+};
+kha_graphics2_GraphicsExtension.drawPolygon = function(g2,x,y,vertices,strength) {
+	if(strength == null) {
+		strength = 1;
+	}
+	var iterator = HxOverrides.iter(vertices);
+	var v0 = iterator.next();
+	var v1 = v0;
+	while(iterator.hasNext()) {
+		var v2 = iterator.next();
+		g2.drawLine(v1.x + x,v1.y + y,v2.x + x,v2.y + y,strength);
+		v1 = v2;
+	}
+	g2.drawLine(v1.x + x,v1.y + y,v0.x + x,v0.y + y,strength);
+};
+kha_graphics2_GraphicsExtension.fillPolygon = function(g2,x,y,vertices) {
+	var iterator = HxOverrides.iter(vertices);
+	if(!iterator.hasNext()) {
+		return;
+	}
+	var v0 = iterator.next();
+	if(!iterator.hasNext()) {
+		return;
+	}
+	var v1 = iterator.next();
+	while(iterator.hasNext()) {
+		var v2 = iterator.next();
+		g2.fillTriangle(v0.x + x,v0.y + y,v1.x + x,v1.y + y,v2.x + x,v2.y + y);
+		v1 = v2;
+	}
+};
+kha_graphics2_GraphicsExtension.drawCubicBezier = function(g2,x,y,segments,strength) {
+	if(strength == null) {
+		strength = 1.0;
+	}
+	if(segments == null) {
+		segments = 20;
+	}
+	var t;
+	var q0 = kha_graphics2_GraphicsExtension.calculateCubicBezierPoint(0,x,y);
+	var q1;
+	var _g = 1;
+	var _g1 = segments + 1;
+	while(_g < _g1) {
+		var i = _g++;
+		t = i / segments;
+		q1 = kha_graphics2_GraphicsExtension.calculateCubicBezierPoint(t,x,y);
+		g2.drawLine(q0[0],q0[1],q1[0],q1[1],strength);
+		q0 = q1;
+	}
+};
+kha_graphics2_GraphicsExtension.drawCubicBezierPath = function(g2,x,y,segments,strength) {
+	if(strength == null) {
+		strength = 1.0;
+	}
+	if(segments == null) {
+		segments = 20;
+	}
+	var i = 0;
+	var t;
+	var q0 = null;
+	var q1 = null;
+	while(i < x.length - 3) {
+		if(i == 0) {
+			q0 = kha_graphics2_GraphicsExtension.calculateCubicBezierPoint(0,[x[i],x[i + 1],x[i + 2],x[i + 3]],[y[i],y[i + 1],y[i + 2],y[i + 3]]);
+		}
+		var _g = 1;
+		var _g1 = segments + 1;
+		while(_g < _g1) {
+			var j = _g++;
+			t = j / segments;
+			q1 = kha_graphics2_GraphicsExtension.calculateCubicBezierPoint(t,[x[i],x[i + 1],x[i + 2],x[i + 3]],[y[i],y[i + 1],y[i + 2],y[i + 3]]);
+			g2.drawLine(q0[0],q0[1],q1[0],q1[1],strength);
+			q0 = q1;
+		}
+		i += 3;
+	}
+};
+kha_graphics2_GraphicsExtension.calculateCubicBezierPoint = function(t,x,y) {
+	var u = 1 - t;
+	var tt = t * t;
+	var uu = u * u;
+	var uuu = uu * u;
+	var ttt = tt * t;
+	var p = [uuu * x[0],uuu * y[0]];
+	p[0] += 3 * uu * t * x[1];
+	p[1] += 3 * uu * t * y[1];
+	p[0] += 3 * u * tt * x[2];
+	p[1] += 3 * u * tt * y[2];
+	p[0] += ttt * x[3];
+	p[1] += ttt * y[3];
+	return p;
+};
+kha_graphics2_GraphicsExtension.drawAlignedString = function(g2,text,x,y,horAlign,verAlign) {
+	var xoffset = 0.0;
+	if(horAlign == kha_graphics2_HorTextAlignment.TextCenter || horAlign == kha_graphics2_HorTextAlignment.TextRight) {
+		var width = g2.get_font().width(g2.get_fontSize(),text);
+		if(horAlign == kha_graphics2_HorTextAlignment.TextCenter) {
+			xoffset = -width * 0.5;
+		} else {
+			xoffset = -width;
+		}
+	}
+	var yoffset = 0.0;
+	if(verAlign == kha_graphics2_VerTextAlignment.TextMiddle || verAlign == kha_graphics2_VerTextAlignment.TextBottom) {
+		var height = g2.get_font().height(g2.get_fontSize());
+		if(verAlign == kha_graphics2_VerTextAlignment.TextMiddle) {
+			yoffset = -height * 0.5;
+		} else {
+			yoffset = -height;
+		}
+	}
+	g2.drawString(text,x + xoffset,y + yoffset);
+};
+kha_graphics2_GraphicsExtension.drawAlignedCharacters = function(g2,text,start,length,x,y,horAlign,verAlign) {
+	var xoffset = 0.0;
+	if(horAlign == kha_graphics2_HorTextAlignment.TextCenter || horAlign == kha_graphics2_HorTextAlignment.TextRight) {
+		var width = g2.get_font().widthOfCharacters(g2.get_fontSize(),text,start,length);
+		if(horAlign == kha_graphics2_HorTextAlignment.TextCenter) {
+			xoffset = -width * 0.5;
+		} else {
+			xoffset = -width;
+		}
+	}
+	var yoffset = 0.0;
+	if(verAlign == kha_graphics2_VerTextAlignment.TextMiddle || verAlign == kha_graphics2_VerTextAlignment.TextBottom) {
+		var height = g2.get_font().height(g2.get_fontSize());
+		if(verAlign == kha_graphics2_VerTextAlignment.TextMiddle) {
+			yoffset = -height * 0.5;
+		} else {
+			yoffset = -height;
+		}
+	}
+	g2.drawCharacters(text,start,length,x + xoffset,y + yoffset);
+};
+var kha_graphics2_HorTextAlignment = $hxEnums["kha.graphics2.HorTextAlignment"] = { __ename__ : true, __constructs__ : ["TextLeft","TextCenter","TextRight"]
+	,TextLeft: {_hx_index:0,__enum__:"kha.graphics2.HorTextAlignment",toString:$estr}
+	,TextCenter: {_hx_index:1,__enum__:"kha.graphics2.HorTextAlignment",toString:$estr}
+	,TextRight: {_hx_index:2,__enum__:"kha.graphics2.HorTextAlignment",toString:$estr}
+};
 var kha_graphics2_ImageScaleQuality = $hxEnums["kha.graphics2.ImageScaleQuality"] = { __ename__ : true, __constructs__ : ["Low","High"]
 	,Low: {_hx_index:0,__enum__:"kha.graphics2.ImageScaleQuality",toString:$estr}
 	,High: {_hx_index:1,__enum__:"kha.graphics2.ImageScaleQuality",toString:$estr}
+};
+var kha_graphics2_VerTextAlignment = $hxEnums["kha.graphics2.VerTextAlignment"] = { __ename__ : true, __constructs__ : ["TextTop","TextMiddle","TextBottom"]
+	,TextTop: {_hx_index:0,__enum__:"kha.graphics2.VerTextAlignment",toString:$estr}
+	,TextMiddle: {_hx_index:1,__enum__:"kha.graphics2.VerTextAlignment",toString:$estr}
+	,TextBottom: {_hx_index:2,__enum__:"kha.graphics2.VerTextAlignment",toString:$estr}
 };
 var kha_graphics2_truetype_VectorOfIntPointer = function() {
 };
@@ -20706,18 +21833,6 @@ Object.defineProperty(js__$Boot_HaxeError.prototype,"message",{ get : function()
 if(ArrayBuffer.prototype.slice == null) {
 	ArrayBuffer.prototype.slice = js_html__$ArrayBuffer_ArrayBufferCompat.sliceImpl;
 }
-Main.proj = new Project(800,480);
-haxe_Unserializer.DEFAULT_RESOLVER = new haxe__$Unserializer_DefaultResolver();
-haxe_Unserializer.BASE64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:";
-haxe_crypto_Base64.CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-haxe_crypto_Base64.BYTES = haxe_io_Bytes.ofString(haxe_crypto_Base64.CHARS);
-haxe_io_FPHelper.helper = new DataView(new ArrayBuffer(8));
-js_Boot.__toStr = ({ }).toString;
-kha_Assets.images = new kha__$Assets_ImageList();
-kha_Assets.sounds = new kha__$Assets_SoundList();
-kha_Assets.blobs = new kha__$Assets_BlobList();
-kha_Assets.fonts = new kha__$Assets_FontList();
-kha_Assets.videos = new kha__$Assets_VideoList();
 kha__$Color_Color_$Impl_$.Black = -16777216;
 kha__$Color_Color_$Impl_$.White = -1;
 kha__$Color_Color_$Impl_$.Red = -65536;
@@ -20731,27 +21846,45 @@ kha__$Color_Color_$Impl_$.Pink = -16181;
 kha__$Color_Color_$Impl_$.Orange = -23296;
 kha__$Color_Color_$Impl_$.Transparent = 0;
 kha__$Color_Color_$Impl_$.invMaxChannelValue = 0.00392156862745098;
+Project.NAVY = kha__$Color_Color_$Impl_$.fromBytes(51,63,88);
+Project.BLUE = kha__$Color_Color_$Impl_$.fromBytes(74,122,150);
+Project.PINK = kha__$Color_Color_$Impl_$.fromBytes(255,128,128);
+Project.BAIGE = kha__$Color_Color_$Impl_$.fromBytes(251,187,173);
+Main.proj = new Project(800,480);
+Timer.delta = 0;
+Timer.current = 0;
+haxe_Unserializer.DEFAULT_RESOLVER = new haxe__$Unserializer_DefaultResolver();
+haxe_Unserializer.BASE64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:";
+haxe_crypto_Base64.CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+haxe_crypto_Base64.BYTES = haxe_io_Bytes.ofString(haxe_crypto_Base64.CHARS);
+haxe_io_FPHelper.helper = new DataView(new ArrayBuffer(8));
+js_Boot.__toStr = ({ }).toString;
+kha_Assets.images = new kha__$Assets_ImageList();
+kha_Assets.sounds = new kha__$Assets_SoundList();
+kha_Assets.blobs = new kha__$Assets_BlobList();
+kha_Assets.fonts = new kha__$Assets_FontList();
+kha_Assets.videos = new kha__$Assets_VideoList();
 kha_Display.instance = new kha_Display();
 kha_Scheduler.timeWarpSaveTime = 10.0;
 kha_Scheduler.DIF_COUNT = 3;
 kha_Scheduler.maxframetime = 0.5;
 kha_Scheduler.startTime = 0;
-kha_Shaders.painter_colored_fragData0 = "s212:I3ZlcnNpb24gMTAwDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnZhcnlpbmcgaGlnaHAgdmVjNCBmcmFnbWVudENvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGdsX0ZyYWdEYXRhWzBdID0gZnJhZ21lbnRDb2xvcjsNCn0NCg0K";
-kha_Shaders.painter_colored_fragData1 = "s239:I3ZlcnNpb24gMzAwIGVzDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCm91dCBoaWdocCB2ZWM0IEZyYWdDb2xvcjsNCmluIGhpZ2hwIHZlYzQgZnJhZ21lbnRDb2xvcjsNCg0Kdm9pZCBtYWluKCkNCnsNCiAgICBGcmFnQ29sb3IgPSBmcmFnbWVudENvbG9yOw0KfQ0KDQo";
-kha_Shaders.painter_colored_vertData0 = "s350:I3ZlcnNpb24gMTAwDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQphdHRyaWJ1dGUgdmVjMyB2ZXJ0ZXhQb3NpdGlvbjsNCnZhcnlpbmcgdmVjNCBmcmFnbWVudENvbG9yOw0KYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICBmcmFnbWVudENvbG9yID0gdmVydGV4Q29sb3I7DQp9DQoNCg";
-kha_Shaders.painter_colored_vertData1 = "s330:I3ZlcnNpb24gMzAwIGVzDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQppbiB2ZWMzIHZlcnRleFBvc2l0aW9uOw0Kb3V0IHZlYzQgZnJhZ21lbnRDb2xvcjsNCmluIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICBmcmFnbWVudENvbG9yID0gdmVydGV4Q29sb3I7DQp9DQoNCg";
-kha_Shaders.painter_image_fragData0 = "s494:I3ZlcnNpb24gMTAwDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KdmFyeWluZyBoaWdocCB2ZWMyIHRleENvb3JkOw0KdmFyeWluZyBoaWdocCB2ZWM0IGNvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGhpZ2hwIHZlYzQgdGV4Y29sb3IgPSB0ZXh0dXJlMkQodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsNCiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7DQogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOw0KICAgIGdsX0ZyYWdEYXRhWzBdID0gdGV4Y29sb3I7DQp9DQoNCg";
-kha_Shaders.painter_image_fragData1 = "s511:I3ZlcnNpb24gMzAwIGVzDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsNCmluIGhpZ2hwIHZlYzQgY29sb3I7DQpvdXQgaGlnaHAgdmVjNCBGcmFnQ29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgaGlnaHAgdmVjNCB0ZXhjb2xvciA9IHRleHR1cmUodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsNCiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7DQogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOw0KICAgIEZyYWdDb2xvciA9IHRleGNvbG9yOw0KfQ0KDQo";
-kha_Shaders.painter_image_vertData0 = "s438:I3ZlcnNpb24gMTAwDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQphdHRyaWJ1dGUgdmVjMyB2ZXJ0ZXhQb3NpdGlvbjsNCnZhcnlpbmcgdmVjMiB0ZXhDb29yZDsNCmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOw0KdmFyeWluZyB2ZWM0IGNvbG9yOw0KYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOw0KICAgIGNvbG9yID0gdmVydGV4Q29sb3I7DQp9DQoNCg";
-kha_Shaders.painter_image_vertData1 = "s403:I3ZlcnNpb24gMzAwIGVzDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQppbiB2ZWMzIHZlcnRleFBvc2l0aW9uOw0Kb3V0IHZlYzIgdGV4Q29vcmQ7DQppbiB2ZWMyIHRleFBvc2l0aW9uOw0Kb3V0IHZlYzQgY29sb3I7DQppbiB2ZWM0IHZlcnRleENvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGdsX1Bvc2l0aW9uID0gcHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCk7DQogICAgdGV4Q29vcmQgPSB0ZXhQb3NpdGlvbjsNCiAgICBjb2xvciA9IHZlcnRleENvbG9yOw0KfQ0KDQo";
-kha_Shaders.painter_text_fragData0 = "s370:I3ZlcnNpb24gMTAwDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KdmFyeWluZyBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7DQp2YXJ5aW5nIGhpZ2hwIHZlYzIgdGV4Q29vcmQ7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfRnJhZ0RhdGFbMF0gPSB2ZWM0KGZyYWdtZW50Q29sb3IueHl6LCB0ZXh0dXJlMkQodGV4LCB0ZXhDb29yZCkueCAqIGZyYWdtZW50Q29sb3Iudyk7DQp9DQoNCg";
-kha_Shaders.painter_text_fragData1 = "s387:I3ZlcnNpb24gMzAwIGVzDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0Kb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOw0KaW4gaGlnaHAgdmVjNCBmcmFnbWVudENvbG9yOw0KaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsNCg0Kdm9pZCBtYWluKCkNCnsNCiAgICBGcmFnQ29sb3IgPSB2ZWM0KGZyYWdtZW50Q29sb3IueHl6LCB0ZXh0dXJlKHRleCwgdGV4Q29vcmQpLnggKiBmcmFnbWVudENvbG9yLncpOw0KfQ0KDQo";
-kha_Shaders.painter_text_vertData0 = "s459:I3ZlcnNpb24gMTAwDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQphdHRyaWJ1dGUgdmVjMyB2ZXJ0ZXhQb3NpdGlvbjsNCnZhcnlpbmcgdmVjMiB0ZXhDb29yZDsNCmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOw0KdmFyeWluZyB2ZWM0IGZyYWdtZW50Q29sb3I7DQphdHRyaWJ1dGUgdmVjNCB2ZXJ0ZXhDb2xvcjsNCg0Kdm9pZCBtYWluKCkNCnsNCiAgICBnbF9Qb3NpdGlvbiA9IHByb2plY3Rpb25NYXRyaXggKiB2ZWM0KHZlcnRleFBvc2l0aW9uLCAxLjApOw0KICAgIHRleENvb3JkID0gdGV4UG9zaXRpb247DQogICAgZnJhZ21lbnRDb2xvciA9IHZlcnRleENvbG9yOw0KfQ0KDQo";
-kha_Shaders.painter_text_vertData1 = "s424:I3ZlcnNpb24gMzAwIGVzDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQppbiB2ZWMzIHZlcnRleFBvc2l0aW9uOw0Kb3V0IHZlYzIgdGV4Q29vcmQ7DQppbiB2ZWMyIHRleFBvc2l0aW9uOw0Kb3V0IHZlYzQgZnJhZ21lbnRDb2xvcjsNCmluIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOw0KICAgIGZyYWdtZW50Q29sb3IgPSB2ZXJ0ZXhDb2xvcjsNCn0NCg0K";
-kha_Shaders.painter_video_fragData0 = "s494:I3ZlcnNpb24gMTAwDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KdmFyeWluZyBoaWdocCB2ZWMyIHRleENvb3JkOw0KdmFyeWluZyBoaWdocCB2ZWM0IGNvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGhpZ2hwIHZlYzQgdGV4Y29sb3IgPSB0ZXh0dXJlMkQodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsNCiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7DQogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOw0KICAgIGdsX0ZyYWdEYXRhWzBdID0gdGV4Y29sb3I7DQp9DQoNCg";
-kha_Shaders.painter_video_fragData1 = "s511:I3ZlcnNpb24gMzAwIGVzDQpwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsNCnByZWNpc2lvbiBoaWdocCBpbnQ7DQoNCnVuaWZvcm0gaGlnaHAgc2FtcGxlcjJEIHRleDsNCg0KaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsNCmluIGhpZ2hwIHZlYzQgY29sb3I7DQpvdXQgaGlnaHAgdmVjNCBGcmFnQ29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgaGlnaHAgdmVjNCB0ZXhjb2xvciA9IHRleHR1cmUodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsNCiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7DQogICAgdGV4Y29sb3IgPSB2ZWM0KF8zMi54LCBfMzIueSwgXzMyLnosIHRleGNvbG9yLncpOw0KICAgIEZyYWdDb2xvciA9IHRleGNvbG9yOw0KfQ0KDQo";
-kha_Shaders.painter_video_vertData0 = "s438:I3ZlcnNpb24gMTAwDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQphdHRyaWJ1dGUgdmVjMyB2ZXJ0ZXhQb3NpdGlvbjsNCnZhcnlpbmcgdmVjMiB0ZXhDb29yZDsNCmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOw0KdmFyeWluZyB2ZWM0IGNvbG9yOw0KYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7DQoNCnZvaWQgbWFpbigpDQp7DQogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsNCiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOw0KICAgIGNvbG9yID0gdmVydGV4Q29sb3I7DQp9DQoNCg";
-kha_Shaders.painter_video_vertData1 = "s403:I3ZlcnNpb24gMzAwIGVzDQoNCnVuaWZvcm0gbWF0NCBwcm9qZWN0aW9uTWF0cml4Ow0KDQppbiB2ZWMzIHZlcnRleFBvc2l0aW9uOw0Kb3V0IHZlYzIgdGV4Q29vcmQ7DQppbiB2ZWMyIHRleFBvc2l0aW9uOw0Kb3V0IHZlYzQgY29sb3I7DQppbiB2ZWM0IHZlcnRleENvbG9yOw0KDQp2b2lkIG1haW4oKQ0Kew0KICAgIGdsX1Bvc2l0aW9uID0gcHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCk7DQogICAgdGV4Q29vcmQgPSB0ZXhQb3NpdGlvbjsNCiAgICBjb2xvciA9IHZlcnRleENvbG9yOw0KfQ0KDQo";
+kha_Shaders.painter_colored_fragData0 = "s198:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdmFyeWluZyBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9GcmFnRGF0YVswXSA9IGZyYWdtZW50Q29sb3I7Cn0KCg";
+kha_Shaders.painter_colored_fragData1 = "s223:I3ZlcnNpb24gMzAwIGVzCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOwppbiBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBGcmFnQ29sb3IgPSBmcmFnbWVudENvbG9yOwp9Cgo";
+kha_Shaders.painter_colored_vertData0 = "s331:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgZnJhZ21lbnRDb2xvcjsKYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9Qb3NpdGlvbiA9IHByb2plY3Rpb25NYXRyaXggKiB2ZWM0KHZlcnRleFBvc2l0aW9uLCAxLjApOwogICAgZnJhZ21lbnRDb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
+kha_Shaders.painter_colored_vertData1 = "s311:I3ZlcnNpb24gMzAwIGVzCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmluIHZlYzMgdmVydGV4UG9zaXRpb247Cm91dCB2ZWM0IGZyYWdtZW50Q29sb3I7CmluIHZlYzQgdmVydGV4Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9Qb3NpdGlvbiA9IHByb2plY3Rpb25NYXRyaXggKiB2ZWM0KHZlcnRleFBvc2l0aW9uLCAxLjApOwogICAgZnJhZ21lbnRDb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
+kha_Shaders.painter_image_vertData0 = "s415:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgY29sb3I7CmF0dHJpYnV0ZSB2ZWM0IHZlcnRleENvbG9yOwoKdm9pZCBtYWluKCkKewogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsKICAgIHRleENvb3JkID0gdGV4UG9zaXRpb247CiAgICBjb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
+kha_Shaders.painter_image_vertData1 = "s380:I3ZlcnNpb24gMzAwIGVzCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmluIHZlYzMgdmVydGV4UG9zaXRpb247Cm91dCB2ZWMyIHRleENvb3JkOwppbiB2ZWMyIHRleFBvc2l0aW9uOwpvdXQgdmVjNCBjb2xvcjsKaW4gdmVjNCB2ZXJ0ZXhDb2xvcjsKCnZvaWQgbWFpbigpCnsKICAgIGdsX1Bvc2l0aW9uID0gcHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCk7CiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOwogICAgY29sb3IgPSB2ZXJ0ZXhDb2xvcjsKfQoK";
+kha_Shaders.painter_text_fragData0 = "s351:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKdmFyeWluZyBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7CnZhcnlpbmcgaGlnaHAgdmVjMiB0ZXhDb29yZDsKCnZvaWQgbWFpbigpCnsKICAgIGdsX0ZyYWdEYXRhWzBdID0gdmVjNChmcmFnbWVudENvbG9yLnh5eiwgdGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpLnggKiBmcmFnbWVudENvbG9yLncpOwp9Cgo";
+kha_Shaders.painter_text_fragData1 = "s367:I3ZlcnNpb24gMzAwIGVzCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOwppbiBoaWdocCB2ZWM0IGZyYWdtZW50Q29sb3I7CmluIGhpZ2hwIHZlYzIgdGV4Q29vcmQ7Cgp2b2lkIG1haW4oKQp7CiAgICBGcmFnQ29sb3IgPSB2ZWM0KGZyYWdtZW50Q29sb3IueHl6LCB0ZXh0dXJlKHRleCwgdGV4Q29vcmQpLnggKiBmcmFnbWVudENvbG9yLncpOwp9Cgo";
+kha_Shaders.painter_image_fragData0 = "s471:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKdmFyeWluZyBoaWdocCB2ZWMyIHRleENvb3JkOwp2YXJ5aW5nIGhpZ2hwIHZlYzQgY29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBoaWdocCB2ZWM0IHRleGNvbG9yID0gdGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpICogY29sb3I7CiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7CiAgICB0ZXhjb2xvciA9IHZlYzQoXzMyLngsIF8zMi55LCBfMzIueiwgdGV4Y29sb3Iudyk7CiAgICBnbF9GcmFnRGF0YVswXSA9IHRleGNvbG9yOwp9Cgo";
+kha_Shaders.painter_image_fragData1 = "s487:I3ZlcnNpb24gMzAwIGVzCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsKaW4gaGlnaHAgdmVjNCBjb2xvcjsKb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOwoKdm9pZCBtYWluKCkKewogICAgaGlnaHAgdmVjNCB0ZXhjb2xvciA9IHRleHR1cmUodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsKICAgIGhpZ2hwIHZlYzMgXzMyID0gdGV4Y29sb3IueHl6ICogY29sb3IudzsKICAgIHRleGNvbG9yID0gdmVjNChfMzIueCwgXzMyLnksIF8zMi56LCB0ZXhjb2xvci53KTsKICAgIEZyYWdDb2xvciA9IHRleGNvbG9yOwp9Cgo";
+kha_Shaders.painter_text_vertData0 = "s436:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgZnJhZ21lbnRDb2xvcjsKYXR0cmlidXRlIHZlYzQgdmVydGV4Q29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBnbF9Qb3NpdGlvbiA9IHByb2plY3Rpb25NYXRyaXggKiB2ZWM0KHZlcnRleFBvc2l0aW9uLCAxLjApOwogICAgdGV4Q29vcmQgPSB0ZXhQb3NpdGlvbjsKICAgIGZyYWdtZW50Q29sb3IgPSB2ZXJ0ZXhDb2xvcjsKfQoK";
+kha_Shaders.painter_text_vertData1 = "s402:I3ZlcnNpb24gMzAwIGVzCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmluIHZlYzMgdmVydGV4UG9zaXRpb247Cm91dCB2ZWMyIHRleENvb3JkOwppbiB2ZWMyIHRleFBvc2l0aW9uOwpvdXQgdmVjNCBmcmFnbWVudENvbG9yOwppbiB2ZWM0IHZlcnRleENvbG9yOwoKdm9pZCBtYWluKCkKewogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsKICAgIHRleENvb3JkID0gdGV4UG9zaXRpb247CiAgICBmcmFnbWVudENvbG9yID0gdmVydGV4Q29sb3I7Cn0KCg";
+kha_Shaders.painter_video_fragData0 = "s471:I3ZlcnNpb24gMTAwCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKdmFyeWluZyBoaWdocCB2ZWMyIHRleENvb3JkOwp2YXJ5aW5nIGhpZ2hwIHZlYzQgY29sb3I7Cgp2b2lkIG1haW4oKQp7CiAgICBoaWdocCB2ZWM0IHRleGNvbG9yID0gdGV4dHVyZTJEKHRleCwgdGV4Q29vcmQpICogY29sb3I7CiAgICBoaWdocCB2ZWMzIF8zMiA9IHRleGNvbG9yLnh5eiAqIGNvbG9yLnc7CiAgICB0ZXhjb2xvciA9IHZlYzQoXzMyLngsIF8zMi55LCBfMzIueiwgdGV4Y29sb3Iudyk7CiAgICBnbF9GcmFnRGF0YVswXSA9IHRleGNvbG9yOwp9Cgo";
+kha_Shaders.painter_video_fragData1 = "s487:I3ZlcnNpb24gMzAwIGVzCnByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwpwcmVjaXNpb24gaGlnaHAgaW50OwoKdW5pZm9ybSBoaWdocCBzYW1wbGVyMkQgdGV4OwoKaW4gaGlnaHAgdmVjMiB0ZXhDb29yZDsKaW4gaGlnaHAgdmVjNCBjb2xvcjsKb3V0IGhpZ2hwIHZlYzQgRnJhZ0NvbG9yOwoKdm9pZCBtYWluKCkKewogICAgaGlnaHAgdmVjNCB0ZXhjb2xvciA9IHRleHR1cmUodGV4LCB0ZXhDb29yZCkgKiBjb2xvcjsKICAgIGhpZ2hwIHZlYzMgXzMyID0gdGV4Y29sb3IueHl6ICogY29sb3IudzsKICAgIHRleGNvbG9yID0gdmVjNChfMzIueCwgXzMyLnksIF8zMi56LCB0ZXhjb2xvci53KTsKICAgIEZyYWdDb2xvciA9IHRleGNvbG9yOwp9Cgo";
+kha_Shaders.painter_video_vertData0 = "s415:I3ZlcnNpb24gMTAwCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmF0dHJpYnV0ZSB2ZWMzIHZlcnRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzIgdGV4Q29vcmQ7CmF0dHJpYnV0ZSB2ZWMyIHRleFBvc2l0aW9uOwp2YXJ5aW5nIHZlYzQgY29sb3I7CmF0dHJpYnV0ZSB2ZWM0IHZlcnRleENvbG9yOwoKdm9pZCBtYWluKCkKewogICAgZ2xfUG9zaXRpb24gPSBwcm9qZWN0aW9uTWF0cml4ICogdmVjNCh2ZXJ0ZXhQb3NpdGlvbiwgMS4wKTsKICAgIHRleENvb3JkID0gdGV4UG9zaXRpb247CiAgICBjb2xvciA9IHZlcnRleENvbG9yOwp9Cgo";
+kha_Shaders.painter_video_vertData1 = "s380:I3ZlcnNpb24gMzAwIGVzCgp1bmlmb3JtIG1hdDQgcHJvamVjdGlvbk1hdHJpeDsKCmluIHZlYzMgdmVydGV4UG9zaXRpb247Cm91dCB2ZWMyIHRleENvb3JkOwppbiB2ZWMyIHRleFBvc2l0aW9uOwpvdXQgdmVjNCBjb2xvcjsKaW4gdmVjNCB2ZXJ0ZXhDb2xvcjsKCnZvaWQgbWFpbigpCnsKICAgIGdsX1Bvc2l0aW9uID0gcHJvamVjdGlvbk1hdHJpeCAqIHZlYzQodmVydGV4UG9zaXRpb24sIDEuMCk7CiAgICB0ZXhDb29yZCA9IHRleFBvc2l0aW9uOwogICAgY29sb3IgPSB2ZXJ0ZXhDb2xvcjsKfQoK";
 kha_System.renderListeners = [];
 kha_System.foregroundListeners = [];
 kha_System.resumeListeners = [];

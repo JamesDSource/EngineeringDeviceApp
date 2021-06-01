@@ -39,7 +39,8 @@ class DivisionRect implements Component {
 	public function isOver(x: Float, y: Float): Component {
 		for(child in children) {
 			var bounds: Component.BoundingBox = child.getBoundingBox();
-			if(	x >= bounds.topLeft.x && 
+			if(	bounds != null &&
+				x >= bounds.topLeft.x && 
 				x <= bounds.bottomRight.x && 
 				y >= bounds.topLeft.y &&
 				y <= bounds.bottomRight.y) 
@@ -54,5 +55,27 @@ class DivisionRect implements Component {
 	public function addChild(child: Component) {
 		children.push(child);
 		child.origin = origin.add(position);
+	}
+
+	public function mouseClicked(mb: Int, x: Int, y: Int, hoveringOver: Bool): Void {
+		for(child in children) {
+			var hoveringOverChild: Bool = false;
+			var bounds: Component.BoundingBox = child.getBoundingBox();
+			if(	bounds != null &&
+				x >= bounds.topLeft.x && 
+				x <= bounds.bottomRight.x && 
+				y >= bounds.topLeft.y &&
+				y <= bounds.bottomRight.y) 
+			{
+				hoveringOverChild = true;
+			}
+			child.mouseClicked(mb, x, y, hoveringOverChild);
+		}
+	}
+
+	public function update(): Void { 
+		for(child in children) {
+			child.update();
+		}
 	}
 }

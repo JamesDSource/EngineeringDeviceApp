@@ -1,11 +1,38 @@
 {
 	"files": [
 		{
+			"name": "EngineeringProject",
+			"files": [
+				"EngineeringProject.png"
+			],
+			"type": "image",
+			"original_width": 798,
+			"original_height": 478
+		},
+		{
 			"name": "RobotoMono",
 			"files": [
 				"RobotoMono.ttf"
 			],
 			"type": "font"
+		},
+		{
+			"name": "meditationicon",
+			"files": [
+				"meditationicon.png"
+			],
+			"type": "image",
+			"original_width": 173,
+			"original_height": 166
+		},
+		{
+			"name": "pencilicon",
+			"files": [
+				"pencilicon.png"
+			],
+			"type": "image",
+			"original_width": 171,
+			"original_height": 171
 		},
 		{
 			"name": "painter_colored_frag",
@@ -119,36 +146,6 @@
 			"types": []
 		},
 		{
-			"name": "painter_text_frag",
-			"files": [
-				"painter-text.frag.d3d11"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "fragmentColor",
-					"type": "vec4"
-				},
-				{
-					"name": "texCoord",
-					"type": "vec2"
-				}
-			],
-			"outputs": [
-				{
-					"name": "FragColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [
-				{
-					"name": "tex",
-					"type": "sampler2D"
-				}
-			],
-			"types": []
-		},
-		{
 			"name": "painter_image_vert",
 			"files": [
 				"painter-image.vert.d3d11"
@@ -215,6 +212,36 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "painter_text_frag",
+			"files": [
+				"painter-text.frag.d3d11"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "fragmentColor",
+					"type": "vec4"
+				},
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				}
+			],
+			"outputs": [
+				{
+					"name": "FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			],
+			"types": []
 		},
 		{
 			"name": "painter_text_vert",
@@ -285,6 +312,36 @@
 			]
 		},
 		{
+			"name": "painter_video_frag",
+			"files": [
+				"painter-video.frag.d3d11"
+			],
+			"type": "shader",
+			"inputs": [
+				{
+					"name": "texCoord",
+					"type": "vec2"
+				},
+				{
+					"name": "color",
+					"type": "vec4"
+				}
+			],
+			"outputs": [
+				{
+					"name": "FragColor",
+					"type": "vec4"
+				}
+			],
+			"uniforms": [
+				{
+					"name": "tex",
+					"type": "sampler2D"
+				}
+			],
+			"types": []
+		},
+		{
 			"name": "painter_video_vert",
 			"files": [
 				"painter-video.vert.d3d11"
@@ -351,36 +408,6 @@
 					]
 				}
 			]
-		},
-		{
-			"name": "painter_video_frag",
-			"files": [
-				"painter-video.frag.d3d11"
-			],
-			"type": "shader",
-			"inputs": [
-				{
-					"name": "texCoord",
-					"type": "vec2"
-				},
-				{
-					"name": "color",
-					"type": "vec4"
-				}
-			],
-			"outputs": [
-				{
-					"name": "FragColor",
-					"type": "vec4"
-				}
-			],
-			"uniforms": [
-				{
-					"name": "tex",
-					"type": "sampler2D"
-				}
-			],
-			"types": []
 		}
 	]
 }

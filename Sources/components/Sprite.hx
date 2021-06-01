@@ -25,11 +25,19 @@ class Sprite implements Component {
 	}
 
 	public function isOver(x: Float, y: Float): Component {
-		return null;
+		return this;
 	}
 
 	public function getTopLeft(): kha.math.Vector2 {
 		var originOffset = Origin.getOriginOffset(imageOrigin, new kha.math.Vector2(image.width, image.height));
 		return origin.add(position).add(originOffset);
+	}
+
+	public function mouseClicked(mb: Int, x: Int, y: Int, hoveringOver: Bool): Void {
+
+	}
+
+	public function update(): Void { 
+		
 	}
 }

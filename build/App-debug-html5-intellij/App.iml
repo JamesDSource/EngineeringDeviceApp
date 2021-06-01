@@ -15,9 +15,9 @@
     <output url="file://$MODULE_DIR$/../debug-html5" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../..">
-      <sourceFolder url="file://c:\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Sources" isTestSource="false" />
-      <sourceFolder url="file://c:\Program Files\WindowsApps\5649RobertKonrad.KodeStudio_18.11.0.0_x64__j9akr42m5hw02\resources\app\kodeExtensions\kha\Kha\Backends\HTML5" isTestSource="false" />
-      <sourceFolder url="file://c:\Users\jolen\OneDrive\Documents\GitHub\EngineeringDeviceApp\Sources" isTestSource="false" />
+      <sourceFolder url="file://c:\Users\james\Desktop\KodeStudio\resources\app\kodeExtensions\kha\Kha\Sources" isTestSource="false" />
+      <sourceFolder url="file://c:\Users\james\Desktop\KodeStudio\resources\app\kodeExtensions\kha\Kha\Backends\HTML5" isTestSource="false" />
+      <sourceFolder url="file://c:\Users\james\Desktop\School\PLTW Engineering\EngineeringApp\Sources" isTestSource="false" />
 
     </content>
     

@@ -39,15 +39,24 @@ class Textbox implements Component {
 	}
 
 	public function draw(graphics: kha.graphics2.Graphics): Void {
+		graphics.color = Project.NAVY;
 		graphics.fontSize = fontSize;
 		Text.drawText(graphics, text, position.add(origin), hSeperation, vSeperation, originPoint);
 	}
 	
 	public function getBoundingBox(): Component.BoundingBox {
-		return {topLeft: null, bottomRight: null};
+		return null;
 	}
 	
 	public function isOver(x: Float, y: Float): Component {
-		return null;
+		return this;
+	}
+
+	public function mouseClicked(mb: Int, x: Int, y: Int, hoveringOver: Bool): Void {
+
+	}
+
+	public function update(): Void { 
+		
 	}
 }
